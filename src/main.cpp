@@ -7,7 +7,7 @@
  * !무단 수정 금지!
  ********************************************************************/
 
-#define BUF_SIZE 32
+#define BUF_SIZE 16
 #define MSG_SIZE 8
 
 #include <stdio.h>
@@ -30,18 +30,19 @@
 int main()
 {
     // ==============WritePath========================
-    std::ofstream rec_path;
-    initPathData(rec_path, "first_path");
+    std::ofstream rec_path("", std::ios::binary);
+    std::cout << "File name : ";
+    std::string file_name;
+    std::cin >> file_name;
 
     int data_size{BUF_SIZE};
     char inputdata[BUF_SIZE] = {0};
 
     int    fd;
     int    ndx;
-    char   msg[] = "F";
     char   buf[BUF_SIZE];
     struct termios    newtio;
-    struct pollfd     poll_events;      // 체크할 event 정보를 갖는 struct
+    struct pollfd     poll_events;      // 체크할 event 정보를 갖는 structs
     int    poll_state;
 
     memset(&newtio, 0, sizeof(newtio) );
@@ -51,7 +52,7 @@ int main()
     newtio.c_cc[VTIME]   = 0;
     newtio.c_cc[VMIN]    = 1;
 
-    openSerialPort(&fd);
+    if(openSerialPort(&fd)==-1) return -1;
     serialSetting(&fd, newtio);
 
     // poll 사용을 위한 준비
@@ -64,18 +65,23 @@ int main()
 
     struct timespec  begin, end;
 
+    initPathData(rec_path, file_name);
+
     std::cout << "Wait Writing..\n";
     sleep(3);
 
     const int motor_num{7};
     int motor[motor_num]={0};
 
+    unsigned char msg[1] = {0xAB};
+
     int count{0};
-    while(count<500)
+    while(true)
     {
         clock_gettime(CLOCK_MONOTONIC, &begin);
         write(fd, msg, 1);
         readSerialData(&fd, poll_events, &poll_state, buf, rec_path);
+        writePathData(rec_path, BUF_SIZE, buf);
         std::cout << "Time: " << (double)(count * 10 * 0.001) << "s\t>>> ";
         // std::cout << buf << "\n";
         count++;
@@ -88,6 +94,7 @@ int main()
         std::cout << "motor5: " << motor[4] << "\t";
         std::cout << "motor6: " << motor[5] << "\t";
         std::cout << "motor7: " << motor[6] << "\n";
+        if(buf[15]==(char)(0xFF)) break;
 
         while(1)
         {
@@ -97,8 +104,7 @@ int main()
         }
     }
 
-    close( fd);
-    endPathData(rec_path);
+    close(fd);
 
     rec_path.close();
 
@@ -107,20 +113,17 @@ int main()
     std::cout << "Wait Reading..\n";
     sleep(3);
 
-    std::ifstream path;
-    if(!openPathData(path, "first_path")) return 0;
+    std::ifstream path("", std::ios::binary);
+    if(!openPathData(path, file_name)) return 0;
 
     count = 0;
     while(true)
     {
         clock_gettime(CLOCK_MONOTONIC, &begin);
         char data[BUF_SIZE];
-        readPathData(path, data_size, data);
-        if (data[0]=='0') break;
+        readPathData(path, BUF_SIZE, data);
         std::cout << "Time: " << (double)(count * 10 * 0.001) << "s\t>>> ";
-        // std::cout << data << "\n";
         count++;
-
         dataTransform(data, motor, motor_num);
         std::cout << "motor1: " << motor[0] << "\t";
         std::cout << "motor2: " << motor[1] << "\t";
@@ -129,6 +132,14 @@ int main()
         std::cout << "motor5: " << motor[4] << "\t";
         std::cout << "motor6: " << motor[5] << "\t";
         std::cout << "motor7: " << motor[6] << "\n";
+        if (data[15]==(char)(0xFF))
+        {
+            path.clear();
+            path.seekg(0, std::ios::beg);
+            // path.close();
+            // if(!openPathData(path, file_name))
+            //     return 0;
+        }
 
         while(1)
         {

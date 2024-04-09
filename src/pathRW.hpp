@@ -14,8 +14,6 @@ void initPathData(std::ofstream &rec_path, std::string path_name);
 
 void writePathData(std::ofstream &rec_path, int data_size, char *data);
 
-void endPathData(std::ofstream &rec_path);
-
 bool openPathData(std::ifstream &path, std::string path_name);
 
 std::string readOneLine(std::ifstream &path, int buff_size);

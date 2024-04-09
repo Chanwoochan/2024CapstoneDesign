@@ -1,4 +1,4 @@
-#define BUF_SIZE 32
+#define BUF_SIZE 16
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,7 +19,7 @@ int openSerialPort(int *fd)   // 시리얼 포트를 open
    *fd = open("/dev/arduinoMega", O_RDWR | O_NOCTTY );        // 디바이스를 open 한다.
    if ( 0 > *fd)
    {
-      std::cout << "open error\n";
+      std::cout << "Serial open error\nPlease check connect Controller.";
       return -1;
    }
    return 0;
@@ -46,7 +46,6 @@ int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *b
       if ( poll_events.revents & POLLIN)            // event 가 자료 수신?
       {
          read( *fd, buf, BUF_SIZE);
-         writePathData(rec_path, BUF_SIZE, buf);
          return 1;
       }
       if ( poll_events.revents & POLLERR)      // event 가 에러?

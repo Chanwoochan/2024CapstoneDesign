@@ -23,12 +23,6 @@ void writePathData(std::ofstream &rec_path,int data_size, char *data)
     {
         rec_path << data[i];
     }
-    rec_path << "\n";
-}
-
-void endPathData(std::ofstream &rec_path)
-{
-    rec_path << "00000000000000000000000000000000";
 }
 
 bool openPathData(std::ifstream &path, std::string path_name)
@@ -54,41 +48,13 @@ std::string readOneLine(std::ifstream &path, int buff_size)
 
 void readPathData(std::ifstream &path, int data_size, char *data)
 {
-    for(int i{0}; i < data_size; i++)
-    {
-        path >> data[i];
-    }
+    path.read(data,data_size);
 }
 
 void dataTransform(char *data, int *out, int motor_num)
 {
-    int o{0};int t{0};int h{0};
-    for(int i{0}; i<motor_num; i++)
-    {
-        if((int)(data[(i+1)*3-1])>64)
+        for(int i{0}; i<motor_num; i++)
         {
-            h = ((int)(data[(i+1)*3-1])-55);
+            out[i]=(int)((unsigned char)(data[2*i])<<8|(unsigned char)(data[2*i+1]));
         }
-        else
-        {
-            h = ((int)(data[(i+1)*3-1])-48);
-        }
-        if((int)(data[(i+1)*3])>64)
-        {
-            t = ((int)(data[(i+1)*3])-55);
-        }
-        else
-        {
-            t = ((int)(data[(i+1)*3])-48);
-        }
-        if((int)(data[(i+1)*3+1])>64)
-        {
-            o = ((int)(data[(i+1)*3+1])-55);
-        }
-        else
-        {
-            o = ((int)(data[(i+1)*3+1])-48);
-        }
-        out[i] = 16*16*h+16*t+o;
-    }
 }
