@@ -1,0 +1,103 @@
+[0.019s] Invoking command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.050s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.246s] -- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)
+[0.282s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.285s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.292s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.305s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.325s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.391s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.393s] -- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.519s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.725s] -- Found motor_interface: 0.0.0 (/home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface/share/motor_interface/cmake)
+[0.755s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.859s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.859s] -- Configured cppcheck include dirs: 
+[0.859s] -- Configured cppcheck exclude dirs and/or files: 
+[0.865s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.874s] -- Added test 'lint_cmake' to check CMake code style
+[0.879s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.911s] -- Added test 'uncrustify' to check C / C++ code style
+[0.911s] -- Configured uncrustify additional arguments: 
+[0.915s] -- Added test 'xmllint' to check XML markup files
+[0.919s] -- Configuring done (0.9s)
+[0.938s] -- Generating done (0.0s)
+[0.940s] -- Build files have been written to: /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator
+[0.972s] [ 25%] [32mBuilding CXX object CMakeFiles/manipulator_read.dir/src/pathR.cpp.o[0m
+[0.972s] [ 25%] [32mBuilding CXX object CMakeFiles/manipulator_read.dir/src/pathRW.cpp.o[0m
+[0.972s] [ 62%] [32mBuilding CXX object CMakeFiles/manipulator_read.dir/src/serial.cpp.o[0m
+[0.973s] [ 62%] [32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/pathRW.cpp.o[0m
+[0.973s] [ 75%] [32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/serial.cpp.o[0m
+[0.973s] [ 62%] [32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/pathW.cpp.o[0m
+[1.454s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.cpp:[m[K In function ‘[01m[Kstd::string readOneLine(std::ifstream&, int)[m[K’:
+[1.455s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.cpp:40:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuff_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.455s]    40 | std::string readOneLine(std::ifstream &path, [01;35m[Kint buff_size[m[K)
+[1.455s]       |                                              [01;35m[K~~~~^~~~~~~~~[m[K
+[1.458s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.cpp:[m[K In function ‘[01m[Kstd::string readOneLine(std::ifstream&, int)[m[K’:
+[1.458s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.cpp:40:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuff_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.458s]    40 | std::string readOneLine(std::ifstream &path, [01;35m[Kint buff_size[m[K)
+[1.458s]       |                                              [01;35m[K~~~~^~~~~~~~~[m[K
+[1.470s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:[m[K In function ‘[01m[Kint readSerialData(int*, pollfd&, int*, char*, std::ofstream&)[m[K’:
+[1.471s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:45:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktemp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.471s]    45 |       char [01;35m[Ktemp[m[K[1];
+[1.471s]       |            [01;35m[K^~~~[m[K
+[1.471s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:35:100:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krec_path[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.471s]    35 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, [01;35m[Kstd::ofstream &rec_path[m[K)
+[1.471s]       |                                                                                     [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[1.477s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:[m[K In function ‘[01m[Kint readSerialData(int*, pollfd&, int*, char*, std::ofstream&)[m[K’:
+[1.477s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:45:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktemp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.477s]    45 |       char [01;35m[Ktemp[m[K[1];
+[1.477s]       |            [01;35m[K^~~~[m[K
+[1.477s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:35:100:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krec_path[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.477s]    35 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, [01;35m[Kstd::ofstream &rec_path[m[K)
+[1.478s]       |                                                                                     [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[3.528s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathR.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::timer_callback()[m[K’:
+[3.528s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathR.cpp:51:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KMotor1[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[3.528s]    51 |         auto [01;35m[KMotor1[m[K = std_msgs::msg::Int64();
+[3.528s]       |              [01;35m[K^~~~~~[m[K
+[3.528s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathR.cpp:52:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KMotor2[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[3.528s]    52 |         auto [01;35m[KMotor2[m[K = std_msgs::msg::Int64();
+[3.528s]       |              [01;35m[K^~~~~~[m[K
+[3.529s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathR.cpp:53:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KMotor3[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[3.529s]    53 |         auto [01;35m[KMotor3[m[K = std_msgs::msg::Int64();
+[3.529s]       |              [01;35m[K^~~~~~[m[K
+[3.529s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathR.cpp:54:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KMotor4[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[3.529s]    54 |         auto [01;35m[KMotor4[m[K = std_msgs::msg::Int64();    // Define msg data type : Int64 = int
+[3.529s]       |              [01;35m[K^~~~~~[m[K
+[3.529s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathR.cpp:66:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdata_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.529s]    66 |         int [01;35m[Kdata_size[m[K{BUF_SIZE};
+[3.529s]       |             [01;35m[K^~~~~~~~~[m[K
+[3.529s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathR.cpp:67:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinputdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.529s]    67 |         char [01;35m[Kinputdata[m[K[BUF_SIZE] = {0};
+[3.529s]       |              [01;35m[K^~~~~~~~~[m[K
+[3.586s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.586s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:121:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[3.586s]   121 |     if(openSerialPort(&fd,[01;35m[K"/dev/arduinoMega"[m[K)==-1) rclcpp::shutdown();
+[3.586s]       |                           [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.567s] [ 87%] [32m[1mLinking CXX executable manipulator_read[0m
+[5.719s] [ 87%] Built target manipulator_read
+[5.833s] [100%] [32m[1mLinking CXX executable manipulator_write[0m
+[6.012s] [100%] Built target manipulator_write
+[6.021s] Invoked command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[6.096s] Invoking command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --install /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator
+[6.119s] -- Install configuration: ""
+[6.119s] -- Installing: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_write
+[6.122s] -- Set runtime path of "/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_write" to ""
+[6.122s] -- Installing: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_read
+[6.124s] -- Set runtime path of "/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_read" to ""
+[6.124s] -- Installing: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/package_run_dependencies/manipulator
+[6.124s] -- Installing: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/parent_prefix_path/manipulator
+[6.124s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/environment/ament_prefix_path.sh
+[6.124s] -- Installing: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/environment/ament_prefix_path.dsv
+[6.124s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/environment/path.sh
+[6.125s] -- Installing: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/environment/path.dsv
+[6.125s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.bash
+[6.125s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.sh
+[6.125s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.zsh
+[6.125s] -- Installing: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.dsv
+[6.125s] -- Installing: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/package.dsv
+[6.125s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/packages/manipulator
+[6.126s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/cmake/manipulatorConfig.cmake
+[6.126s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/cmake/manipulatorConfig-version.cmake
+[6.126s] -- Installing: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/package.xml
+[6.132s] Invoked command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --install /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator

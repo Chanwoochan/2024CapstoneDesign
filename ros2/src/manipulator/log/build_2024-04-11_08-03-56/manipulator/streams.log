@@ -1,0 +1,20 @@
+[0.019s] Invoking command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.074s] [ 50%] Built target manipulator_read
+[0.080s] [ 62%] [32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/pathW.cpp.o[0m
+[2.077s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::timer_callback()[m[K’:
+[2.077s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:77:31:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[2.077s]    77 |         if(openSerialPort(&fd,[01;35m[K"/dev/arduinoMega"[m[K)==-1) rclcpp::shutdown();
+[2.078s]       |                               [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.080s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:124:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Manipulator[m[K’ has no member named ‘[01m[Kshutdown[m[K’
+[2.080s]   124 |             if(buf[15]==(char)(0xFF)) this->[01;31m[Kshutdown[m[K();
+[2.080s]       |                                             [01;31m[K^~~~~~~~[m[K
+[2.080s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:61:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdata_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.080s]    61 |         int [01;35m[Kdata_size[m[K{BUF_SIZE};
+[2.080s]       |             [01;35m[K^~~~~~~~~[m[K
+[2.080s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:62:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinputdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.080s]    62 |         char [01;35m[Kinputdata[m[K[BUF_SIZE] = {0};
+[2.080s]       |              [01;35m[K^~~~~~~~~[m[K
+[2.802s] gmake[2]: *** [CMakeFiles/manipulator_write.dir/build.make:76: CMakeFiles/manipulator_write.dir/src/pathW.cpp.o] Error 1
+[2.802s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/manipulator_write.dir/all] Error 2
+[2.803s] gmake: *** [Makefile:146: all] Error 2
+[2.808s] Invoked command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8

@@ -1,0 +1,6 @@
+{
+  "package_name": "motor_interface",
+  "non_idl_tuples": [
+    "/home/kcw/capstone_ws/ros2/src/motor_interface:msg/Motor.msg"
+  ]
+}

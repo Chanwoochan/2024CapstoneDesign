@@ -1,0 +1,16 @@
+[0.019s] Invoking command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.073s] [ 80%] Built target manipulator_read
+[0.073s] [ 80%] Built target manipulator_write
+[0.077s] [ 90%] [32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/motor.cpp.o[0m
+[2.269s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::sub_callback(motor_interface::msg::Motor_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.269s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:51:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.269s]    51 |     void sub_callback([01;35m[Kmotor_interface::msg::Motor::SharedPtr msg[m[K)
+[2.269s]       |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[7.382s] [100%] [32m[1mLinking CXX executable manipulator_run[0m
+[7.659s] /usr/bin/ld: CMakeFiles/manipulator_run.dir/src/motor.cpp.o: in function `main':
+[7.659s] motor.cpp:(.text+0x15f): undefined reference to `serialSetting(int*, termios&)'
+[7.696s] collect2: error: ld returned 1 exit status
+[7.697s] gmake[2]: *** [CMakeFiles/manipulator_run.dir/build.make:167: manipulator_run] Error 1
+[7.698s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/manipulator_run.dir/all] Error 2
+[7.698s] gmake: *** [Makefile:146: all] Error 2
+[7.703s] Invoked command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8

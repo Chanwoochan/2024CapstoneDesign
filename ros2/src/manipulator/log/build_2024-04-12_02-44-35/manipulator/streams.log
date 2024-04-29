@@ -1,0 +1,15 @@
+[0.021s] Invoking command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.073s] [ 50%] Built target manipulator_read
+[0.082s] [ 62%] [32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/pathW.cpp.o[0m
+[2.192s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::timer_callback()[m[K’:
+[2.192s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:77:33:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[2.192s]    77 |         if(buf[15]!=0) {rclcpp::[01;31m[K::[m[Kshutdown()};
+[2.192s]       |                                 [01;31m[K^~[m[K
+[2.193s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.194s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:99:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[2.194s]    99 |     if(openSerialPort(&fd,[01;35m[K"/dev/arduinoMega"[m[K)==-1) rclcpp::shutdown();
+[2.194s]       |                           [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.889s] gmake[2]: *** [CMakeFiles/manipulator_write.dir/build.make:76: CMakeFiles/manipulator_write.dir/src/pathW.cpp.o] Error 1
+[2.889s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/manipulator_write.dir/all] Error 2
+[2.889s] gmake: *** [Makefile:146: all] Error 2
+[2.894s] Invoked command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8

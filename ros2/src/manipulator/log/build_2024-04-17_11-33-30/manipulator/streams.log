@@ -1,0 +1,41 @@
+[0.015s] Invoking command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.066s] [ 33%] Built target manipulator_read
+[0.066s] [ 66%] Built target manipulator_write
+[0.072s] [ 75%] [32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/motor.cpp.o[0m
+[2.079s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:[m[K In function ‘[01m[Kvoid motor_position_control(unsigned char*, unsigned char, unsigned char)[m[K’:
+[2.079s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:90:88:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kparam_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.079s]    90 | void motor_position_control(unsigned char *data, unsigned char motor_id, [01;35m[Kunsigned char param_length[m[K)
+[2.079s]       |                                                                          [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[2.117s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::sub_callback(motor_interface::msg::Motor_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.117s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:110:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.117s]   110 |     void sub_callback([01;35m[Kmotor_interface::msg::Motor::SharedPtr msg[m[K)
+[2.118s]       |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.120s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.120s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:132:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[2.120s]   132 |     if(openSerialPort(&fd,[01;35m[K"/dev/3M_manipulator"[m[K)==-1) return -1;
+[2.120s]       |                           [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.810s] [ 83%] [32m[1mLinking CXX executable manipulator_run[0m
+[7.212s] [100%] Built target manipulator_run
+[7.221s] Invoked command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[7.294s] Invoking command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --install /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator
+[7.314s] -- Install configuration: ""
+[7.315s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_write
+[7.315s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_read
+[7.315s] -- Installing: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_run
+[7.321s] -- Set runtime path of "/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_run" to ""
+[7.321s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/package_run_dependencies/manipulator
+[7.321s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/parent_prefix_path/manipulator
+[7.321s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/environment/ament_prefix_path.sh
+[7.321s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/environment/ament_prefix_path.dsv
+[7.321s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/environment/path.sh
+[7.321s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/environment/path.dsv
+[7.321s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.bash
+[7.321s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.sh
+[7.322s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.zsh
+[7.322s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.dsv
+[7.322s] -- Installing: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/package.dsv
+[7.322s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/packages/manipulator
+[7.322s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/cmake/manipulatorConfig.cmake
+[7.322s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/cmake/manipulatorConfig-version.cmake
+[7.322s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/package.xml
+[7.326s] Invoked command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --install /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator

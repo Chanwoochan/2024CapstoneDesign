@@ -1,0 +1,49 @@
+[0.017s] Invoking command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.057s] [ 12%] [32mBuilding CXX object CMakeFiles/manipulator_read.dir/src/serial.cpp.o[0m
+[0.066s] [ 25%] [32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/pathW.cpp.o[0m
+[0.066s] [ 37%] [32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/serial.cpp.o[0m
+[0.436s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:[m[K In function ‘[01m[Kint readSerialData(int*, pollfd&, int*, char*, std::ofstream&)[m[K’:
+[0.436s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:45:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktemp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[0.436s]    45 |       char [01;35m[Ktemp[m[K[1];
+[0.436s]       |            [01;35m[K^~~~[m[K
+[0.436s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:35:100:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krec_path[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[0.436s]    35 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, [01;35m[Kstd::ofstream &rec_path[m[K)
+[0.437s]       |                                                                                     [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[0.448s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:[m[K In function ‘[01m[Kint readSerialData(int*, pollfd&, int*, char*, std::ofstream&)[m[K’:
+[0.448s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:45:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktemp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[0.449s]    45 |       char [01;35m[Ktemp[m[K[1];
+[0.449s]       |            [01;35m[K^~~~[m[K
+[0.449s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:35:100:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krec_path[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[0.449s]    35 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, [01;35m[Kstd::ofstream &rec_path[m[K)
+[0.449s]       |                                                                                     [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[0.503s] [ 50%] [32m[1mLinking CXX executable manipulator_read[0m
+[0.705s] [ 75%] Built target manipulator_read
+[2.220s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.220s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:121:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[2.220s]   121 |     if(openSerialPort(&fd,[01;35m[K"/dev/arduinoMega"[m[K)==-1) rclcpp::shutdown();
+[2.220s]       |                           [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[3.811s] [ 87%] [32m[1mLinking CXX executable manipulator_write[0m
+[3.956s] [100%] Built target manipulator_write
+[3.966s] Invoked command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[4.036s] Invoking command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --install /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator
+[4.057s] -- Install configuration: ""
+[4.057s] -- Installing: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_write
+[4.059s] -- Set runtime path of "/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_write" to ""
+[4.059s] -- Installing: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_read
+[4.061s] -- Set runtime path of "/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_read" to ""
+[4.061s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/package_run_dependencies/manipulator
+[4.061s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/parent_prefix_path/manipulator
+[4.061s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/environment/ament_prefix_path.sh
+[4.061s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/environment/ament_prefix_path.dsv
+[4.061s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/environment/path.sh
+[4.061s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/environment/path.dsv
+[4.062s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.bash
+[4.062s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.sh
+[4.062s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.zsh
+[4.062s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.dsv
+[4.062s] -- Installing: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/package.dsv
+[4.062s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/packages/manipulator
+[4.062s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/cmake/manipulatorConfig.cmake
+[4.062s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/cmake/manipulatorConfig-version.cmake
+[4.063s] -- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/package.xml
+[4.069s] Invoked command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --install /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator

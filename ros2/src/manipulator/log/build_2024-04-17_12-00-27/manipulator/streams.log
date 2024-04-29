@@ -1,0 +1,12 @@
+[0.018s] Invoking command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.067s] [ 33%] Built target manipulator_write
+[0.078s] [ 41%] [32mBuilding CXX object CMakeFiles/manipulator_read.dir/src/pathR.cpp.o[0m
+[0.079s] [ 75%] Built target manipulator_run
+[2.215s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathR.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.215s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathR.cpp:98:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+[2.215s]    98 |     [01;31m[Kelse[m[K std::cout << "완료!\n\n";
+[2.215s]       |     [01;31m[K^~~~[m[K
+[2.906s] gmake[2]: *** [CMakeFiles/manipulator_read.dir/build.make:76: CMakeFiles/manipulator_read.dir/src/pathR.cpp.o] Error 1
+[2.906s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/manipulator_read.dir/all] Error 2
+[2.906s] gmake: *** [Makefile:146: all] Error 2
+[2.912s] Invoked command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8

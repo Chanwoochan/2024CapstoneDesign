@@ -1,0 +1,24 @@
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:[m[K In constructor ‘[01m[KManipulator::Manipulator()[m[K’:
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:45:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ka[m[K’ was not declared in this scope
+   45 |         [01;31m[Ka[m[K = this->crea
+      |         [01;31m[K^[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:45:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Manipulator[m[K’ has no member named ‘[01m[Kcrea[m[K’
+   45 |         a = this->[01;31m[Kcrea[m[K
+      |                   [01;31m[K^~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::timer_callback()[m[K’:
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:78:31:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   78 |         if(openSerialPort(&fd,[01;35m[K"/dev/arduinoMega"[m[K)==-1) rclcpp::shutdown();
+      |                               [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:62:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdata_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   62 |         int [01;35m[Kdata_size[m[K{BUF_SIZE};
+      |             [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:63:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinputdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   63 |         char [01;35m[Kinputdata[m[K[BUF_SIZE] = {0};
+      |              [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:149:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kspin_node_once[m[K’ was not declared in this scope
+  149 |     [01;31m[Kspin_node_once[m[K(node1);
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/manipulator_write.dir/build.make:76: CMakeFiles/manipulator_write.dir/src/pathW.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/manipulator_write.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

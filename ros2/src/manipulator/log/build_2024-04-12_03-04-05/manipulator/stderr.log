@@ -1,0 +1,26 @@
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:[m[K In function ‘[01m[Kint readSerialData(int*, pollfd&, int*, char*, std::ofstream&)[m[K’:
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:45:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktemp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   45 |       char [01;35m[Ktemp[m[K[1];
+      |            [01;35m[K^~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:35:100:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krec_path[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   35 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, [01;35m[Kstd::ofstream &rec_path[m[K)
+      |                                                                                     [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.cpp:[m[K In function ‘[01m[Kstd::string readOneLine(std::ifstream&, int)[m[K’:
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.cpp:40:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuff_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   40 | std::string readOneLine(std::ifstream &path, [01;35m[Kint buff_size[m[K)
+      |                                              [01;35m[K~~~~^~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:[m[K In function ‘[01m[Kint readSerialData(int*, pollfd&, int*, char*, std::ofstream&)[m[K’:
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:45:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktemp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   45 |       char [01;35m[Ktemp[m[K[1];
+      |            [01;35m[K^~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:35:100:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krec_path[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   35 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, [01;35m[Kstd::ofstream &rec_path[m[K)
+      |                                                                                     [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.cpp:[m[K In function ‘[01m[Kstd::string readOneLine(std::ifstream&, int)[m[K’:
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.cpp:40:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuff_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   40 | std::string readOneLine(std::ifstream &path, [01;35m[Kint buff_size[m[K)
+      |                                              [01;35m[K~~~~^~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:102:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+  102 |     if(openSerialPort(&fd,[01;35m[K"/dev/arduinoMega"[m[K)==-1) return -1;
+      |                           [01;35m[K^~~~~~~~~~~~~~~~~~[m[K

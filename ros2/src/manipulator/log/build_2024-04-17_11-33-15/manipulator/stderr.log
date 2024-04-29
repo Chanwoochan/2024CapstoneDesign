@@ -1,0 +1,19 @@
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:[m[K In function ‘[01m[Kvoid motor_position_control(unsigned char*, unsigned char, unsigned char)[m[K’:
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:92:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kata[m[K’ was not declared in this scope; did you mean ‘[01m[Kdata[m[K’?
+   92 |     data[0]=0xFF;     [01;31m[Kata[m[K[1]=           0xFF; data[2]=0xFD; data[3]=0x00;
+      |                       [01;31m[K^~~[m[K
+      |                       [32m[Kdata[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:90:88:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kparam_length[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   90 | void motor_position_control(unsigned char *data, unsigned char motor_id, [01;35m[Kunsigned char param_length[m[K)
+      |                                                                          [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::sub_callback(motor_interface::msg::Motor_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:110:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  110 |     void sub_callback([01;35m[Kmotor_interface::msg::Motor::SharedPtr msg[m[K)
+      |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:132:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+  132 |     if(openSerialPort(&fd,[01;35m[K"/dev/3M_manipulator"[m[K)==-1) return -1;
+      |                           [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/manipulator_run.dir/build.make:76: CMakeFiles/manipulator_run.dir/src/motor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/manipulator_run.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

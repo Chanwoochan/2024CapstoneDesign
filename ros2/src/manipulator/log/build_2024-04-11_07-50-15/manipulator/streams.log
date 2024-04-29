@@ -1,0 +1,43 @@
+[0.029s] Invoking command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.093s] [ 50%] Built target manipulator_read
+[0.103s] [ 62%] [32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/pathW.cpp.o[0m
+[2.468s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::timer_callback()[m[K’:
+[2.468s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:77:31:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[2.468s]    77 |         if(openSerialPort(&fd,[01;35m[K"/dev/arduinoMega"[m[K)==-1) rclcpp::shutdown();
+[2.468s]       |                               [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.470s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:61:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdata_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.470s]    61 |         int [01;35m[Kdata_size[m[K{BUF_SIZE};
+[2.470s]       |             [01;35m[K^~~~~~~~~[m[K
+[2.471s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:62:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinputdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.471s]    62 |         char [01;35m[Kinputdata[m[K[BUF_SIZE] = {0};
+[2.471s]       |              [01;35m[K^~~~~~~~~[m[K
+[2.473s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.474s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:148:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Executor::spin_node_once(std::shared_ptr<Manipulator>&, int)[m[K’
+[2.474s]   148 |     [01;31m[Krclcpp::Executor::spin_node_once(node1,1)[m[K;
+[2.474s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[2.474s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.474s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.474s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.474s]                  from [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:30[m[K:
+[2.474s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:248:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class RepT, class T> void rclcpp::Executor::spin_node_once(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, std::chrono::duration<_Rep1, _Period1>)[m[K’
+[2.474s]   248 |   [01;36m[Kspin_node_once[m[K(
+[2.474s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.474s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:248:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.474s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:148:37:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::chrono::duration<_Rep1, _Period1>[m[K’ and ‘[01m[Kint[m[K’
+[2.474s]   148 |     [01;36m[Krclcpp::Executor::spin_node_once(node1,1)[m[K;
+[2.474s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[2.474s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.475s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.475s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.475s]                  from [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:30[m[K:
+[2.475s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:261:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class NodeT, class RepT, class T> void rclcpp::Executor::spin_node_once(std::shared_ptr<_Tp>, std::chrono::duration<_Rep, _Period>)[m[K’
+[2.475s]   261 |   [01;36m[Kspin_node_once[m[K(
+[2.475s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.475s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:261:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.475s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:148:37:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::chrono::duration<_Rep, _Period>[m[K’ and ‘[01m[Kint[m[K’
+[2.475s]   148 |     [01;36m[Krclcpp::Executor::spin_node_once(node1,1)[m[K;
+[2.475s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[3.256s] gmake[2]: *** [CMakeFiles/manipulator_write.dir/build.make:76: CMakeFiles/manipulator_write.dir/src/pathW.cpp.o] Error 1
+[3.257s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/manipulator_write.dir/all] Error 2
+[3.257s] gmake: *** [Makefile:146: all] Error 2
+[3.264s] Invoked command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8

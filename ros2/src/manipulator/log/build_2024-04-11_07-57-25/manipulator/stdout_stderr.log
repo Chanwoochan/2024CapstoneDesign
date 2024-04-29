@@ -1,0 +1,51 @@
+[ 50%] Built target manipulator_read
+[ 62%] [32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/pathW.cpp.o[0m
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::timer_callback()[m[K’:
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:77:31:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   77 |         if(openSerialPort(&fd,[01;35m[K"/dev/arduinoMega"[m[K)==-1) rclcpp::on_shutdown();
+      |                               [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:77:75:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kvoid rclcpp::on_shutdown(std::function<void()>, rclcpp::Context::SharedPtr)[m[K’
+   77 |         if(openSerialPort(&fd,"/dev/arduinoMega")==-1) [01;31m[Krclcpp::on_shutdown()[m[K;
+      |                                                        [01;31m[K~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:30[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/utilities.hpp:215:1:[m[K [01;36m[Knote: [m[Kdeclared here
+  215 | [01;36m[Kon_shutdown[m[K(std::function<void()> callback, rclcpp::Context::SharedPtr context = nullptr);
+      | [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:124:58:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kvoid rclcpp::on_shutdown(std::function<void()>, rclcpp::Context::SharedPtr)[m[K’
+  124 |             if(buf[15]==(char)(0xFF)) [01;31m[Krclcpp::on_shutdown()[m[K;
+      |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:30[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/utilities.hpp:215:1:[m[K [01;36m[Knote: [m[Kdeclared here
+  215 | [01;36m[Kon_shutdown[m[K(std::function<void()> callback, rclcpp::Context::SharedPtr context = nullptr);
+      | [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:61:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdata_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   61 |         int [01;35m[Kdata_size[m[K{BUF_SIZE};
+      |             [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:62:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinputdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   62 |         char [01;35m[Kinputdata[m[K[BUF_SIZE] = {0};
+      |              [01;35m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/manipulator_write.dir/build.make:76: CMakeFiles/manipulator_write.dir/src/pathW.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/manipulator_write.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

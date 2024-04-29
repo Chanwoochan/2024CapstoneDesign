@@ -1,0 +1,100 @@
+[0.000000] (-) TimerEvent: {}
+[0.000418] (manipulator) JobQueued: {'identifier': 'manipulator', 'dependencies': OrderedDict()}
+[0.000464] (manipulator) JobStarted: {'identifier': 'manipulator'}
+[0.021376] (manipulator) JobProgress: {'identifier': 'manipulator', 'progress': 'cmake'}
+[0.022106] (manipulator) JobProgress: {'identifier': 'manipulator', 'progress': 'build'}
+[0.022958] (manipulator) Command: {'cmd': ['/home/kcw/.local/bin/cmake', '--build', '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator', '--', '-j8', '-l8'], 'cwd': '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kcw'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kcw'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/kcw'), ('TERM_PROGRAM_VERSION', '1.82.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3600'), ('SYSTEMD_EXEC_PID', '3809'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '16305'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kcw/capstone_ws/ros2/src/motor_interface/install:/home/kcw/capstone_ws/ros2/src/manipulator/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kcw'), ('JOURNAL_STREAM', '8:36813'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcw'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/kcw/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kcwUbuntu:@/tmp/.ICE-unix/3792,unix/kcwUbuntu:/tmp/.ICE-unix/3792'), ('INVOCATION_ID', '7c6b623934384f3797e952b59e429e30'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.KT8XL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f422bc21d8.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:6aca2640-4051-400d-bde9-bf46b06a1cb7'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface:/opt/ros/humble')]), 'shell': False}
+[0.070322] (manipulator) StdoutLine: {'line': b'[ 40%] Built target manipulator_write\n'}
+[0.072634] (manipulator) StdoutLine: {'line': b'[ 80%] Built target manipulator_read\n'}
+[0.078276] (manipulator) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/motor.cpp.o\x1b[0m\n'}
+[0.096897] (-) TimerEvent: {}
+[0.197182] (-) TimerEvent: {}
+[0.297513] (-) TimerEvent: {}
+[0.397864] (-) TimerEvent: {}
+[0.498217] (-) TimerEvent: {}
+[0.598569] (-) TimerEvent: {}
+[0.698971] (-) TimerEvent: {}
+[0.799323] (-) TimerEvent: {}
+[0.899647] (-) TimerEvent: {}
+[0.999936] (-) TimerEvent: {}
+[1.100367] (-) TimerEvent: {}
+[1.200653] (-) TimerEvent: {}
+[1.300982] (-) TimerEvent: {}
+[1.401297] (-) TimerEvent: {}
+[1.501592] (-) TimerEvent: {}
+[1.601918] (-) TimerEvent: {}
+[1.702235] (-) TimerEvent: {}
+[1.802518] (-) TimerEvent: {}
+[1.902835] (-) TimerEvent: {}
+[2.003145] (-) TimerEvent: {}
+[2.103514] (-) TimerEvent: {}
+[2.192920] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Manipulator::sub_callback(motor_interface::msg::Motor_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.193168] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:51:62:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.193272] (manipulator) StderrLine: {'line': b'   51 |     void sub_callback(\x1b[01;35m\x1b[Kmotor_interface::msg::Motor::SharedPtr msg\x1b[m\x1b[K)\n'}
+[2.193364] (manipulator) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[2.195416] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.195605] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:72:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings\x07-Wwrite-strings\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.195675] (manipulator) StderrLine: {'line': b'   72 |     openSerialPort(&fd,\x1b[01;35m\x1b[K"/dev/arduinoMega"\x1b[m\x1b[K);\n'}
+[2.195731] (manipulator) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.203690] (-) TimerEvent: {}
+[2.303983] (-) TimerEvent: {}
+[2.404308] (-) TimerEvent: {}
+[2.504634] (-) TimerEvent: {}
+[2.604973] (-) TimerEvent: {}
+[2.705307] (-) TimerEvent: {}
+[2.805658] (-) TimerEvent: {}
+[2.906022] (-) TimerEvent: {}
+[3.006370] (-) TimerEvent: {}
+[3.106698] (-) TimerEvent: {}
+[3.207016] (-) TimerEvent: {}
+[3.307413] (-) TimerEvent: {}
+[3.407726] (-) TimerEvent: {}
+[3.508068] (-) TimerEvent: {}
+[3.608393] (-) TimerEvent: {}
+[3.708735] (-) TimerEvent: {}
+[3.809062] (-) TimerEvent: {}
+[3.909389] (-) TimerEvent: {}
+[4.009708] (-) TimerEvent: {}
+[4.110057] (-) TimerEvent: {}
+[4.210376] (-) TimerEvent: {}
+[4.310767] (-) TimerEvent: {}
+[4.411066] (-) TimerEvent: {}
+[4.511449] (-) TimerEvent: {}
+[4.611782] (-) TimerEvent: {}
+[4.712087] (-) TimerEvent: {}
+[4.812421] (-) TimerEvent: {}
+[4.912721] (-) TimerEvent: {}
+[5.013050] (-) TimerEvent: {}
+[5.113350] (-) TimerEvent: {}
+[5.213683] (-) TimerEvent: {}
+[5.313984] (-) TimerEvent: {}
+[5.414322] (-) TimerEvent: {}
+[5.514619] (-) TimerEvent: {}
+[5.614959] (-) TimerEvent: {}
+[5.715257] (-) TimerEvent: {}
+[5.815587] (-) TimerEvent: {}
+[5.915888] (-) TimerEvent: {}
+[6.016216] (-) TimerEvent: {}
+[6.116501] (-) TimerEvent: {}
+[6.216817] (-) TimerEvent: {}
+[6.317116] (-) TimerEvent: {}
+[6.417654] (-) TimerEvent: {}
+[6.517982] (-) TimerEvent: {}
+[6.618294] (-) TimerEvent: {}
+[6.718640] (-) TimerEvent: {}
+[6.818981] (-) TimerEvent: {}
+[6.918689] (manipulator) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable manipulator_run\x1b[0m\n'}
+[6.919045] (-) TimerEvent: {}
+[7.019324] (-) TimerEvent: {}
+[7.119726] (-) TimerEvent: {}
+[7.195648] (manipulator) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/manipulator_run.dir/src/motor.cpp.o: in function `main':\n"}
+[7.195847] (manipulator) StderrLine: {'line': b"motor.cpp:(.text+0x15f): undefined reference to `openSerialPort(int*, char*)'\n"}
+[7.196021] (manipulator) StderrLine: {'line': b"/usr/bin/ld: motor.cpp:(.text+0x178): undefined reference to `serialSetting(int*, termios&)'\n"}
+[7.219852] (-) TimerEvent: {}
+[7.236171] (manipulator) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[7.237066] (manipulator) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/manipulator_run.dir/build.make:167: manipulator_run] Error 1\n'}
+[7.237381] (manipulator) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/manipulator_run.dir/all] Error 2\n'}
+[7.237639] (manipulator) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.243227] (manipulator) CommandEnded: {'returncode': 2}
+[7.308714] (manipulator) JobEnded: {'identifier': 'manipulator', 'rc': 2}
+[7.319750] (-) EventReactorShutdown: {}

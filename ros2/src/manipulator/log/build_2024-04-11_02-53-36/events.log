@@ -1,0 +1,223 @@
+[0.000000] (-) TimerEvent: {}
+[0.000504] (manipulator) JobQueued: {'identifier': 'manipulator', 'dependencies': OrderedDict()}
+[0.001034] (manipulator) JobStarted: {'identifier': 'manipulator'}
+[0.016842] (manipulator) JobProgress: {'identifier': 'manipulator', 'progress': 'cmake'}
+[0.018161] (manipulator) JobProgress: {'identifier': 'manipulator', 'progress': 'build'}
+[0.018265] (manipulator) Command: {'cmd': ['/home/kcw/.local/bin/cmake', '--build', '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator', '--', '-j8', '-l8'], 'cwd': '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kcw'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kcw'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/kcw/capstone_ws/ros2/src'), ('TERM_PROGRAM_VERSION', '1.82.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3234'), ('SYSTEMD_EXEC_PID', '3481'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '24660'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kcw'), ('JOURNAL_STREAM', '8:41563'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcw'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/kcw/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kcwUbuntu:@/tmp/.ICE-unix/3442,unix/kcwUbuntu:/tmp/.ICE-unix/3442'), ('INVOCATION_ID', '45f86c395a434d1583331768569a2e54'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3CVWL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f422bc21d8.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:562dba7b-210a-49e7-b9bc-55d64f913a5d'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.052175] (manipulator) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099989] (-) TimerEvent: {}
+[0.200314] (-) TimerEvent: {}
+[0.268050] (manipulator) StdoutLine: {'line': b'-- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.300493] (-) TimerEvent: {}
+[0.396846] (manipulator) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.400608] (-) TimerEvent: {}
+[0.409289] (manipulator) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.435457] (manipulator) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.500754] (-) TimerEvent: {}
+[0.508066] (manipulator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.558256] (manipulator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.601114] (-) TimerEvent: {}
+[0.701430] (-) TimerEvent: {}
+[0.709216] (manipulator) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.720770] (manipulator) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.801571] (-) TimerEvent: {}
+[0.872221] (manipulator) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.901733] (-) TimerEvent: {}
+[0.904807] (manipulator) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.961563] (manipulator) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.974458] (manipulator) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.001884] (-) TimerEvent: {}
+[1.031553] (manipulator) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.032798] (manipulator) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.102066] (-) TimerEvent: {}
+[1.202407] (-) TimerEvent: {}
+[1.234435] (manipulator) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.302528] (-) TimerEvent: {}
+[1.308059] (manipulator) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.308408] (manipulator) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.308481] (manipulator) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.309756] (manipulator) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.313842] (manipulator) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.315779] (manipulator) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.329547] (manipulator) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.329757] (manipulator) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.332310] (manipulator) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.333841] (manipulator) StdoutLine: {'line': b'-- Configuring done (1.3s)\n'}
+[1.351276] (manipulator) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.354511] (manipulator) StdoutLine: {'line': b'-- Build files have been written to: /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator\n'}
+[1.377928] (manipulator) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/manipulator.dir/src/main.cpp.o\x1b[0m\n'}
+[1.378213] (manipulator) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/manipulator.dir/src/pathRW.cpp.o\x1b[0m\n'}
+[1.378340] (manipulator) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/manipulator.dir/src/serial.cpp.o\x1b[0m\n'}
+[1.402631] (-) TimerEvent: {}
+[1.502997] (-) TimerEvent: {}
+[1.603386] (-) TimerEvent: {}
+[1.631982] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kstd::string readOneLine(std::ifstream&, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.632323] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.cpp:40:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbuff_size\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.632461] (manipulator) StderrLine: {'line': b'   40 | std::string readOneLine(std::ifstream &path, \x1b[01;35m\x1b[Kint buff_size\x1b[m\x1b[K)\n'}
+[1.632585] (manipulator) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.668534] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint readSerialData(int*, pollfd&, int*, char*, std::ofstream&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.668833] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:45:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ktemp\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.668976] (manipulator) StderrLine: {'line': b'   45 |       char \x1b[01;35m\x1b[Ktemp\x1b[m\x1b[K[1];\n'}
+[1.669101] (manipulator) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.669223] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp:35:100:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Krec_path\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.669366] (manipulator) StderrLine: {'line': b'   35 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, \x1b[01;35m\x1b[Kstd::ofstream &rec_path\x1b[m\x1b[K)\n'}
+[1.669502] (manipulator) StderrLine: {'line': b'      |                                                                                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[1.703507] (-) TimerEvent: {}
+[1.803795] (-) TimerEvent: {}
+[1.871447] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:32:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kchrono_literals\x1b[m\x1b[K\xe2\x80\x99 is not a namespace-name\n'}
+[1.871672] (manipulator) StderrLine: {'line': b'   32 | using namespace std::\x1b[01;31m\x1b[Kchrono_literals\x1b[m\x1b[K;\n'}
+[1.871769] (manipulator) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.872549] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:35:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KManipulator\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.872756] (manipulator) StderrLine: {'line': b'   35 | \x1b[01;31m\x1b[KManipulator\x1b[m\x1b[K::KcwMotorControl() : Manipulator::Node("kcw_motor_control")\n'}
+[1.872891] (manipulator) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.873013] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:45:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KManipulator\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.873121] (manipulator) StderrLine: {'line': b'   45 | void \x1b[01;31m\x1b[KManipulator\x1b[m\x1b[K::timer_callback()\n'}
+[1.873466] (manipulator) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.873558] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.873648] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:52:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbegin\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::begin\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.873721] (manipulator) StderrLine: {'line': b'   52 |         clock_gettime(CLOCK_MONOTONIC, &\x1b[01;31m\x1b[Kbegin\x1b[m\x1b[K);\n'}
+[1.873787] (manipulator) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.873903] (manipulator) StderrLine: {'line': b'      |                                         \x1b[32m\x1b[Kstd::begin\x1b[m\x1b[K\n'}
+[1.873969] (manipulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:54\x1b[m\x1b[K,\n'}
+[1.874054] (manipulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/locale_classes.h:40\x1b[m\x1b[K,\n'}
+[1.874151] (manipulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/ios_base.h:41\x1b[m\x1b[K,\n'}
+[1.874245] (manipulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/ios:42\x1b[m\x1b[K,\n'}
+[1.874359] (manipulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/ostream:38\x1b[m\x1b[K,\n'}
+[1.874461] (manipulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/iostream:39\x1b[m\x1b[K,\n'}
+[1.874565] (manipulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:24\x1b[m\x1b[K:\n'}
+[1.874664] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/range_access.h:108:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::begin\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[1.874794] (manipulator) StderrLine: {'line': b'  108 |   template<typename _Tp> const _Tp* \x1b[01;36m\x1b[Kbegin\x1b[m\x1b[K(const valarray<_Tp>&) noexcept;\n'}
+[1.874881] (manipulator) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.876591] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:53:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfd\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.876741] (manipulator) StderrLine: {'line': b'   53 |         write(\x1b[01;31m\x1b[Kfd\x1b[m\x1b[K, msg, 1);\n'}
+[1.876804] (manipulator) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.877122] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:53:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.877184] (manipulator) StderrLine: {'line': b'   53 |         write(fd, \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K, 1);\n'}
+[1.877239] (manipulator) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.877293] (manipulator) StderrLine: {'line': b'      |                   \x1b[32m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\n'}
+[1.877346] (manipulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/int64.hpp:7\x1b[m\x1b[K,\n'}
+[1.877399] (manipulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:30\x1b[m\x1b[K:\n'}
+[1.877452] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int64__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[1.877507] (manipulator) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[1.877559] (manipulator) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.879755] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:54:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpoll_events\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.879869] (manipulator) StderrLine: {'line': b'   54 |         readSerialData(&fd, \x1b[01;31m\x1b[Kpoll_events\x1b[m\x1b[K, &poll_state, buf, rec_path);\n'}
+[1.879997] (manipulator) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.882226] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:54:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpoll_state\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.882336] (manipulator) StderrLine: {'line': b'   54 |         readSerialData(&fd, poll_events, &\x1b[01;31m\x1b[Kpoll_state\x1b[m\x1b[K, buf, rec_path);\n'}
+[1.882397] (manipulator) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.883655] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:54:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbuf\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.883741] (manipulator) StderrLine: {'line': b'   54 |         readSerialData(&fd, poll_events, &poll_state, \x1b[01;31m\x1b[Kbuf\x1b[m\x1b[K, rec_path);\n'}
+[1.883801] (manipulator) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.885386] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:54:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krec_path\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krealpath\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.885505] (manipulator) StderrLine: {'line': b'   54 |         readSerialData(&fd, poll_events, &poll_state, buf, \x1b[01;31m\x1b[Krec_path\x1b[m\x1b[K);\n'}
+[1.885565] (manipulator) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.885621] (manipulator) StderrLine: {'line': b'      |                                                            \x1b[32m\x1b[Krealpath\x1b[m\x1b[K\n'}
+[1.885836] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:56:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcount\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::count\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.886019] (manipulator) StderrLine: {'line': b'   56 |         std::cout << "Time: " << (double)(\x1b[01;31m\x1b[Kcount\x1b[m\x1b[K * 10 * 0.001) << "s\\t>>> ";\n'}
+[1.886080] (manipulator) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.886137] (manipulator) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[Kstd::count\x1b[m\x1b[K\n'}
+[1.886192] (manipulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[1.886247] (manipulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int64__struct.hpp:8\x1b[m\x1b[K,\n'}
+[1.886300] (manipulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/int64.hpp:7\x1b[m\x1b[K,\n'}
+[1.886352] (manipulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:30\x1b[m\x1b[K:\n'}
+[1.886404] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:101:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::count\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[1.886458] (manipulator) StderrLine: {'line': b'  101 | \x1b[01;36m\x1b[Kcount\x1b[m\x1b[K(_ExecutionPolicy&& __exec, _ForwardIterator __first, _ForwardIterator __last, const _Tp& __value);\n'}
+[1.886510] (manipulator) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.887265] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:60:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KMotor4\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.887348] (manipulator) StderrLine: {'line': b'   60 |         dataTransform(buf, \x1b[01;31m\x1b[Kmotor\x1b[m\x1b[K, motor_num);\n'}
+[1.887407] (manipulator) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.887463] (manipulator) StderrLine: {'line': b'      |                            \x1b[32m\x1b[KMotor4\x1b[m\x1b[K\n'}
+[1.890270] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:60:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor_num\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.890470] (manipulator) StderrLine: {'line': b'   60 |         dataTransform(buf, motor, \x1b[01;31m\x1b[Kmotor_num\x1b[m\x1b[K);\n'}
+[1.890550] (manipulator) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.891636] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:69:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbreak statement not within loop or switch\n'}
+[1.891815] (manipulator) StderrLine: {'line': b'   69 |         if(buf[15]==(char)(0xFF)) \x1b[01;31m\x1b[Kbreak\x1b[m\x1b[K;\n'}
+[1.891924] (manipulator) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.894280] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:72:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor_1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KMotor1\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.894469] (manipulator) StderrLine: {'line': b'   72 |     \x1b[01;31m\x1b[Kmotor_1\x1b[m\x1b[K -> publish(Motor1);                    // Issue Current data As topic\n'}
+[1.894534] (manipulator) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.894592] (manipulator) StderrLine: {'line': b'      |     \x1b[32m\x1b[KMotor1\x1b[m\x1b[K\n'}
+[1.895843] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:73:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor_2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KMotor2\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.896021] (manipulator) StderrLine: {'line': b'   73 |     \x1b[01;31m\x1b[Kmotor_2\x1b[m\x1b[K -> publish(Motor2);                    // Issue Encoder Pos data As topic\n'}
+[1.896086] (manipulator) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.896144] (manipulator) StderrLine: {'line': b'      |     \x1b[32m\x1b[KMotor2\x1b[m\x1b[K\n'}
+[1.897157] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:74:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor_3\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KMotor3\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.897281] (manipulator) StderrLine: {'line': b'   74 |     \x1b[01;31m\x1b[Kmotor_3\x1b[m\x1b[K -> publish(Motor3);                    // Issue Velocity data As topic\n'}
+[1.897342] (manipulator) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.897398] (manipulator) StderrLine: {'line': b'      |     \x1b[32m\x1b[KMotor3\x1b[m\x1b[K\n'}
+[1.898440] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:75:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmotor_4\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KMotor4\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.898558] (manipulator) StderrLine: {'line': b'   75 |     \x1b[01;31m\x1b[Kmotor_4\x1b[m\x1b[K -> publish(Motor4);                    // Issue Acceleration data As topic                      // Update CLK\n'}
+[1.898662] (manipulator) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.898732] (manipulator) StderrLine: {'line': b'      |     \x1b[32m\x1b[KMotor4\x1b[m\x1b[K\n'}
+[1.899513] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.899609] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:104:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings\x07-Wwrite-strings\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.899676] (manipulator) StderrLine: {'line': b'  104 |     if(openSerialPort(&fd,\x1b[01;35m\x1b[K"/dev/arduinoMega"\x1b[m\x1b[K)==-1) return -1;\n'}
+[1.899750] (manipulator) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.899853] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:128:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.899952] (manipulator) StderrLine: {'line': b'  128 |     \x1b[01;31m\x1b[Krclcpp\x1b[m\x1b[K::executors::MultiThreadedExecutor executor;\n'}
+[1.900022] (manipulator) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.901549] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:129:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KManipulator\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.901781] (manipulator) StderrLine: {'line': b'  129 |     auto node1 = std::make_shared<\x1b[01;31m\x1b[KManipulator\x1b[m\x1b[K>();\n'}
+[1.901860] (manipulator) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.901938] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:129:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.902074] (manipulator) StderrLine: {'line': b'  129 |     auto node1 = \x1b[01;31m\x1b[Kstd::make_shared<Manipulator>()\x1b[m\x1b[K;\n'}
+[1.902128] (manipulator) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[1.902181] (manipulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[1.902233] (manipulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int64__struct.hpp:10\x1b[m\x1b[K,\n'}
+[1.902285] (manipulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/int64.hpp:7\x1b[m\x1b[K,\n'}
+[1.902338] (manipulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:30\x1b[m\x1b[K:\n'}
+[1.902390] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.902443] (manipulator) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[1.902495] (manipulator) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.902546] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.902606] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:129:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.902658] (manipulator) StderrLine: {'line': b'  129 |     auto node1 = \x1b[01;31m\x1b[Kstd::make_shared<Manipulator>()\x1b[m\x1b[K;\n'}
+[1.902710] (manipulator) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[1.903427] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:130:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kexecutor\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.903698] (manipulator) StderrLine: {'line': b'  130 |     \x1b[01;31m\x1b[Kexecutor\x1b[m\x1b[K.add_node(node1);\n'}
+[1.903760] (manipulator) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.903817] (-) TimerEvent: {}
+[1.903924] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:132:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.904007] (manipulator) StderrLine: {'line': b'  132 |     \x1b[01;31m\x1b[Krclcpp\x1b[m\x1b[K::shutdown();\n'}
+[1.904088] (manipulator) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.904150] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:86:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kdata_size\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.904218] (manipulator) StderrLine: {'line': b'   86 |     int \x1b[01;35m\x1b[Kdata_size\x1b[m\x1b[K{BUF_SIZE};\n'}
+[1.904282] (manipulator) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.904344] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:87:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kinputdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.904410] (manipulator) StderrLine: {'line': b'   87 |     char \x1b[01;35m\x1b[Kinputdata\x1b[m\x1b[K[BUF_SIZE] = {0};\n'}
+[1.904473] (manipulator) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.904535] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:90:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kmt\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.904600] (manipulator) StderrLine: {'line': b'   90 |     int    \x1b[01;35m\x1b[Kmt\x1b[m\x1b[K;\n'}
+[1.904663] (manipulator) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.904725] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:91:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kndx\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.904796] (manipulator) StderrLine: {'line': b'   91 |     int    \x1b[01;35m\x1b[Kndx\x1b[m\x1b[K;\n'}
+[1.904859] (manipulator) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.904922] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:92:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kbuf\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.905012] (manipulator) StderrLine: {'line': b'   92 |     char   \x1b[01;35m\x1b[Kbuf\x1b[m\x1b[K[BUF_SIZE];\n'}
+[1.905076] (manipulator) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.905139] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:95:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kpoll_state\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.905204] (manipulator) StderrLine: {'line': b'   95 |     int    \x1b[01;35m\x1b[Kpoll_state\x1b[m\x1b[K;\n'}
+[1.905285] (manipulator) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.905405] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:114:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kbegin\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.905526] (manipulator) StderrLine: {'line': b'  114 |     struct timespec  \x1b[01;35m\x1b[Kbegin\x1b[m\x1b[K, end;\n'}
+[1.905630] (manipulator) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.905706] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:114:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kend\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.905834] (manipulator) StderrLine: {'line': b'  114 |     struct timespec  begin, \x1b[01;35m\x1b[Kend\x1b[m\x1b[K;\n'}
+[1.905919] (manipulator) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.906015] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:122:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kmotor\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.906082] (manipulator) StderrLine: {'line': b'  122 |     int \x1b[01;35m\x1b[Kmotor\x1b[m\x1b[K[motor_num]={0};\n'}
+[1.906144] (manipulator) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.906225] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:124:19:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.906315] (manipulator) StderrLine: {'line': b'  124 |     unsigned char \x1b[01;35m\x1b[Kmsg\x1b[m\x1b[K[1] = {0xAB};\n'}
+[1.906370] (manipulator) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.906422] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/ros2/src/manipulator/src/main.cpp:126:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kcount\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.906476] (manipulator) StderrLine: {'line': b'  126 |     int \x1b[01;35m\x1b[Kcount\x1b[m\x1b[K{0};\n'}
+[1.906527] (manipulator) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.949815] (manipulator) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/manipulator.dir/build.make:76: CMakeFiles/manipulator.dir/src/main.cpp.o] Error 1\n'}
+[1.950133] (manipulator) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/manipulator.dir/all] Error 2\n'}
+[1.950382] (manipulator) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[1.955214] (manipulator) CommandEnded: {'returncode': 2}
+[2.004694] (-) TimerEvent: {}
+[2.020410] (manipulator) JobEnded: {'identifier': 'manipulator', 'rc': 2}
+[2.031030] (-) EventReactorShutdown: {}

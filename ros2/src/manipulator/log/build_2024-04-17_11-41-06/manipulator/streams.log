@@ -1,0 +1,16 @@
+[0.017s] Invoking command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.068s] [ 33%] Built target manipulator_write
+[0.068s] [ 66%] Built target manipulator_read
+[0.078s] [ 75%] [32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/motor.cpp.o[0m
+[2.117s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::sub_callback(motor_interface::msg::Motor_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.117s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:117:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kwrite[m[K’
+[2.117s]   117 |         [01;31m[Kwrite[m[K(fd, data, 16);
+[2.117s]       |         [01;31m[K^~~~~[m[K
+[2.119s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.119s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp:135:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[2.119s]   135 |     if(openSerialPort(&fd,[01;35m[K"/dev/3M_manipulator"[m[K)==-1) return -1;
+[2.119s]       |                           [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.124s] gmake[2]: *** [CMakeFiles/manipulator_run.dir/build.make:76: CMakeFiles/manipulator_run.dir/src/motor.cpp.o] Error 1
+[4.125s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/manipulator_run.dir/all] Error 2
+[4.125s] gmake: *** [Makefile:146: all] Error 2
+[4.130s] Invoked command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8

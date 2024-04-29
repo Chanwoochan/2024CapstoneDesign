@@ -1,0 +1,48 @@
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:130:5:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+  130 |     [01;31m[Kauto[m[K Motor1 = std_msgs::msg::Int64();
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:131:5:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+  131 |     [01;31m[Kauto[m[K Motor2 = std_msgs::msg::Int64();
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:132:5:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+  132 |     [01;31m[Kauto[m[K Motor3 = std_msgs::msg::Int64();
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:133:5:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+  133 |     [01;31m[Kauto[m[K Motor4 = std_msgs::msg::Int64();    // Define msg data type : Int64 = int
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::timer_callback()[m[K’:
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:72:31:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   72 |         if(openSerialPort(&fd,[01;35m[K"/dev/arduinoMega"[m[K)==-1) rclcpp::shutdown();
+      |                               [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathR.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::timer_callback()[m[K’:
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathR.cpp:51:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KMotor1[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   51 |         auto [01;35m[KMotor1[m[K = std_msgs::msg::Int64();
+      |              [01;35m[K^~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathR.cpp:52:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KMotor2[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   52 |         auto [01;35m[KMotor2[m[K = std_msgs::msg::Int64();
+      |              [01;35m[K^~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathR.cpp:53:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KMotor3[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   53 |         auto [01;35m[KMotor3[m[K = std_msgs::msg::Int64();
+      |              [01;35m[K^~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathR.cpp:54:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KMotor4[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   54 |         auto [01;35m[KMotor4[m[K = std_msgs::msg::Int64();    // Define msg data type : Int64 = int
+      |              [01;35m[K^~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathR.cpp:66:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdata_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   66 |         int [01;35m[Kdata_size[m[K{BUF_SIZE};
+      |             [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathR.cpp:67:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinputdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   67 |         char [01;35m[Kinputdata[m[K[BUF_SIZE] = {0};
+      |              [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:96:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kpoll_state[m[K’ was not declared in this scope
+   96 |             readSerialData(&fd, poll_events, &[01;31m[Kpoll_state[m[K, buf, rec_path);
+      |                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:57:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdata_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   57 |         int [01;35m[Kdata_size[m[K{BUF_SIZE};
+      |             [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:58:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kinputdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   58 |         char [01;35m[Kinputdata[m[K[BUF_SIZE] = {0};
+      |              [01;35m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/manipulator_write.dir/build.make:76: CMakeFiles/manipulator_write.dir/src/pathW.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/manipulator_write.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

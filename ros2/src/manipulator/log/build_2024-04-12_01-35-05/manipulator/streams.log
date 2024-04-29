@@ -1,0 +1,11 @@
+[0.024s] Invoking command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.083s] [ 25%] [32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/pathW.cpp.o[0m
+[0.083s] [ 62%] Built target manipulator_read
+[0.324s] [01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:32:10:[m[K [01;31m[Kfatal error: [m[Kmotor_intedface/msg/motor.hpp: No such file or directory
+[0.324s]    32 | #include [01;31m[K"motor_intedface/msg/motor.hpp"[m[K
+[0.324s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.324s] compilation terminated.
+[0.334s] gmake[2]: *** [CMakeFiles/manipulator_write.dir/build.make:76: CMakeFiles/manipulator_write.dir/src/pathW.cpp.o] Error 1
+[0.334s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/manipulator_write.dir/all] Error 2
+[0.335s] gmake: *** [Makefile:146: all] Error 2
+[0.340s] Invoked command in '/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator -- -j8 -l8
