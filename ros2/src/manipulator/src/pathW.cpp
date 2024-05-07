@@ -64,7 +64,7 @@ class Manipulator : public rclcpp::Node  // Node 1
         auto Motor = motor_interface::msg::Motor();
 
         write(fd, msg, 1);
-        readSerialData(&fd, poll_events, &poll_state, buf);
+        readSerialData(&fd, poll_events, &poll_state, buf, BUF_SIZE);
         writePathData(rec_path, BUF_SIZE, buf);
         dataTransform(buf, motor, motor_num);
 

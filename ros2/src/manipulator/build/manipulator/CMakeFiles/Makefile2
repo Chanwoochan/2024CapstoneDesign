@@ -54,10 +54,10 @@ RM = /home/kcw/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcw/capstone_ws/ros2/src/manipulator
+CMAKE_SOURCE_DIR = /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator
+CMAKE_BINARY_DIR = /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -87,14 +87,14 @@ clean: CMakeFiles/manipulator_run.dir/clean
 CMakeFiles/uninstall.dir/all: CMakeFiles/manipulator_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -113,14 +113,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/manipulator_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/manipulator_uninstall.dir/build.make CMakeFiles/manipulator_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/manipulator_uninstall.dir/build.make CMakeFiles/manipulator_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num= "Built target manipulator_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num= "Built target manipulator_uninstall"
 .PHONY : CMakeFiles/manipulator_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/manipulator_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/manipulator_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles 0
 .PHONY : CMakeFiles/manipulator_uninstall.dir/rule
 
 # Convenience name for target.
@@ -139,14 +139,14 @@ CMakeFiles/manipulator_uninstall.dir/clean:
 CMakeFiles/manipulator_write.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/manipulator_write.dir/build.make CMakeFiles/manipulator_write.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/manipulator_write.dir/build.make CMakeFiles/manipulator_write.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num=9,10,11,12 "Built target manipulator_write"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num=9,10,11,12 "Built target manipulator_write"
 .PHONY : CMakeFiles/manipulator_write.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/manipulator_write.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/manipulator_write.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles 0
 .PHONY : CMakeFiles/manipulator_write.dir/rule
 
 # Convenience name for target.
@@ -165,14 +165,14 @@ CMakeFiles/manipulator_write.dir/clean:
 CMakeFiles/manipulator_read.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/manipulator_read.dir/build.make CMakeFiles/manipulator_read.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/manipulator_read.dir/build.make CMakeFiles/manipulator_read.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num=1,2,3,4 "Built target manipulator_read"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num=1,2,3,4 "Built target manipulator_read"
 .PHONY : CMakeFiles/manipulator_read.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/manipulator_read.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/manipulator_read.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles 0
 .PHONY : CMakeFiles/manipulator_read.dir/rule
 
 # Convenience name for target.
@@ -191,14 +191,14 @@ CMakeFiles/manipulator_read.dir/clean:
 CMakeFiles/manipulator_run.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/manipulator_run.dir/build.make CMakeFiles/manipulator_run.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/manipulator_run.dir/build.make CMakeFiles/manipulator_run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num=5,6,7,8 "Built target manipulator_run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num=5,6,7,8 "Built target manipulator_run"
 .PHONY : CMakeFiles/manipulator_run.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/manipulator_run.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/manipulator_run.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles 0
 .PHONY : CMakeFiles/manipulator_run.dir/rule
 
 # Convenience name for target.

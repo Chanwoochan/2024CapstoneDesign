@@ -1,0 +1,88 @@
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:1:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+    1 | #define BUF_SIZE [01;31m[K16[m[K
+      |                  [01;31m[K^~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp:6:89:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KBUF_SIZE[m[K’
+    6 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int [01;36m[KBUF_SIZE[m[K);
+      |                                                                                         [01;36m[K^~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:1:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+    1 | #define BUF_SIZE [01;31m[K16[m[K
+      |                  [01;31m[K^~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:35:89:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KBUF_SIZE[m[K’
+   35 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int [01;36m[KBUF_SIZE[m[K)
+      |                                                                                         [01;36m[K^~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:1:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+    1 | #define BUF_SIZE [01;31m[K16[m[K
+      |                  [01;31m[K^~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp:6:89:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KBUF_SIZE[m[K’
+    6 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int [01;36m[KBUF_SIZE[m[K);
+      |                                                                                         [01;36m[K^~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:1:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+    1 | #define BUF_SIZE [01;31m[K16[m[K
+      |                  [01;31m[K^~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:35:89:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KBUF_SIZE[m[K’
+   35 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int [01;36m[KBUF_SIZE[m[K)
+      |                                                                                         [01;36m[K^~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:1:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+    1 | #define BUF_SIZE [01;31m[K16[m[K
+      |                  [01;31m[K^~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp:6:89:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KBUF_SIZE[m[K’
+    6 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int [01;36m[KBUF_SIZE[m[K);
+      |                                                                                         [01;36m[K^~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:1:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+    1 | #define BUF_SIZE [01;31m[K16[m[K
+      |                  [01;31m[K^~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:35:89:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KBUF_SIZE[m[K’
+   35 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int [01;36m[KBUF_SIZE[m[K)
+      |                                                                                         [01;36m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/manipulator_write.dir/build.make:104: CMakeFiles/manipulator_write.dir/src/serial.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/manipulator_read.dir/build.make:104: CMakeFiles/manipulator_read.dir/src/serial.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/manipulator_run.dir/build.make:104: CMakeFiles/manipulator_run.dir/src/serial.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathR.cpp:10:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+   10 | #define BUF_SIZE [01;31m[K16[m[K
+      |                  [01;31m[K^~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp:6:89:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KBUF_SIZE[m[K’
+    6 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int [01;36m[KBUF_SIZE[m[K);
+      |                                                                                         [01;36m[K^~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:10:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+   10 | #define BUF_SIZE [01;31m[K16[m[K
+      |                  [01;31m[K^~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp:6:89:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KBUF_SIZE[m[K’
+    6 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int [01;36m[KBUF_SIZE[m[K);
+      |                                                                                         [01;36m[K^~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:10:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+   10 | #define BUF_SIZE [01;31m[K16[m[K
+      |                  [01;31m[K^~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp:6:89:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KBUF_SIZE[m[K’
+    6 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int [01;36m[KBUF_SIZE[m[K);
+      |                                                                                         [01;36m[K^~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathR.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathR.cpp:119:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+  119 |     if(openSerialPort(&fd,[01;35m[K"/dev/arduinoMega"[m[K)==-1) return -1;
+      |                           [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::timer_callback()[m[K’:
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:67:23:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kint readSerialData(int*, pollfd&, int*, char*, int)[m[K’
+   67 |         [01;31m[KreadSerialData(&fd, poll_events, &poll_state, buf)[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:28[m[K:
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp:6:5:[m[K [01;36m[Knote: [m[Kdeclared here
+    6 | int [01;36m[KreadSerialData[m[K(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int BUF_SIZE);
+      |     [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:111:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+  111 |     if(openSerialPort(&fd,[01;35m[K"/dev/arduinoMega"[m[K)==-1) return -1;
+      |                           [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:159:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+  159 |     if(openSerialPort(&fd,[01;35m[K"/dev/u2d2"[m[K)==-1) return -1;
+      |                           [01;35m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/manipulator_read.dir/build.make:76: CMakeFiles/manipulator_read.dir/src/pathR.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/manipulator_read.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/manipulator_write.dir/build.make:76: CMakeFiles/manipulator_write.dir/src/pathW.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/manipulator_write.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/manipulator_run.dir/build.make:76: CMakeFiles/manipulator_run.dir/src/motor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/manipulator_run.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

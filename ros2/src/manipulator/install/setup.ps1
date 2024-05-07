@@ -21,6 +21,11 @@ function _colcon_prefix_chain_powershell_source_script {
   }
 }
 
+# source chained prefixes
+_colcon_prefix_chain_powershell_source_script "/opt/ros/humble\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/kcw/capstone_ws/ros2/src/manipulator/install\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install\local_setup.ps1"
+
 # source this prefix
 $env:COLCON_CURRENT_PREFIX=(Split-Path $PSCommandPath -Parent)
 _colcon_prefix_chain_powershell_source_script "$env:COLCON_CURRENT_PREFIX\local_setup.ps1"

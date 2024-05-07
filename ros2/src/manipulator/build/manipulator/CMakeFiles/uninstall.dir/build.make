@@ -53,10 +53,10 @@ RM = /home/kcw/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcw/capstone_ws/ros2/src/manipulator
+CMAKE_SOURCE_DIR = /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator
+CMAKE_BINARY_DIR = /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcw/capstone_ws/ros2/src/manipulator /home/kcw/capstone_ws/ros2/src/manipulator /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

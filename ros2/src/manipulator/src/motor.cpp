@@ -104,6 +104,20 @@ void motor_position_control(unsigned char *data, unsigned char motor_id, unsigne
     std::cout << std::dec << "\n";
 }
 
+void motor_torque_e(unsigned char motor_id)
+{
+    unsigned char data[13]{};
+    data[0] = 0xFF;     data[1] = 0xFF; data[2] = 0xFD; data[3] = 0x00;
+    data[4] = motor_id; data[5] = 0x06; data[6] = 0x00; data[7] = 0x03;
+    data[8] = 0x40; data[9] = 0x00;
+
+    data[10] = 0x01;
+    unsigned short CRC = update_crc(0, data , 11);   // 14 = 5 + Packet Length(9)
+    data[11] = (CRC & 0x00FF);    //CRC_L
+    data[12] = (CRC>>8) & 0x00FF; //CRC_H
+    write(fd, data, 13);
+}
+
 class Manipulator : public rclcpp::Node  // Node 1
 {
     public:
@@ -115,7 +129,9 @@ class Manipulator : public rclcpp::Node  // Node 1
     void sub_callback(motor_interface::msg::Motor::SharedPtr msg)
     {
         unsigned char data[16]{};
-        motor_position_control(data, (unsigned char)1, (unsigned short)(msg->m1));
+        motor_position_control(data, (unsigned char)1, 4095-(unsigned short)(msg->m1)*4);
+        write(fd, data, 16);
+        motor_position_control(data, (unsigned char)2, 4095-(unsigned short)(msg->m2)*4);
         write(fd, data, 16);
         // RCLCPP_INFO(this->get_logger(),"motor1 : %ld, motorw : %d",msg->m1,msg->m2);
     }
@@ -140,7 +156,7 @@ int main(int argc, char* argv[])
     std::cout << "완료!\n\n";
     usleep(1000000);
     std::cout << "매니퓰레이터와 연결중입니다...";
-    if(openSerialPort(&fd,"/dev/3M_manipulator")==-1);
+    if(openSerialPort(&fd,"/dev/u2d2")==-1) return -1;
     else std::cout << "완료!\n\n";
     usleep(1000000);
     serialSetting(&fd, newtio);
@@ -150,6 +166,7 @@ int main(int argc, char* argv[])
     std::cout << "잠시만 기다려주세요..\n\n";
     sleep(3);
     std::cout << "위치제어중입니다.\n";
+    for(unsigned char i{1};i<=7;i++) motor_torque_e(i);
     rclcpp::spin(node1);
     rclcpp::shutdown();
     return 0;

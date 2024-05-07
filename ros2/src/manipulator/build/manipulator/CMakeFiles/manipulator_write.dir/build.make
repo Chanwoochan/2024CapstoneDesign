@@ -53,10 +53,10 @@ RM = /home/kcw/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kcw/capstone_ws/ros2/src/manipulator
+CMAKE_SOURCE_DIR = /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator
+CMAKE_BINARY_DIR = /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator
 
 # Include any dependencies generated for this target.
 include CMakeFiles/manipulator_write.dir/depend.make
@@ -70,46 +70,46 @@ include CMakeFiles/manipulator_write.dir/progress.make
 include CMakeFiles/manipulator_write.dir/flags.make
 
 CMakeFiles/manipulator_write.dir/src/pathW.cpp.o: CMakeFiles/manipulator_write.dir/flags.make
-CMakeFiles/manipulator_write.dir/src/pathW.cpp.o: /home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp
+CMakeFiles/manipulator_write.dir/src/pathW.cpp.o: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp
 CMakeFiles/manipulator_write.dir/src/pathW.cpp.o: CMakeFiles/manipulator_write.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/manipulator_write.dir/src/pathW.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/manipulator_write.dir/src/pathW.cpp.o -MF CMakeFiles/manipulator_write.dir/src/pathW.cpp.o.d -o CMakeFiles/manipulator_write.dir/src/pathW.cpp.o -c /home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/manipulator_write.dir/src/pathW.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/manipulator_write.dir/src/pathW.cpp.o -MF CMakeFiles/manipulator_write.dir/src/pathW.cpp.o.d -o CMakeFiles/manipulator_write.dir/src/pathW.cpp.o -c /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp
 
 CMakeFiles/manipulator_write.dir/src/pathW.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/manipulator_write.dir/src/pathW.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp > CMakeFiles/manipulator_write.dir/src/pathW.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp > CMakeFiles/manipulator_write.dir/src/pathW.cpp.i
 
 CMakeFiles/manipulator_write.dir/src/pathW.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/manipulator_write.dir/src/pathW.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp -o CMakeFiles/manipulator_write.dir/src/pathW.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp -o CMakeFiles/manipulator_write.dir/src/pathW.cpp.s
 
 CMakeFiles/manipulator_write.dir/src/pathRW.cpp.o: CMakeFiles/manipulator_write.dir/flags.make
-CMakeFiles/manipulator_write.dir/src/pathRW.cpp.o: /home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.cpp
+CMakeFiles/manipulator_write.dir/src/pathRW.cpp.o: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp
 CMakeFiles/manipulator_write.dir/src/pathRW.cpp.o: CMakeFiles/manipulator_write.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/manipulator_write.dir/src/pathRW.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/manipulator_write.dir/src/pathRW.cpp.o -MF CMakeFiles/manipulator_write.dir/src/pathRW.cpp.o.d -o CMakeFiles/manipulator_write.dir/src/pathRW.cpp.o -c /home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/manipulator_write.dir/src/pathRW.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/manipulator_write.dir/src/pathRW.cpp.o -MF CMakeFiles/manipulator_write.dir/src/pathRW.cpp.o.d -o CMakeFiles/manipulator_write.dir/src/pathRW.cpp.o -c /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp
 
 CMakeFiles/manipulator_write.dir/src/pathRW.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/manipulator_write.dir/src/pathRW.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.cpp > CMakeFiles/manipulator_write.dir/src/pathRW.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp > CMakeFiles/manipulator_write.dir/src/pathRW.cpp.i
 
 CMakeFiles/manipulator_write.dir/src/pathRW.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/manipulator_write.dir/src/pathRW.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.cpp -o CMakeFiles/manipulator_write.dir/src/pathRW.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp -o CMakeFiles/manipulator_write.dir/src/pathRW.cpp.s
 
 CMakeFiles/manipulator_write.dir/src/serial.cpp.o: CMakeFiles/manipulator_write.dir/flags.make
-CMakeFiles/manipulator_write.dir/src/serial.cpp.o: /home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp
+CMakeFiles/manipulator_write.dir/src/serial.cpp.o: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp
 CMakeFiles/manipulator_write.dir/src/serial.cpp.o: CMakeFiles/manipulator_write.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/manipulator_write.dir/src/serial.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/manipulator_write.dir/src/serial.cpp.o -MF CMakeFiles/manipulator_write.dir/src/serial.cpp.o.d -o CMakeFiles/manipulator_write.dir/src/serial.cpp.o -c /home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/manipulator_write.dir/src/serial.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/manipulator_write.dir/src/serial.cpp.o -MF CMakeFiles/manipulator_write.dir/src/serial.cpp.o.d -o CMakeFiles/manipulator_write.dir/src/serial.cpp.o -c /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp
 
 CMakeFiles/manipulator_write.dir/src/serial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/manipulator_write.dir/src/serial.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp > CMakeFiles/manipulator_write.dir/src/serial.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp > CMakeFiles/manipulator_write.dir/src/serial.cpp.i
 
 CMakeFiles/manipulator_write.dir/src/serial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/manipulator_write.dir/src/serial.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp -o CMakeFiles/manipulator_write.dir/src/serial.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp -o CMakeFiles/manipulator_write.dir/src/serial.cpp.s
 
 # Object files for target manipulator_write
 manipulator_write_OBJECTS = \
@@ -131,12 +131,12 @@ manipulator_write: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspec
 manipulator_write: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 manipulator_write: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 manipulator_write: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-manipulator_write: /home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_fastrtps_c.so
-manipulator_write: /home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_introspection_c.so
-manipulator_write: /home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_fastrtps_cpp.so
-manipulator_write: /home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_introspection_cpp.so
-manipulator_write: /home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_cpp.so
-manipulator_write: /home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface/lib/libmotor_interface__rosidl_generator_py.so
+manipulator_write: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_fastrtps_c.so
+manipulator_write: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_introspection_c.so
+manipulator_write: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_fastrtps_cpp.so
+manipulator_write: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_introspection_cpp.so
+manipulator_write: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_cpp.so
+manipulator_write: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/lib/libmotor_interface__rosidl_generator_py.so
 manipulator_write: /opt/ros/humble/lib/liblibstatistics_collector.so
 manipulator_write: /opt/ros/humble/lib/librcl.so
 manipulator_write: /opt/ros/humble/lib/librmw_implementation.so
@@ -187,15 +187,15 @@ manipulator_write: /opt/ros/humble/lib/librmw.so
 manipulator_write: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 manipulator_write: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 manipulator_write: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-manipulator_write: /home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_c.so
-manipulator_write: /home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface/lib/libmotor_interface__rosidl_generator_c.so
+manipulator_write: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_c.so
+manipulator_write: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/lib/libmotor_interface__rosidl_generator_c.so
 manipulator_write: /opt/ros/humble/lib/librosidl_typesupport_c.so
 manipulator_write: /opt/ros/humble/lib/librcpputils.so
 manipulator_write: /opt/ros/humble/lib/librosidl_runtime_c.so
 manipulator_write: /opt/ros/humble/lib/librcutils.so
 manipulator_write: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 manipulator_write: CMakeFiles/manipulator_write.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable manipulator_write"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable manipulator_write"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/manipulator_write.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -207,6 +207,6 @@ CMakeFiles/manipulator_write.dir/clean:
 .PHONY : CMakeFiles/manipulator_write.dir/clean
 
 CMakeFiles/manipulator_write.dir/depend:
-	cd /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcw/capstone_ws/ros2/src/manipulator /home/kcw/capstone_ws/ros2/src/manipulator /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator/CMakeFiles/manipulator_write.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeFiles/manipulator_write.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/manipulator_write.dir/depend
 

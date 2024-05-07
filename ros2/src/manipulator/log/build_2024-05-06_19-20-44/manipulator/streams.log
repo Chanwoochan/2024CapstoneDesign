@@ -1,0 +1,70 @@
+[0.029s] Invoking command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator -DCMAKE_INSTALL_PREFIX=/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator
+[0.104s] -- The C compiler identification is GNU 11.4.0
+[0.171s] -- The CXX compiler identification is GNU 11.4.0
+[0.194s] -- Detecting C compiler ABI info
+[0.257s] -- Detecting C compiler ABI info - done
+[0.270s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.270s] -- Detecting C compile features
+[0.270s] -- Detecting C compile features - done
+[0.279s] -- Detecting CXX compiler ABI info
+[0.355s] -- Detecting CXX compiler ABI info - done
+[0.368s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.368s] -- Detecting CXX compile features
+[0.369s] -- Detecting CXX compile features - done
+[0.372s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.750s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.853s] -- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)
+[0.913s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.922s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.935s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.955s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.983s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.080s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.083s] -- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.193s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.231s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.292s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.305s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.370s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.371s] -- Found Threads: TRUE  
+[1.584s] -- Found motor_interface: 0.0.0 (/home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface/share/motor_interface/cmake)
+[1.610s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.777s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.777s] -- Configured cppcheck include dirs: 
+[1.777s] -- Configured cppcheck exclude dirs and/or files: 
+[1.787s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.805s] -- Added test 'lint_cmake' to check CMake code style
+[1.816s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.892s] -- Added test 'uncrustify' to check C / C++ code style
+[1.892s] -- Configured uncrustify additional arguments: 
+[1.901s] -- Added test 'xmllint' to check XML markup files
+[1.903s] -- Configuring done (1.8s)
+[1.926s] -- Generating done (0.0s)
+[1.929s] -- Build files have been written to: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator
+[1.942s] Invoked command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator -DCMAKE_INSTALL_PREFIX=/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator
+[1.944s] Invoking command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[2.002s] [ 41%] Built target manipulator_read
+[2.002s] [ 83%] Built target manipulator_write
+[2.002s] [100%] Built target manipulator_run
+[2.011s] Invoked command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[2.104s] Invoking command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --install /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator
+[2.134s] -- Install configuration: ""
+[2.134s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_write
+[2.134s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_read
+[2.134s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_run
+[2.135s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/package_run_dependencies/manipulator
+[2.135s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/parent_prefix_path/manipulator
+[2.135s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/environment/ament_prefix_path.sh
+[2.135s] -- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/environment/ament_prefix_path.dsv
+[2.135s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/environment/path.sh
+[2.135s] -- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/environment/path.dsv
+[2.135s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.bash
+[2.135s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.sh
+[2.135s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.zsh
+[2.136s] -- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.dsv
+[2.136s] -- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/package.dsv
+[2.136s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/packages/manipulator
+[2.136s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/cmake/manipulatorConfig.cmake
+[2.136s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/cmake/manipulatorConfig-version.cmake
+[2.136s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/package.xml
+[2.142s] Invoked command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --install /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator

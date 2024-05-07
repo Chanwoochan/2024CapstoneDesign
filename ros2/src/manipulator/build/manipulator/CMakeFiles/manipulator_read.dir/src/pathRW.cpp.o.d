@@ -1,5 +1,5 @@
 CMakeFiles/manipulator_read.dir/src/pathRW.cpp.o: \
- /home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.cpp \
+ /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -150,4 +150,4 @@ CMakeFiles/manipulator_read.dir/src/pathRW.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.hpp
+ /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.hpp

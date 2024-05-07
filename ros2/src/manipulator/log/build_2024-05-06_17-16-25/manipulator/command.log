@@ -1,0 +1,2 @@
+Invoking command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator -- -j8 -l8
+Invoked command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator -- -j8 -l8

@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kcw/capstone_ws/ros2/src/manipulator/src/motor.cpp" "CMakeFiles/manipulator_run.dir/src/motor.cpp.o" "gcc" "CMakeFiles/manipulator_run.dir/src/motor.cpp.o.d"
-  "/home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.cpp" "CMakeFiles/manipulator_run.dir/src/pathRW.cpp.o" "gcc" "CMakeFiles/manipulator_run.dir/src/pathRW.cpp.o.d"
-  "/home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp" "CMakeFiles/manipulator_run.dir/src/serial.cpp.o" "gcc" "CMakeFiles/manipulator_run.dir/src/serial.cpp.o.d"
+  "/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp" "CMakeFiles/manipulator_run.dir/src/motor.cpp.o" "gcc" "CMakeFiles/manipulator_run.dir/src/motor.cpp.o.d"
+  "/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp" "CMakeFiles/manipulator_run.dir/src/pathRW.cpp.o" "gcc" "CMakeFiles/manipulator_run.dir/src/pathRW.cpp.o.d"
+  "/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp" "CMakeFiles/manipulator_run.dir/src/serial.cpp.o" "gcc" "CMakeFiles/manipulator_run.dir/src/serial.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

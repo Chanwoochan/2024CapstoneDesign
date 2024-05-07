@@ -25,6 +25,7 @@
 #include <fstream>
 #include <string>
 #include "pathRW.hpp"
+#include "serial.hpp"
 
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/int64.hpp"
@@ -38,10 +39,20 @@ std::ifstream path("", std::ios::binary);
 int data_size{BUF_SIZE};
 char inputdata[BUF_SIZE] = {0};
 
+int    fd;
+int    poll_state;
+char   buf[2];
+struct termios    newtio;
+struct pollfd     poll_events;
+
 const int motor_num{7};
 int motor[motor_num]={0};
 
 char data[BUF_SIZE];
+
+unsigned char msg[1] = {0xCD};
+
+short state{0};
 
 class Manipulator : public rclcpp::Node  // Node 1
 {
@@ -65,6 +76,32 @@ class Manipulator : public rclcpp::Node  // Node 1
         Motor.m7 = motor[6]; Motor.st = (unsigned char)data[15];
         motor_ -> publish(Motor);
 
+        if((unsigned char)data[15]==0x02) 
+        {
+            state=1;
+            std::cout<<"확장포트1의 센서 감지가 필요합니다.\n";
+        }
+        else if((unsigned char)data[15]==0x03) 
+        {
+            state=2;
+            std::cout<<"확장포트2의 센서 감지가 필요합니다.\n";
+        }
+        else if((unsigned char)data[15]==0x04) 
+        {
+            state=3;
+            std::cout<<"확장포트3의 센서 감지가 필요합니다.\n";
+        }
+        while(state)
+        {
+            write(fd, msg, 1);
+            readSerialData(&fd, poll_events, &poll_state, buf, 2);
+            if((unsigned char)buf[1]==state + 0x01) 
+            {
+                std::cout<<"센서 감지됨.\n";
+                state=0;
+            }
+        }
+
         if (data[15]==(char)(0xFF))
         {
             path.clear();
@@ -85,6 +122,24 @@ int main(int argc, char* argv[])
     rclcpp::init(argc, argv);
     auto node1 = std::make_shared<Manipulator>();
     std::cout << "완료!\n\n";
+    usleep(1000000);
+    std::cout << "Serial 통신을 위한 인자들을 초기화중입니다...";
+    memset(&newtio, 0, sizeof(newtio) );
+    newtio.c_cflag       = B1000000 | CS8 | CLOCAL | CREAD;
+    newtio.c_oflag       = 0;
+    newtio.c_lflag       = 0;
+    newtio.c_cc[VTIME]   = 0;
+    newtio.c_cc[VMIN]    = 1;
+    std::cout << "완료!\n\n";
+    usleep(1000000);
+    std::cout << "컨트롤러와 연결중입니다...";
+    if(openSerialPort(&fd,"/dev/arduinoMega")==-1) return -1;
+    else std::cout << "완료!\n\n";
+    usleep(1000000);
+    serialSetting(&fd, newtio);
+    poll_events.fd        = fd;
+    poll_events.events    = POLLIN | POLLERR;
+    poll_events.revents   = 0;
     usleep(1000000);
     std::cout << "불러올 PATH파일의 이름이 무엇입니까?\n";
     std::cout << "File name : ";

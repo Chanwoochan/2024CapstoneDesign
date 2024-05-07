@@ -1,5 +1,5 @@
 CMakeFiles/manipulator_read.dir/src/serial.cpp.o: \
- /home/kcw/capstone_ws/ros2/src/manipulator/src/serial.cpp \
+ /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -179,5 +179,5 @@ CMakeFiles/manipulator_read.dir/src/serial.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.hpp \
- /home/kcw/capstone_ws/ros2/src/manipulator/src/serial.hpp
+ /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.hpp \
+ /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp

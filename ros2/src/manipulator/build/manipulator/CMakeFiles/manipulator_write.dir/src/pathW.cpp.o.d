@@ -1,5 +1,5 @@
 CMakeFiles/manipulator_write.dir/src/pathW.cpp.o: \
- /home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp \
+ /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -179,8 +179,8 @@ CMakeFiles/manipulator_write.dir/src/pathW.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /home/kcw/capstone_ws/ros2/src/manipulator/src/pathRW.hpp \
- /home/kcw/capstone_ws/ros2/src/manipulator/src/serial.hpp \
+ /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.hpp \
+ /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
@@ -629,7 +629,7 @@ CMakeFiles/manipulator_write.dir/src/pathW.cpp.o: \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int64__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int64__builder.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int64__traits.hpp \
- /home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface/include/motor_interface/motor_interface/msg/motor.hpp \
- /home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface/include/motor_interface/motor_interface/msg/detail/motor__struct.hpp \
- /home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface/include/motor_interface/motor_interface/msg/detail/motor__builder.hpp \
- /home/kcw/capstone_ws/ros2/src/motor_interface/install/motor_interface/include/motor_interface/motor_interface/msg/detail/motor__traits.hpp
+ /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/include/motor_interface/motor_interface/msg/motor.hpp \
+ /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/include/motor_interface/motor_interface/msg/detail/motor__struct.hpp \
+ /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/include/motor_interface/motor_interface/msg/detail/motor__builder.hpp \
+ /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/include/motor_interface/motor_interface/msg/detail/motor__traits.hpp

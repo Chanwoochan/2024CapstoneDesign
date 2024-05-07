@@ -1,0 +1,23 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator/CMakeCache.txt is different than the directory /home/kcw/capstone_ws/ros2/src/manipulator/build/manipulator where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[ 66%] Built target manipulator_write
+[ 83%] Built target manipulator_run
+[100%] Built target manipulator_read
+-- Install configuration: ""
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_write
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_read
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_run
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/package_run_dependencies/manipulator
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/parent_prefix_path/manipulator
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/environment/ament_prefix_path.sh
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/environment/path.sh
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/environment/path.dsv
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.bash
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.sh
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.zsh
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.dsv
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/package.dsv
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/packages/manipulator
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/cmake/manipulatorConfig.cmake
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/cmake/manipulatorConfig-version.cmake
+-- Up-to-date: /home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator/share/manipulator/package.xml

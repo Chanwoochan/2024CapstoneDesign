@@ -1,0 +1,167 @@
+[0.000000] (-) TimerEvent: {}
+[0.000573] (manipulator) JobQueued: {'identifier': 'manipulator', 'dependencies': OrderedDict()}
+[0.001690] (manipulator) JobStarted: {'identifier': 'manipulator'}
+[0.020378] (manipulator) JobProgress: {'identifier': 'manipulator', 'progress': 'cmake'}
+[0.021181] (manipulator) JobProgress: {'identifier': 'manipulator', 'progress': 'build'}
+[0.022144] (manipulator) Command: {'cmd': ['/home/kcw/.local/bin/cmake', '--build', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator', '--', '-j8', '-l8'], 'cwd': '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kcw'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kcw'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src'), ('TERM_PROGRAM_VERSION', '1.82.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3207'), ('SYSTEMD_EXEC_PID', '3428'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11591'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install:/home/kcw/capstone_ws/ros2/src/manipulator/install:/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kcw'), ('JOURNAL_STREAM', '8:36724'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcw'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/kcw/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kcwUbuntu:@/tmp/.ICE-unix/3386,unix/kcwUbuntu:/tmp/.ICE-unix/3386'), ('INVOCATION_ID', '269c342373364f63bdb19577f334740b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.E9XFN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ccc9f54009.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface:/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:039dd88f-71b9-4cd5-aa06-3d1caee9ecb0'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface:/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator:/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/opt/ros/humble')]), 'shell': False}
+[0.096406] (manipulator) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/pathW.cpp.o\x1b[0m\n'}
+[0.096670] (manipulator) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_read.dir/src/serial.cpp.o\x1b[0m\n'}
+[0.096841] (manipulator) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_read.dir/src/pathR.cpp.o\x1b[0m\n'}
+[0.097261] (manipulator) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/serial.cpp.o\x1b[0m\n'}
+[0.099441] (-) TimerEvent: {}
+[0.108284] (manipulator) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/motor.cpp.o\x1b[0m\n'}
+[0.108542] (manipulator) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/serial.cpp.o\x1b[0m\n'}
+[0.199567] (-) TimerEvent: {}
+[0.299972] (-) TimerEvent: {}
+[0.400351] (-) TimerEvent: {}
+[0.500699] (-) TimerEvent: {}
+[0.564660] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:1:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[0.564935] (manipulator) StderrLine: {'line': b'    1 | #define BUF_SIZE \x1b[01;31m\x1b[K16\x1b[m\x1b[K\n'}
+[0.568294] (manipulator) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.568457] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp:6:89:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KBUF_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.568584] (manipulator) StderrLine: {'line': b'    6 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int \x1b[01;36m\x1b[KBUF_SIZE\x1b[m\x1b[K);\n'}
+[0.568702] (manipulator) StderrLine: {'line': b'      |                                                                                         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[0.568818] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:1:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[0.568935] (manipulator) StderrLine: {'line': b'    1 | #define BUF_SIZE \x1b[01;31m\x1b[K16\x1b[m\x1b[K\n'}
+[0.569044] (manipulator) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.569154] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:35:89:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KBUF_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.569266] (manipulator) StderrLine: {'line': b'   35 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int \x1b[01;36m\x1b[KBUF_SIZE\x1b[m\x1b[K)\n'}
+[0.569373] (manipulator) StderrLine: {'line': b'      |                                                                                         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[0.593275] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:1:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[0.593515] (manipulator) StderrLine: {'line': b'    1 | #define BUF_SIZE \x1b[01;31m\x1b[K16\x1b[m\x1b[K\n'}
+[0.593634] (manipulator) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.593745] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp:6:89:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KBUF_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.593858] (manipulator) StderrLine: {'line': b'    6 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int \x1b[01;36m\x1b[KBUF_SIZE\x1b[m\x1b[K);\n'}
+[0.594047] (manipulator) StderrLine: {'line': b'      |                                                                                         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[0.594159] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:1:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[0.594269] (manipulator) StderrLine: {'line': b'    1 | #define BUF_SIZE \x1b[01;31m\x1b[K16\x1b[m\x1b[K\n'}
+[0.594377] (manipulator) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.594483] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:35:89:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KBUF_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.594596] (manipulator) StderrLine: {'line': b'   35 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int \x1b[01;36m\x1b[KBUF_SIZE\x1b[m\x1b[K)\n'}
+[0.594722] (manipulator) StderrLine: {'line': b'      |                                                                                         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[0.600835] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:1:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[0.601108] (-) TimerEvent: {}
+[0.601258] (manipulator) StderrLine: {'line': b'    1 | #define BUF_SIZE \x1b[01;31m\x1b[K16\x1b[m\x1b[K\n'}
+[0.601391] (manipulator) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.601510] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp:6:89:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KBUF_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.601624] (manipulator) StderrLine: {'line': b'    6 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int \x1b[01;36m\x1b[KBUF_SIZE\x1b[m\x1b[K);\n'}
+[0.601734] (manipulator) StderrLine: {'line': b'      |                                                                                         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[0.602112] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:1:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[0.602262] (manipulator) StderrLine: {'line': b'    1 | #define BUF_SIZE \x1b[01;31m\x1b[K16\x1b[m\x1b[K\n'}
+[0.602374] (manipulator) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.602485] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.cpp:35:89:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KBUF_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.602597] (manipulator) StderrLine: {'line': b'   35 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int \x1b[01;36m\x1b[KBUF_SIZE\x1b[m\x1b[K)\n'}
+[0.602717] (manipulator) StderrLine: {'line': b'      |                                                                                         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[0.624400] (manipulator) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/manipulator_write.dir/build.make:104: CMakeFiles/manipulator_write.dir/src/serial.cpp.o] Error 1\n'}
+[0.624840] (manipulator) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[0.652472] (manipulator) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/manipulator_read.dir/build.make:104: CMakeFiles/manipulator_read.dir/src/serial.cpp.o] Error 1\n'}
+[0.652746] (manipulator) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[0.655480] (manipulator) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/manipulator_run.dir/build.make:104: CMakeFiles/manipulator_run.dir/src/serial.cpp.o] Error 1\n'}
+[0.655696] (manipulator) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[0.701255] (-) TimerEvent: {}
+[0.798309] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:10:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[0.798483] (manipulator) StderrLine: {'line': b'   10 | #define BUF_SIZE \x1b[01;31m\x1b[K16\x1b[m\x1b[K\n'}
+[0.798563] (manipulator) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.798647] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp:6:89:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KBUF_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.798719] (manipulator) StderrLine: {'line': b'    6 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int \x1b[01;36m\x1b[KBUF_SIZE\x1b[m\x1b[K);\n'}
+[0.798788] (manipulator) StderrLine: {'line': b'      |                                                                                         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[0.801338] (-) TimerEvent: {}
+[0.877477] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:10:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[0.877654] (manipulator) StderrLine: {'line': b'   10 | #define BUF_SIZE \x1b[01;31m\x1b[K16\x1b[m\x1b[K\n'}
+[0.877730] (manipulator) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.877800] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp:6:89:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KBUF_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.877870] (manipulator) StderrLine: {'line': b'    6 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int \x1b[01;36m\x1b[KBUF_SIZE\x1b[m\x1b[K);\n'}
+[0.877939] (manipulator) StderrLine: {'line': b'      |                                                                                         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[0.901491] (-) TimerEvent: {}
+[0.953475] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathR.cpp:10:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[0.953656] (manipulator) StderrLine: {'line': b'   10 | #define BUF_SIZE \x1b[01;31m\x1b[K16\x1b[m\x1b[K\n'}
+[0.953732] (manipulator) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.953802] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp:6:89:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KBUF_SIZE\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.953873] (manipulator) StderrLine: {'line': b'    6 | int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int \x1b[01;36m\x1b[KBUF_SIZE\x1b[m\x1b[K);\n'}
+[0.953951] (manipulator) StderrLine: {'line': b'      |                                                                                         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.001655] (-) TimerEvent: {}
+[1.102006] (-) TimerEvent: {}
+[1.202355] (-) TimerEvent: {}
+[1.302676] (-) TimerEvent: {}
+[1.403093] (-) TimerEvent: {}
+[1.503473] (-) TimerEvent: {}
+[1.603798] (-) TimerEvent: {}
+[1.704175] (-) TimerEvent: {}
+[1.804514] (-) TimerEvent: {}
+[1.904893] (-) TimerEvent: {}
+[2.005272] (-) TimerEvent: {}
+[2.105643] (-) TimerEvent: {}
+[2.205965] (-) TimerEvent: {}
+[2.306382] (-) TimerEvent: {}
+[2.406712] (-) TimerEvent: {}
+[2.507078] (-) TimerEvent: {}
+[2.607435] (-) TimerEvent: {}
+[2.707830] (-) TimerEvent: {}
+[2.808150] (-) TimerEvent: {}
+[2.908495] (-) TimerEvent: {}
+[2.973259] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.973488] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:111:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings\x07-Wwrite-strings\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.973634] (manipulator) StderrLine: {'line': b'  111 |     if(openSerialPort(&fd,\x1b[01;35m\x1b[K"/dev/arduinoMega"\x1b[m\x1b[K)==-1) return -1;\n'}
+[2.973747] (manipulator) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.008661] (-) TimerEvent: {}
+[3.109015] (-) TimerEvent: {}
+[3.209391] (-) TimerEvent: {}
+[3.309749] (-) TimerEvent: {}
+[3.410129] (-) TimerEvent: {}
+[3.510437] (-) TimerEvent: {}
+[3.610817] (-) TimerEvent: {}
+[3.711172] (-) TimerEvent: {}
+[3.811558] (-) TimerEvent: {}
+[3.881798] (manipulator) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/manipulator_write.dir/build.make:76: CMakeFiles/manipulator_write.dir/src/pathW.cpp.o] Error 1\n'}
+[3.882074] (manipulator) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/manipulator_write.dir/all] Error 2\n'}
+[3.882224] (manipulator) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[3.911727] (-) TimerEvent: {}
+[4.012087] (-) TimerEvent: {}
+[4.112459] (-) TimerEvent: {}
+[4.212812] (-) TimerEvent: {}
+[4.220178] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.220390] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:159:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings\x07-Wwrite-strings\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.220534] (manipulator) StderrLine: {'line': b'  159 |     if(openSerialPort(&fd,\x1b[01;35m\x1b[K"/dev/u2d2"\x1b[m\x1b[K)==-1) return -1;\n'}
+[4.220633] (manipulator) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.242539] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathR.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.242717] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathR.cpp:119:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings\x07-Wwrite-strings\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.242798] (manipulator) StderrLine: {'line': b'  119 |     if(openSerialPort(&fd,\x1b[01;35m\x1b[K"/dev/arduinoMega"\x1b[m\x1b[K)==-1) return -1;\n'}
+[4.242867] (manipulator) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.312944] (-) TimerEvent: {}
+[4.413313] (-) TimerEvent: {}
+[4.513634] (-) TimerEvent: {}
+[4.613991] (-) TimerEvent: {}
+[4.714349] (-) TimerEvent: {}
+[4.814778] (-) TimerEvent: {}
+[4.915111] (-) TimerEvent: {}
+[5.015439] (-) TimerEvent: {}
+[5.115778] (-) TimerEvent: {}
+[5.216166] (-) TimerEvent: {}
+[5.316517] (-) TimerEvent: {}
+[5.416875] (-) TimerEvent: {}
+[5.517193] (-) TimerEvent: {}
+[5.554292] (manipulator) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/manipulator_read.dir/build.make:76: CMakeFiles/manipulator_read.dir/src/pathR.cpp.o] Error 1\n'}
+[5.554544] (manipulator) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/manipulator_read.dir/all] Error 2\n'}
+[5.617361] (-) TimerEvent: {}
+[5.717725] (-) TimerEvent: {}
+[5.818087] (-) TimerEvent: {}
+[5.918449] (-) TimerEvent: {}
+[6.018784] (-) TimerEvent: {}
+[6.119149] (-) TimerEvent: {}
+[6.219461] (-) TimerEvent: {}
+[6.319837] (-) TimerEvent: {}
+[6.420195] (-) TimerEvent: {}
+[6.520613] (-) TimerEvent: {}
+[6.620918] (-) TimerEvent: {}
+[6.721288] (-) TimerEvent: {}
+[6.821616] (-) TimerEvent: {}
+[6.921971] (-) TimerEvent: {}
+[7.022291] (-) TimerEvent: {}
+[7.122655] (-) TimerEvent: {}
+[7.170166] (manipulator) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/manipulator_run.dir/build.make:76: CMakeFiles/manipulator_run.dir/src/motor.cpp.o] Error 1\n'}
+[7.170421] (manipulator) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/manipulator_run.dir/all] Error 2\n'}
+[7.170682] (manipulator) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.175981] (manipulator) CommandEnded: {'returncode': 2}
+[7.222775] (-) TimerEvent: {}
+[7.255173] (manipulator) JobEnded: {'identifier': 'manipulator', 'rc': 2}
+[7.265821] (-) EventReactorShutdown: {}

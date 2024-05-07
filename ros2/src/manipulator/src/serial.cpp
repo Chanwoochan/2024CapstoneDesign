@@ -32,7 +32,7 @@ void serialSetting(int *fd, struct termios &newtio)       // 시리얼 포트 �
    fcntl(*fd, F_SETFL, FNDELAY);
 }
 
-int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf)
+int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int buf_size)
 {
    *poll_state = poll(                                // poll()을 호출하여 event 발생 여부 확인
                      (struct pollfd*)&poll_events,  // event 등록 변수
@@ -44,7 +44,7 @@ int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *b
    {
       if ( poll_events.revents & POLLIN)            // event 가 자료 수신?
       {
-         read( *fd, buf, BUF_SIZE);
+         read( *fd, buf, buf_size);
          return 1;
       }
       if ( poll_events.revents & POLLERR)      // event 가 에러?
