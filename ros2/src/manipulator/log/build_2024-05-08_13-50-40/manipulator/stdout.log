@@ -1,0 +1,3 @@
+[ 30%] Built target manipulator_read
+[ 61%] Built target manipulator_write
+[ 69%] [32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/motor.cpp.o[0m

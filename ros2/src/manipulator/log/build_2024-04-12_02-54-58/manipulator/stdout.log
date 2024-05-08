@@ -1,4 +1,0 @@
-[ 12%] [32mBuilding CXX object CMakeFiles/manipulator_read.dir/src/pathR.cpp.o[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/pathW.cpp.o[0m
-[ 37%] [32m[1mLinking CXX executable manipulator_write[0m
-[ 62%] Built target manipulator_write

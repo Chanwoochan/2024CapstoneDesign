@@ -25,11 +25,20 @@ int openSerialPort(int *fd, char device[])   // 시리얼 포트를 open
    return 0;
 }
 
-void serialSetting(int *fd, struct termios &newtio)       // 시리얼 포트 통신 환경 설정
+void serialSetting(int *fd, struct termios &newtio,struct pollfd &poll_events)       // 시리얼 포트 통신 환경 설정
 {
+   memset(&newtio, 0, sizeof(newtio) );
+   newtio.c_cflag       = B1000000 | CS8 | CLOCAL | CREAD;
+   newtio.c_oflag       = 0;
+   newtio.c_lflag       = 0;
+   newtio.c_cc[VTIME]   = 0;
+   newtio.c_cc[VMIN]    = 1;
    tcflush(*fd, TCIFLUSH);
    tcsetattr(*fd, TCSANOW, &newtio);
    fcntl(*fd, F_SETFL, FNDELAY);
+   poll_events.fd        = *fd;
+   poll_events.events    = POLLIN | POLLERR;
+   poll_events.revents   = 0;
 }
 
 int readSerialData(int *fd, struct pollfd &poll_events, int *poll_state, char *buf, int buf_size)

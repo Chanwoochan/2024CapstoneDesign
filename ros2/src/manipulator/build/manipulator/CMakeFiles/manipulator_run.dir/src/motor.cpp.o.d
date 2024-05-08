@@ -181,6 +181,7 @@ CMakeFiles/manipulator_run.dir/src/motor.cpp.o: \
  /usr/include/c++/11/bits/fstream.tcc \
  /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp \
  /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.hpp \
+ /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/dynamixel_protocols.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \

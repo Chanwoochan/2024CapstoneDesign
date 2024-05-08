@@ -76,28 +76,34 @@ class Manipulator : public rclcpp::Node  // Node 1
         Motor.m7 = motor[6]; Motor.st = (unsigned char)data[15];
         motor_ -> publish(Motor);
 
-        if((unsigned char)data[15]==0x02) 
+        if((unsigned char)data[15]==0x02)
         {
             state=1;
-            std::cout<<"확장포트1의 센서 감지가 필요합니다.\n";
+            std::cout << "\x1b[38;5;9m[Expansion Port]\x1b[0m: "; 
+            std::cout<<"센서1 감지가 필요합니다.\n";
         }
-        else if((unsigned char)data[15]==0x03) 
+        else if((unsigned char)data[15]==0x03)
         {
             state=2;
-            std::cout<<"확장포트2의 센서 감지가 필요합니다.\n";
+            std::cout << "\x1b[38;5;9m[Expansion Port]\x1b[0m: "; 
+            std::cout<<"센서2 감지가 필요합니다.\n";
         }
-        else if((unsigned char)data[15]==0x04) 
+        else if((unsigned char)data[15]==0x04)
         {
             state=3;
-            std::cout<<"확장포트3의 센서 감지가 필요합니다.\n";
+            std::cout << "\x1b[38;5;9m[Expansion Port]\x1b[0m: "; 
+            std::cout<<"센서3 감지가 필요합니다.\n";
         }
+        write(fd, msg, 1);
+        readSerialData(&fd, poll_events, &poll_state, buf, 2);
         while(state)
         {
             write(fd, msg, 1);
             readSerialData(&fd, poll_events, &poll_state, buf, 2);
-            if((unsigned char)buf[1]==state + 0x01) 
+            if((unsigned char)buf[1]==state + 0x01)
             {
-                std::cout<<"센서 감지됨.\n";
+                std::cout << "\x1b[38;5;9m[Expansion Port]\x1b[0m: "; 
+                std::cout<<"센서"<<state<<" 감지됨.\n";
                 state=0;
             }
         }
@@ -116,43 +122,48 @@ class Manipulator : public rclcpp::Node  // Node 1
 
 int main(int argc, char* argv[])
 {
-    std::cout << "3M_MANIPULATOR PATH READER v1.0\n\n";
+    std::cout << "\x1b[38;5;39m3M_MANIPULATOR PATH READER v1.0\x1b[0m\n\n";
     usleep(1000000);
+
+    std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "ROS2 를 초기화중입니다...";
     rclcpp::init(argc, argv);
     auto node1 = std::make_shared<Manipulator>();
     std::cout << "완료!\n\n";
     usleep(1000000);
-    std::cout << "Serial 통신을 위한 인자들을 초기화중입니다...";
-    memset(&newtio, 0, sizeof(newtio) );
-    newtio.c_cflag       = B1000000 | CS8 | CLOCAL | CREAD;
-    newtio.c_oflag       = 0;
-    newtio.c_lflag       = 0;
-    newtio.c_cc[VTIME]   = 0;
-    newtio.c_cc[VMIN]    = 1;
-    std::cout << "완료!\n\n";
-    usleep(1000000);
+
+    std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "컨트롤러와 연결중입니다...";
     if(openSerialPort(&fd,"/dev/arduinoMega")==-1) return -1;
     else std::cout << "완료!\n\n";
     usleep(1000000);
-    serialSetting(&fd, newtio);
-    poll_events.fd        = fd;
-    poll_events.events    = POLLIN | POLLERR;
-    poll_events.revents   = 0;
+
+    std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
+    std::cout << "Serial 통신을 위한 인자들을 초기화중입니다...";
+    serialSetting(&fd, newtio, poll_events);
+    std::cout << "완료!\n\n";
     usleep(1000000);
+
+    std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "불러올 PATH파일의 이름이 무엇입니까?\n";
+    std::cout << "\x1b[38;5;226m[INPUT]\x1b[0m: ";
     std::cout << "File name : ";
     std::string file_name;
     std::cin >> file_name;
-    std::cout << "\nPATH파일을 불러오고 있습니다...";
+    std::cout << "\n\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
+    std::cout << "PATH파일을 불러오고 있습니다...";
     if(!openPathData(path, file_name)) return -1;
     else std::cout << "완료!\n\n";
+
     usleep(1000000);
+    std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "잠시만 기다려주세요..\n\n";
     sleep(3);
+
+    std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "PATH 읽는중...\n";
     rclcpp::spin(node1);
+    
     path.close();
     rclcpp::shutdown();
     return 0;

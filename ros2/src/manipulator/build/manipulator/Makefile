@@ -236,6 +236,30 @@ manipulator_run/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/manipulator_run.dir/build.make CMakeFiles/manipulator_run.dir/build
 .PHONY : manipulator_run/fast
 
+src/dynamixel_protocols.o: src/dynamixel_protocols.cpp.o
+.PHONY : src/dynamixel_protocols.o
+
+# target to build an object file
+src/dynamixel_protocols.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manipulator_run.dir/build.make CMakeFiles/manipulator_run.dir/src/dynamixel_protocols.cpp.o
+.PHONY : src/dynamixel_protocols.cpp.o
+
+src/dynamixel_protocols.i: src/dynamixel_protocols.cpp.i
+.PHONY : src/dynamixel_protocols.i
+
+# target to preprocess a source file
+src/dynamixel_protocols.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manipulator_run.dir/build.make CMakeFiles/manipulator_run.dir/src/dynamixel_protocols.cpp.i
+.PHONY : src/dynamixel_protocols.cpp.i
+
+src/dynamixel_protocols.s: src/dynamixel_protocols.cpp.s
+.PHONY : src/dynamixel_protocols.s
+
+# target to generate assembly for a file
+src/dynamixel_protocols.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manipulator_run.dir/build.make CMakeFiles/manipulator_run.dir/src/dynamixel_protocols.cpp.s
+.PHONY : src/dynamixel_protocols.cpp.s
+
 src/motor.o: src/motor.cpp.o
 .PHONY : src/motor.o
 
@@ -386,6 +410,9 @@ help:
 	@echo "... manipulator_read"
 	@echo "... manipulator_run"
 	@echo "... manipulator_write"
+	@echo "... src/dynamixel_protocols.o"
+	@echo "... src/dynamixel_protocols.i"
+	@echo "... src/dynamixel_protocols.s"
 	@echo "... src/motor.o"
 	@echo "... src/motor.i"
 	@echo "... src/motor.s"

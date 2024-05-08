@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/manipulator_run.dir/src/dynamixel_protocols.cpp.o"
+  "CMakeFiles/manipulator_run.dir/src/dynamixel_protocols.cpp.o.d"
   "CMakeFiles/manipulator_run.dir/src/motor.cpp.o"
   "CMakeFiles/manipulator_run.dir/src/motor.cpp.o.d"
   "CMakeFiles/manipulator_run.dir/src/pathRW.cpp.o"

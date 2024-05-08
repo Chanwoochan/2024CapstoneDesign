@@ -26,7 +26,7 @@ ament_target_dependencies(manipulator_write rclcpp std_msgs motor_interface)
 add_executable(manipulator_read src/pathR.cpp src/pathRW.cpp src/serial.cpp)
 ament_target_dependencies(manipulator_read rclcpp std_msgs motor_interface)
 
-add_executable(manipulator_run src/motor.cpp src/pathRW.cpp src/serial.cpp)
+add_executable(manipulator_run src/motor.cpp src/pathRW.cpp src/serial.cpp src/dynamixel_protocols.cpp)
 ament_target_dependencies(manipulator_run rclcpp std_msgs motor_interface)
 
 # Install

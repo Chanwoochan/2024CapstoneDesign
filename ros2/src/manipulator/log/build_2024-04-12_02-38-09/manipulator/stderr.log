@@ -1,8 +1,0 @@
-[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::timer_callback()[m[K’:
-[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:78:19:[m[K [01;35m[Kwarning: [m[Kcomparison is always false due to limited range of data type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits-Wtype-limits]8;;[m[K]
-   78 |         if([01;35m[Kbuf[15]==(unsigned char)0xFF[m[K) rclcpp::shutdown();
-      |            [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
-[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/kcw/capstone_ws/ros2/src/manipulator/src/pathW.cpp:100:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
-  100 |     if(openSerialPort(&fd,[01;35m[K"/dev/arduinoMega"[m[K)==-1) rclcpp::shutdown();
-      |                           [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
