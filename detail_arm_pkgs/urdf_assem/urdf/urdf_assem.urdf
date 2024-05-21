@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="urdf_assem">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-9.3693E-08 2.2776E-09 -1.8355E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.62852" />
+      <inertia
+        ixx="0.00090495"
+        ixy="-8.558E-08"
+        ixz="5.5032E-07"
+        iyy="0.00078655"
+        iyz="-1.6194E-06"
+        izz="0.001595" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_assem/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_assem/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="1yaw_Link">
+    <inertial>
+      <origin
+        xyz="0.00013774 -0.00022821 0.051001"
+        rpy="0 0 0" />
+      <mass
+        value="0.070658" />
+      <inertia
+        ixx="1.9218E-05"
+        ixy="4.5889E-09"
+        ixz="3.3772E-08"
+        iyy="1.93E-05"
+        iyz="2.5327E-07"
+        izz="1.7629E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_assem/meshes/1yaw_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_assem/meshes/1yaw_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1yaw"
+    type="revolute">
+    <origin
+      xyz="0.044649 4.6404E-05 0.0020863"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="1yaw_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="2pitch_Link">
+    <inertial>
+      <origin
+        xyz="-0.00010904 -0.00019961 -0.020253"
+        rpy="0 0 0" />
+      <mass
+        value="0.070658" />
+      <inertia
+        ixx="1.9218E-05"
+        ixy="4.5889E-09"
+        ixz="3.3772E-08"
+        iyy="1.93E-05"
+        iyz="2.5327E-07"
+        izz="1.7629E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_assem/meshes/2pitch_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_assem/meshes/2pitch_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="2pitch"
+    type="revolute">
+    <origin
+      xyz="0.00024679 -2.86E-05 0.071254"
+      rpy="0 0 0" />
+    <parent
+      link="1yaw_Link" />
+    <child
+      link="2pitch_Link" />
+    <axis
+      xyz="0.11512 0.99335 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="3pitch_Link">
+    <inertial>
+      <origin
+        xyz="0.00011267 0.00017126 -0.042597"
+        rpy="0 0 0" />
+      <mass
+        value="0.097967" />
+      <inertia
+        ixx="2.7803E-05"
+        ixy="-2.9858E-07"
+        ixz="5.1607E-08"
+        iyy="2.5307E-05"
+        iyz="4.1167E-07"
+        izz="2.1924E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_assem/meshes/3pitch_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_assem/meshes/3pitch_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="3pitch"
+    type="revolute">
+    <origin
+      xyz="-0.00022593 -0.00022549 0.11"
+      rpy="0 0 0" />
+    <parent
+      link="2pitch_Link" />
+    <child
+      link="3pitch_Link" />
+    <axis
+      xyz="0.11512 0.99335 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="4pitch_Link">
+    <inertial>
+      <origin
+        xyz="-0.00013909 0.00015238 -0.032575"
+        rpy="0 0 0" />
+      <mass
+        value="0.086004" />
+      <inertia
+        ixx="2.3019E-05"
+        ixy="-3.0261E-07"
+        ixz="3.9574E-08"
+        iyy="2.0489E-05"
+        iyz="3.0865E-07"
+        izz="1.8118E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_assem/meshes/4pitch_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_assem/meshes/4pitch_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4pitch"
+    type="revolute">
+    <origin
+      xyz="0.00029743 -3.4469E-05 0.1115"
+      rpy="0 0 0" />
+    <parent
+      link="3pitch_Link" />
+    <child
+      link="4pitch_Link" />
+    <axis
+      xyz="0.11512 0.99335 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="5pitch_Link">
+    <inertial>
+      <origin
+        xyz="-0.00019972 0.00039521 -0.032621"
+        rpy="0 0 0" />
+      <mass
+        value="0.086678" />
+      <inertia
+        ixx="2.3221E-05"
+        ixy="-3.2277E-07"
+        ixz="2.5762E-07"
+        iyy="2.0427E-05"
+        iyz="-1.2391E-09"
+        izz="1.8284E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_assem/meshes/5pitch_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_assem/meshes/5pitch_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="5pitch"
+    type="revolute">
+    <origin
+      xyz="0.00025467 2.0821E-05 0.1115"
+      rpy="0 0 0" />
+    <parent
+      link="4pitch_Link" />
+    <child
+      link="5pitch_Link" />
+    <axis
+      xyz="0.99335 -0.11512 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="6roll_Link">
+    <inertial>
+      <origin
+        xyz="-0.0069217 0.00083646 -0.011417"
+        rpy="0 0 0" />
+      <mass
+        value="0.073114" />
+      <inertia
+        ixx="1.0569E-05"
+        ixy="1.0678E-06"
+        ixz="2.3366E-07"
+        iyy="1.9621E-05"
+        iyz="-3.2881E-08"
+        izz="2.044E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_assem/meshes/6roll_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_assem/meshes/6roll_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="6roll"
+    type="revolute">
+    <origin
+      xyz="0.00074007 -0.00019001 0.052"
+      rpy="0 0 0" />
+    <parent
+      link="5pitch_Link" />
+    <child
+      link="6roll_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="gripper_Link">
+    <inertial>
+      <origin
+        xyz="-0.0064688 0.00064877 0.03076"
+        rpy="0 0 0" />
+      <mass
+        value="0.17396" />
+      <inertia
+        ixx="4.4692E-05"
+        ixy="1.6658E-06"
+        ixz="-2.3558E-07"
+        iyy="5.8926E-05"
+        iyz="2.1103E-08"
+        izz="6.171E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_assem/meshes/gripper_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_assem/meshes/gripper_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper"
+    type="revolute">
+    <origin
+      xyz="0.00033362 0.0016368 0.043"
+      rpy="0 0 0" />
+    <parent
+      link="6roll_Link" />
+    <child
+      link="gripper_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

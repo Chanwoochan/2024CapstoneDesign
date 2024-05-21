@@ -1,0 +1,393 @@
+<sdf version='1.7'>
+  <model name='urdf_assem'>
+    <link name='base_link'>
+      <inertial>
+        <pose>-0 0 -0 0 -0 0</pose>
+        <mass>0.62852</mass>
+        <inertia>
+          <ixx>0.00090495</ixx>
+          <ixy>-8.558e-08</ixy>
+          <ixz>5.5032e-07</ixz>
+          <iyy>0.00078655</iyy>
+          <iyz>-1.6194e-06</iyz>
+          <izz>0.001595</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_assem/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_assem/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='1yaw' type='revolute'>
+      <pose relative_to='base_link'>0.044649 4.6e-05 0.002086 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>1yaw_Link</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='1yaw_Link'>
+      <pose relative_to='1yaw'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.000138 -0.000228 0.051001 0 -0 0</pose>
+        <mass>0.070658</mass>
+        <inertia>
+          <ixx>1.9218e-05</ixx>
+          <ixy>4.5889e-09</ixy>
+          <ixz>3.3772e-08</ixz>
+          <iyy>1.93e-05</iyy>
+          <iyz>2.5327e-07</iyz>
+          <izz>1.7629e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='1yaw_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_assem/meshes/1yaw_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='1yaw_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_assem/meshes/1yaw_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='2pitch' type='revolute'>
+      <pose relative_to='1yaw_Link'>0.000247 -2.9e-05 0.071254 0 -0 0</pose>
+      <parent>1yaw_Link</parent>
+      <child>2pitch_Link</child>
+      <axis>
+        <xyz>0.11512 0.99335 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='2pitch_Link'>
+      <pose relative_to='2pitch'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.000109 -0.0002 -0.020253 0 -0 0</pose>
+        <mass>0.070658</mass>
+        <inertia>
+          <ixx>1.9218e-05</ixx>
+          <ixy>4.5889e-09</ixy>
+          <ixz>3.3772e-08</ixz>
+          <iyy>1.93e-05</iyy>
+          <iyz>2.5327e-07</iyz>
+          <izz>1.7629e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='2pitch_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_assem/meshes/2pitch_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='2pitch_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_assem/meshes/2pitch_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='3pitch' type='revolute'>
+      <pose relative_to='2pitch_Link'>-0.000226 -0.000225 0.11 0 -0 0</pose>
+      <parent>2pitch_Link</parent>
+      <child>3pitch_Link</child>
+      <axis>
+        <xyz>0.11512 0.99335 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='3pitch_Link'>
+      <pose relative_to='3pitch'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.000113 0.000171 -0.042597 0 -0 0</pose>
+        <mass>0.097967</mass>
+        <inertia>
+          <ixx>2.7803e-05</ixx>
+          <ixy>-2.9858e-07</ixy>
+          <ixz>5.1607e-08</ixz>
+          <iyy>2.5307e-05</iyy>
+          <iyz>4.1167e-07</iyz>
+          <izz>2.1924e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='3pitch_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_assem/meshes/3pitch_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='3pitch_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_assem/meshes/3pitch_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='4pitch' type='revolute'>
+      <pose relative_to='3pitch_Link'>0.000297 -3.4e-05 0.1115 0 -0 0</pose>
+      <parent>3pitch_Link</parent>
+      <child>4pitch_Link</child>
+      <axis>
+        <xyz>0.11512 0.99335 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='4pitch_Link'>
+      <pose relative_to='4pitch'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.000139 0.000152 -0.032575 0 -0 0</pose>
+        <mass>0.086004</mass>
+        <inertia>
+          <ixx>2.3019e-05</ixx>
+          <ixy>-3.0261e-07</ixy>
+          <ixz>3.9574e-08</ixz>
+          <iyy>2.0489e-05</iyy>
+          <iyz>3.0865e-07</iyz>
+          <izz>1.8118e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='4pitch_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_assem/meshes/4pitch_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='4pitch_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_assem/meshes/4pitch_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='5pitch' type='revolute'>
+      <pose relative_to='4pitch_Link'>0.000255 2.1e-05 0.1115 0 -0 0</pose>
+      <parent>4pitch_Link</parent>
+      <child>5pitch_Link</child>
+      <axis>
+        <xyz>0.99335 -0.11512 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='5pitch_Link'>
+      <pose relative_to='5pitch'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.0002 0.000395 -0.032621 0 -0 0</pose>
+        <mass>0.086678</mass>
+        <inertia>
+          <ixx>2.3221e-05</ixx>
+          <ixy>-3.2277e-07</ixy>
+          <ixz>2.5762e-07</ixz>
+          <iyy>2.0427e-05</iyy>
+          <iyz>-1.2391e-09</iyz>
+          <izz>1.8284e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='5pitch_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_assem/meshes/5pitch_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='5pitch_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_assem/meshes/5pitch_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='6roll' type='revolute'>
+      <pose relative_to='5pitch_Link'>0.00074 -0.00019 0.052 0 -0 0</pose>
+      <parent>5pitch_Link</parent>
+      <child>6roll_Link</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='6roll_Link'>
+      <pose relative_to='6roll'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.006922 0.000836 -0.011417 0 -0 0</pose>
+        <mass>0.073114</mass>
+        <inertia>
+          <ixx>1.0569e-05</ixx>
+          <ixy>1.0678e-06</ixy>
+          <ixz>2.3366e-07</ixz>
+          <iyy>1.9621e-05</iyy>
+          <iyz>-3.2881e-08</iyz>
+          <izz>2.044e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='6roll_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_assem/meshes/6roll_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='6roll_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_assem/meshes/6roll_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='gripper' type='revolute'>
+      <pose relative_to='6roll_Link'>0.000334 0.001637 0.043 0 -0 0</pose>
+      <parent>6roll_Link</parent>
+      <child>gripper_Link</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='gripper_Link'>
+      <pose relative_to='gripper'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.006469 0.000649 0.03076 0 -0 0</pose>
+        <mass>0.17396</mass>
+        <inertia>
+          <ixx>4.4692e-05</ixx>
+          <ixy>1.6658e-06</ixy>
+          <ixz>-2.3558e-07</ixz>
+          <iyy>5.8926e-05</iyy>
+          <iyz>2.1103e-08</iyz>
+          <izz>6.171e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='gripper_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_assem/meshes/gripper_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='gripper_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://urdf_assem/meshes/gripper_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
