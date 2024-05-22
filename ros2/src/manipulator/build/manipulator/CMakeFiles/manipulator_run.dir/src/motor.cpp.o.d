@@ -178,7 +178,9 @@ CMakeFiles/manipulator_run.dir/src/motor.cpp.o: \
  /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc \
+ /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/limits \
+ /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
  /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/serial.hpp \
  /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.hpp \
  /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/dynamixel_protocols.hpp \
@@ -227,9 +229,6 @@ CMakeFiles/manipulator_run.dir/src/motor.cpp.o: \
  /usr/include/c++/11/pstl/execution_defs.h \
  /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp \
  /usr/include/c++/11/future /usr/include/c++/11/mutex \
- /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/limits /usr/include/c++/11/ctime \
- /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
  /usr/include/c++/11/condition_variable /usr/include/c++/11/atomic \

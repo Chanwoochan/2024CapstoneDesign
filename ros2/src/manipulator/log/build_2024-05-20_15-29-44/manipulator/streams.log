@@ -1,0 +1,147 @@
+[0.008s] Invoking command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator': /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.187s] [ 30%] Built target manipulator_write
+[0.187s] [ 61%] Built target manipulator_read
+[0.192s] [ 69%] [32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/motor.cpp.o[0m
+[2.806s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:63:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[2.806s]    63 |     std::[01;31m[Kcout[m[K << "\x1b[38;5;39m3M_MANIPULATOR v1.0\x1b[0m\n\n";
+[2.806s]       |          [01;31m[K^~~~[m[K
+[2.806s] In file included from [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:24[m[K:
+[2.806s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[2.806s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[2.806s]       |                  [01;36m[K^~~~[m[K
+[2.806s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:64:11:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[2.806s]    64 |     usleep[01;31m[K([m[K1000000);
+[2.806s]       |           [01;31m[K^[m[K
+[2.806s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:66:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[2.806s]    66 |     std::[01;31m[Kcout[m[K << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
+[2.806s]       |          [01;31m[K^~~~[m[K
+[2.807s] In file included from [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:24[m[K:
+[2.807s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[2.807s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[2.807s]       |                  [01;36m[K^~~~[m[K
+[2.807s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:67:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[2.807s]    67 |     std::[01;31m[Kcout[m[K << "ROS2 를 초기화중입니다...";
+[2.807s]       |          [01;31m[K^~~~[m[K
+[2.807s] In file included from [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:24[m[K:
+[2.807s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[2.808s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[2.808s]       |                  [01;36m[K^~~~[m[K
+[2.808s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:68:17:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[2.808s]    68 |     rclcpp::init[01;31m[K([m[Kargc, argv);
+[2.808s]       |                 [01;31m[K^[m[K
+[2.808s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:70:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[2.808s]    70 |     std::[01;31m[Kcout[m[K << "완료!\n\n";
+[2.808s]       |          [01;31m[K^~~~[m[K
+[2.808s] In file included from [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:24[m[K:
+[2.808s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[2.808s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[2.808s]       |                  [01;36m[K^~~~[m[K
+[2.808s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:71:11:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[2.809s]    71 |     usleep[01;31m[K([m[K1000000);
+[2.809s]       |           [01;31m[K^[m[K
+[2.809s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:73:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[2.809s]    73 |     std::[01;31m[Kcout[m[K << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
+[2.809s]       |          [01;31m[K^~~~[m[K
+[2.809s] In file included from [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:24[m[K:
+[2.809s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[2.809s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[2.809s]       |                  [01;36m[K^~~~[m[K
+[2.810s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:74:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[2.810s]    74 |     std::[01;31m[Kcout[m[K << "매니퓰레이터와 연결중입니다...";
+[2.810s]       |          [01;31m[K^~~~[m[K
+[2.810s] In file included from [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:24[m[K:
+[2.810s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[2.810s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[2.810s]       |                  [01;36m[K^~~~[m[K
+[2.810s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:75:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+[2.810s]    75 |     [01;31m[Kif[m[K(openSerialPort(&fd,"/dev/u2d2")==-1) return -1;
+[2.810s]       |     [01;31m[K^~[m[K
+[2.810s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:76:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+[2.810s]    76 |     [01;31m[Kelse[m[K std::cout << "완료!\n\n";
+[2.810s]       |     [01;31m[K^~~~[m[K
+[2.810s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:77:11:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[2.810s]    77 |     usleep[01;31m[K([m[K1000000);
+[2.810s]       |           [01;31m[K^[m[K
+[2.811s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:79:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[2.811s]    79 |     std::[01;31m[Kcout[m[K << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
+[2.811s]       |          [01;31m[K^~~~[m[K
+[2.811s] In file included from [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:24[m[K:
+[2.811s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[2.811s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[2.811s]       |                  [01;36m[K^~~~[m[K
+[2.811s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:80:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[2.811s]    80 |     std::[01;31m[Kcout[m[K << "Serial 통신을 위한 인자들을 초기화중입니다...";
+[2.811s]       |          [01;31m[K^~~~[m[K
+[2.811s] In file included from [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:24[m[K:
+[2.811s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[2.811s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[2.811s]       |                  [01;36m[K^~~~[m[K
+[2.811s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:81:18:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[2.811s]    81 |     serialSetting[01;31m[K([m[K&fd, newtio, poll_events);
+[2.811s]       |                  [01;31m[K^[m[K
+[2.811s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:82:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[2.811s]    82 |     std::[01;31m[Kcout[m[K << "완료!\n\n";
+[2.812s]       |          [01;31m[K^~~~[m[K
+[2.812s] In file included from [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:24[m[K:
+[2.812s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[2.812s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[2.812s]       |                  [01;36m[K^~~~[m[K
+[2.812s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:83:11:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[2.812s]    83 |     usleep[01;31m[K([m[K1000000);
+[2.812s]       |           [01;31m[K^[m[K
+[2.812s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:85:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[2.812s]    85 |     std::[01;31m[Kcout[m[K << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
+[2.812s]       |          [01;31m[K^~~~[m[K
+[2.812s] In file included from [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:24[m[K:
+[2.812s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[2.812s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[2.812s]       |                  [01;36m[K^~~~[m[K
+[2.812s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:86:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[2.812s]    86 |     std::[01;31m[Kcout[m[K << "잠시만 기다려주세요..\n\n";
+[2.812s]       |          [01;31m[K^~~~[m[K
+[2.812s] In file included from [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:24[m[K:
+[2.812s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[2.812s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[2.813s]       |                  [01;36m[K^~~~[m[K
+[2.813s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:87:10:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[2.813s]    87 |     sleep[01;31m[K([m[K3);
+[2.813s]       |          [01;31m[K^[m[K
+[2.813s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:89:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[2.813s]    89 |     std::[01;31m[Kcout[m[K << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
+[2.813s]       |          [01;31m[K^~~~[m[K
+[2.813s] In file included from [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:24[m[K:
+[2.813s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[2.813s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[2.813s]       |                  [01;36m[K^~~~[m[K
+[2.813s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:90:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+[2.813s]    90 |     std::[01;31m[Kcout[m[K << "위치제어중입니다.\n";
+[2.813s]       |          [01;31m[K^~~~[m[K
+[2.813s] In file included from [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:24[m[K:
+[2.813s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[2.813s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[2.813s]       |                  [01;36m[K^~~~[m[K
+[2.813s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:91:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kfor[m[K’
+[2.813s]    91 |     [01;31m[Kfor[m[K(unsigned char i{1};i<=7;i++)
+[2.813s]       |     [01;31m[K^~~[m[K
+[2.814s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:91:28:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ does not name a type
+[2.814s]    91 |     for(unsigned char i{1};[01;31m[Ki[m[K<=7;i++)
+[2.814s]       |                            [01;31m[K^[m[K
+[2.814s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:91:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ does not name a type
+[2.814s]    91 |     for(unsigned char i{1};i<=7;[01;31m[Ki[m[K++)
+[2.814s]       |                                 [01;31m[K^[m[K
+[2.814s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:98:17:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[2.814s]    98 |     rclcpp::spin[01;31m[K([m[Knode1);
+[2.814s]       |                 [01;31m[K^[m[K
+[2.814s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:100:23:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K;[m[K’ token
+[2.814s]   100 |     rclcpp::shutdown()[01;31m[K;[m[K
+[2.814s]       |                       [01;31m[K^[m[K
+[2.814s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:101:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+[2.814s]   101 |     [01;31m[Kreturn[m[K 0;
+[2.814s]       |     [01;31m[K^~~~~~[m[K
+[2.814s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:102:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[2.814s]   102 | [01;31m[K}[m[K
+[2.814s]       | [01;31m[K^[m[K
+[4.801s] gmake[2]: *** [CMakeFiles/manipulator_run.dir/build.make:76: CMakeFiles/manipulator_run.dir/src/motor.cpp.o] Error 1
+[4.802s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/manipulator_run.dir/all] Error 2
+[4.802s] gmake: *** [Makefile:146: all] Error 2
+[4.806s] Invoked command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator' returned '2': /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator -- -j8 -l8

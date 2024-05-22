@@ -6,7 +6,7 @@
 #include <sys/poll.h>
 #include <termios.h>                   // B115200, CS8 등 상수 정의
 #include <fcntl.h>                     // O_RDWR , O_NOCTTY 등의 상수 정의
-#include <unistd.h>
+#include <chrono>
 
 #include "dynamixel_protocols.hpp"
 
@@ -56,8 +56,9 @@ unsigned short update_crc(unsigned short crc_accum, unsigned char *data_blk_ptr,
     return crc_accum;
 }
 
-void motor_position_control(int fd, unsigned char *data, unsigned char motor_id, unsigned short position)
+void motor_position_control(int fd, unsigned char motor_id, unsigned short position)
 {
+    unsigned char data[16]{};
     data[0] = 0xFF;     data[1] = 0xFF; data[2] = 0xFD; data[3] = 0x00;
     data[4] = motor_id; data[5] = 0x09; data[6] = 0x00; data[7] = 0x03;
     data[8] = 0x74; data[9] = 0x00;
@@ -72,14 +73,15 @@ void motor_position_control(int fd, unsigned char *data, unsigned char motor_id,
     write(fd, data, 16);
 }
 
-void motor_p_gain(int fd, unsigned char *data, unsigned char motor_id, unsigned short p_gain)
+void motor_velocity_control(int fd, unsigned char motor_id, unsigned short velocity)
 {
+    unsigned char data[16]{};
     data[0] = 0xFF;     data[1] = 0xFF; data[2] = 0xFD; data[3] = 0x00;
     data[4] = motor_id; data[5] = 0x09; data[6] = 0x00; data[7] = 0x03;
-    data[8] = 0x54; data[9] = 0x00;
+    data[8] = 0x68; data[9] = 0x00;
 
-    data[10] = p_gain     & 0xFF;
-    data[11] =(p_gain>>8) & 0xFF;
+    data[10] = velocity     & 0xFF;
+    data[11] =(velocity>>8) & 0xFF;
 
     data[12] = 0x00; data[13] = 0x00;
     unsigned short CRC = update_crc(0, data , 14);   // 14 = 5 + Packet Length(9)
@@ -88,20 +90,70 @@ void motor_p_gain(int fd, unsigned char *data, unsigned char motor_id, unsigned 
     write(fd, data, 16);
 }
 
-void motor_d_gain(int fd, unsigned char *data, unsigned char motor_id, unsigned short d_gain)
+void motor_Profile_v(int fd, unsigned char motor_id, unsigned short velocity)
 {
+    unsigned char data[16]{};
     data[0] = 0xFF;     data[1] = 0xFF; data[2] = 0xFD; data[3] = 0x00;
     data[4] = motor_id; data[5] = 0x09; data[6] = 0x00; data[7] = 0x03;
-    data[8] = 0x50; data[9] = 0x00;
+    data[8] = 0x70; data[9] = 0x00;
 
-    data[10] = d_gain     & 0xFF;
-    data[11] =(d_gain>>8) & 0xFF;
+    data[10] = velocity     & 0xFF;
+    data[11] =(velocity>>0x08) & 0xFF;
 
     data[12] = 0x00; data[13] = 0x00;
     unsigned short CRC = update_crc(0, data , 14);   // 14 = 5 + Packet Length(9)
     data[14] = (CRC & 0x00FF);    //CRC_L
     data[15] = (CRC>>8) & 0x00FF; //CRC_H
     write(fd, data, 16);
+}
+
+void motor_Profile_a(int fd, unsigned char motor_id, unsigned short acc)
+{
+    unsigned char data[16]{};
+    data[0] = 0xFF;     data[1] = 0xFF; data[2] = 0xFD; data[3] = 0x00;
+    data[4] = motor_id; data[5] = 0x09; data[6] = 0x00; data[7] = 0x03;
+    data[8] = 0x6C; data[9] = 0x00;
+
+    data[10] = acc     & 0xFF;
+    data[11] =(acc>>8) & 0xFF;
+
+    data[12] = 0x00; data[13] = 0x00;
+    unsigned short CRC = update_crc(0, data , 14);   // 14 = 5 + Packet Length(9)
+    data[14] = (CRC & 0x00FF);    //CRC_L
+    data[15] = (CRC>>8) & 0x00FF; //CRC_H
+    write(fd, data, 16);
+}
+
+void motor_p_gain(int fd, unsigned char motor_id, unsigned short p_gain)
+{
+    unsigned char data[14]{};
+    data[0] = 0xFF;     data[1] = 0xFF; data[2] = 0xFD; data[3] = 0x00;
+    data[4] = motor_id; data[5] = 0x07; data[6] = 0x00; data[7] = 0x03;
+    data[8] = 0x54; data[9] = 0x00;
+
+    data[10] = p_gain     & 0xFF;
+    data[11] =(p_gain>>8) & 0xFF;
+
+    unsigned short CRC = update_crc(0, data , 12);   // 12 = 5 + Packet Length(7)
+    data[12] = (CRC & 0x00FF);    //CRC_L
+    data[13] = (CRC>>8) & 0x00FF; //CRC_H
+    write(fd, data, 14);
+}
+
+void motor_d_gain(int fd, unsigned char motor_id, unsigned short d_gain)
+{
+    unsigned char data[14]{};
+    data[0] = 0xFF;     data[1] = 0xFF; data[2] = 0xFD; data[3] = 0x00;
+    data[4] = motor_id; data[5] = 0x07; data[6] = 0x00; data[7] = 0x03;
+    data[8] = 0x50; data[9] = 0x00;
+
+    data[10] = d_gain     & 0xFF;
+    data[11] =(d_gain>>8) & 0xFF;
+
+    unsigned short CRC = update_crc(0, data , 12);
+    data[12] = (CRC & 0x00FF);    //CRC_L
+    data[13] = (CRC>>8) & 0x00FF; //CRC_H
+    write(fd, data, 14);
 }
 
 void motor_torque_e(int fd, unsigned char motor_id)
@@ -112,8 +164,21 @@ void motor_torque_e(int fd, unsigned char motor_id)
     data[8] = 0x40; data[9] = 0x00;
 
     data[10] = 0x01;
-    unsigned short CRC = update_crc(0, data , 11);   // 14 = 5 + Packet Length(9)
+    unsigned short CRC = update_crc(0, data , 11);
     data[11] = (CRC & 0x00FF);    //CRC_L
     data[12] = (CRC>>8) & 0x00FF; //CRC_H
     write(fd, data, 13);
+}
+
+void position_init(int fd, unsigned long runtime)
+{
+    for(unsigned long i{}; i<runtime/50; i++)
+    {
+        std::chrono::system_clock::time_point start_time = std::chrono::system_clock::now(); // 코드 시작 시간
+        for(unsigned char i{1}; i<=7; i++ )
+            motor_position_control(fd, i, 2047);
+        std::chrono::system_clock::time_point end_time = std::chrono::system_clock::now();
+        std::chrono::nanoseconds nano = end_time - start_time;
+        while((long)(nano.count())<50000000);
+    }
 }

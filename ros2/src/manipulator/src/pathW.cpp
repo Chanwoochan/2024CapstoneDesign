@@ -58,9 +58,33 @@ class Manipulator : public rclcpp::Node  // Node 1
     Manipulator() : Manipulator::Node("Controller")
     { // Define Topic msg
         motor_ = this->create_publisher<motor_interface::msg::Motor>("motor", 10);
-        timer_ = this->create_wall_timer( 10ms, std::bind(&Manipulator::timer_callback, this)); // control timer, control time = 10 ms
+        timer_ = this->create_wall_timer( 50ms, std::bind(&Manipulator::init_callback, this)); // control timer, control time = 10 ms
     }
     private:
+    void init_callback()
+    {
+        auto Motor = motor_interface::msg::Motor();
+
+        write(fd, msg, 1);
+        readSerialData(&fd, poll_events, &poll_state, buf, BUF_SIZE);
+        dataTransform(buf, motor, motor_num);
+        Motor.m1 = motor[0]; Motor.m2 = motor[1];
+        Motor.m3 = motor[2]; Motor.m4 = motor[3];
+        Motor.m5 = motor[4]; Motor.m6 = motor[5];
+        Motor.m7 = motor[6]; Motor.st = (unsigned char)buf[15];
+        motor_ -> publish(Motor);
+        if(buf[15]==(char)0xFF)
+        {
+            s_state=1;
+        }
+        if(s_state==1&&buf[15]==(char)0x00)
+        {
+            
+            std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
+            std::cout << "PATH 쓰는중...\n";
+            timer_ = this->create_wall_timer( 50ms, std::bind(&Manipulator::timer_callback, this));
+        }
+    }
     void timer_callback()
     {
         auto Motor = motor_interface::msg::Motor();
@@ -147,7 +171,7 @@ int main(int argc, char* argv[])
     sleep(3);
 
     std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
-    std::cout << "PATH 쓰는중...\n";
+    std::cout << "시작 위치 결정 후 버튼을 눌러주세요.\n";
     rclcpp::spin(node1);
     
     rec_path.close();

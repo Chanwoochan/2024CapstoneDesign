@@ -12,12 +12,20 @@
 
 unsigned short update_crc(unsigned short crc_accum, unsigned char *data_blk_ptr, unsigned short data_blk_size);
 
-void motor_position_control(int fd, unsigned char *data, unsigned char motor_id, unsigned short position);
+void motor_position_control(int fd, unsigned char motor_id, unsigned short position);
 
-void motor_p_gain(int fd, unsigned char *data, unsigned char motor_id, unsigned short p_gain);
+void motor_velocity_control(int fd, unsigned char motor_id, unsigned short velocity);
 
-void motor_d_gain(int fd, unsigned char *data, unsigned char motor_id, unsigned short d_gain);
+void motor_Profile_v(int fd, unsigned char motor_id, unsigned short velocity);
+
+void motor_Profile_a(int fd, unsigned char motor_id, unsigned short acc);
+
+void motor_p_gain(int fd, unsigned char motor_id, unsigned short p_gain);
+
+void motor_d_gain(int fd, unsigned char motor_id, unsigned short d_gain);
 
 void motor_torque_e(int fd, unsigned char motor_id);
+
+void position_init(int fd, unsigned long runtime);
 
 #endif

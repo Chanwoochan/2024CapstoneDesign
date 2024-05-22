@@ -54,13 +54,15 @@ unsigned char msg[1] = {0xCD};
 
 short state{0};
 
+int control_time{};
+
 class Manipulator : public rclcpp::Node  // Node 1
 {
     public:
     Manipulator() : Manipulator::Node("Pathreader")
     { // Define Topic msg
         motor_ = this->create_publisher<motor_interface::msg::Motor>("motor", 10);
-        timer_ = this->create_wall_timer( 10ms, std::bind(&Manipulator::timer_callback, this)); // control timer, control time = 10 ms
+        timer_ = this->create_wall_timer(std::chrono::microseconds(control_time), std::bind(&Manipulator::timer_callback, this)); // control timer, control time = 10 ms
     }
     private:
     void timer_callback()
@@ -79,19 +81,19 @@ class Manipulator : public rclcpp::Node  // Node 1
         if((unsigned char)data[15]==0x02)
         {
             state=1;
-            std::cout << "\x1b[38;5;9m[Expansion Port]\x1b[0m: "; 
+            std::cout << "\x1b[38;5;9m[Expansion Port]\x1b[0m: ";
             std::cout<<"센서1 감지가 필요합니다.\n";
         }
         else if((unsigned char)data[15]==0x03)
         {
             state=2;
-            std::cout << "\x1b[38;5;9m[Expansion Port]\x1b[0m: "; 
+            std::cout << "\x1b[38;5;9m[Expansion Port]\x1b[0m: ";
             std::cout<<"센서2 감지가 필요합니다.\n";
         }
         else if((unsigned char)data[15]==0x04)
         {
             state=3;
-            std::cout << "\x1b[38;5;9m[Expansion Port]\x1b[0m: "; 
+            std::cout << "\x1b[38;5;9m[Expansion Port]\x1b[0m: ";
             std::cout<<"센서3 감지가 필요합니다.\n";
         }
         write(fd, msg, 1);
@@ -102,7 +104,7 @@ class Manipulator : public rclcpp::Node  // Node 1
             readSerialData(&fd, poll_events, &poll_state, buf, 2);
             if((unsigned char)buf[1]==state + 0x01)
             {
-                std::cout << "\x1b[38;5;9m[Expansion Port]\x1b[0m: "; 
+                std::cout << "\x1b[38;5;9m[Expansion Port]\x1b[0m: ";
                 std::cout<<"센서"<<state<<" 감지됨.\n";
                 state=0;
             }
@@ -154,6 +156,14 @@ int main(int argc, char* argv[])
     std::cout << "PATH파일을 불러오고 있습니다...";
     if(!openPathData(path, file_name)) return -1;
     else std::cout << "완료!\n\n";
+
+    std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
+    std::cout << "경로 재생 배속을 입력해주새요. (정배속 구동 시 1 입력.)\n";
+    std::cout << "\x1b[38;5;226m[INPUT]\x1b[0m: ";
+    std::cout << "배속 : ";
+    int time_in;
+    std::cin >> time_in;
+    control_time = 50000/time_in;
 
     usleep(1000000);
     std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
