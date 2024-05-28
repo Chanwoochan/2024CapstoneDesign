@@ -84,5 +84,10 @@
         "typeinfo": "cpp",
         "variant": "cpp"
     },
-    "ros.distro": "humble"
+    "ros.distro": "humble",
+    "colcon.provideTasks": true,
+    "colcon.workspaceSetup": [
+        "/opt/ros/foxy/setup.sh",
+        "install/setup.sh"
+    ]
 }

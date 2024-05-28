@@ -1,0 +1,29 @@
+[0.018s] Invoking command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.108s] [  7%] [32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/dynamixel_protocols.cpp.o[0m
+[0.108s] [ 61%] Built target manipulator_read
+[0.108s] [ 69%] Built target manipulator_write
+[0.300s] [ 76%] [32m[1mLinking CXX executable manipulator_run[0m
+[0.879s] [100%] Built target manipulator_run
+[0.890s] Invoked command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.979s] Invoking command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/opt/ros/humble /home/kcw/.local/bin/cmake --install /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator
+[1.054s] -- Install configuration: ""
+[1.060s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_write
+[1.063s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_read
+[1.065s] -- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_run
+[1.070s] -- Set runtime path of "/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_run" to ""
+[1.071s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/package_run_dependencies/manipulator
+[1.071s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/parent_prefix_path/manipulator
+[1.071s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/environment/ament_prefix_path.sh
+[1.071s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/environment/ament_prefix_path.dsv
+[1.071s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/environment/path.sh
+[1.071s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/environment/path.dsv
+[1.071s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.bash
+[1.071s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.sh
+[1.071s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.zsh
+[1.071s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.dsv
+[1.072s] -- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/package.dsv
+[1.072s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/packages/manipulator
+[1.073s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/cmake/manipulatorConfig.cmake
+[1.073s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/cmake/manipulatorConfig-version.cmake
+[1.073s] -- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/package.xml
+[1.078s] Invoked command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/opt/ros/humble /home/kcw/.local/bin/cmake --install /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator

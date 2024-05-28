@@ -1,0 +1,23 @@
+[0.017s] Invoking command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.077s] [ 30%] Built target manipulator_write
+[0.082s] [ 61%] Built target manipulator_read
+[0.091s] [ 69%] [32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/motor.cpp.o[0m
+[3.470s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::control_callback(motor_interface::msg::Motor_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.471s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:71:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct motor_interface::msg::Motor_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct motor_interface::msg::Motor_<std::allocator<void> >[m[K’} has no member named ‘[01m[Km70[m[K’; did you mean ‘[01m[Km7[m[K’?
+[3.471s]    71 |         std::cout <<  std::hex << (unsigned char)(-(msg->[01;31m[Km70[m[K) << "\n";
+[3.471s]       |                                                          [01;31m[K^~~[m[K
+[3.471s]       |                                                          [32m[Km7[m[K
+[3.471s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:71:70:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[3.471s]    71 |         std::cout <<  std::hex << (unsigned char)(-(msg->m70) << "\n"[01;31m[K;[m[K
+[3.471s]       |                                                                      [01;31m[K^[m[K
+[3.471s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:71:50:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[3.471s]    71 |         std::cout <<  std::hex << (unsigned char)[01;36m[K([m[K-(msg->m70) << "\n";
+[3.471s]       |                                                  [01;36m[K^[m[K
+[3.475s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.475s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:106:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[3.475s]   106 |     if(openSerialPort(&fd,[01;35m[K"/dev/u2d2"[m[K)==-1) return -1;
+[3.475s]       |                           [01;35m[K^~~~~~~~~~~[m[K
+[6.442s] gmake[2]: *** [CMakeFiles/manipulator_run.dir/build.make:76: CMakeFiles/manipulator_run.dir/src/motor.cpp.o] Error 1
+[6.442s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/manipulator_run.dir/all] Error 2
+[6.442s] gmake: *** [Makefile:146: all] Error 2
+[6.449s] Invoked command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator -- -j8 -l8

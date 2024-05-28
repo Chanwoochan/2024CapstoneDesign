@@ -1,0 +1,255 @@
+[0.000000] (-) TimerEvent: {}
+[0.000157] (manipulator) JobQueued: {'identifier': 'manipulator', 'dependencies': OrderedDict()}
+[0.000195] (manipulator) JobStarted: {'identifier': 'manipulator'}
+[0.007417] (manipulator) JobProgress: {'identifier': 'manipulator', 'progress': 'cmake'}
+[0.007662] (manipulator) Command: {'cmd': ['/home/kcw/.local/bin/cmake', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator', '-DCMAKE_INSTALL_PREFIX=/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator'], 'cwd': '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kcw'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kcw'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3050'), ('SYSTEMD_EXEC_PID', '3334'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '26285'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install:/home/kcw/capstone_ws/ros2/src/manipulator/install:/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kcw'), ('JOURNAL_STREAM', '8:37431'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcw'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/kcw/.local/bin:/home/kcw/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kcwUbuntu:@/tmp/.ICE-unix/3313,unix/kcwUbuntu:/tmp/.ICE-unix/3313'), ('INVOCATION_ID', 'c5b438357b6643ac8cbb54f7a55423ef'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DRASN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d5c4bc728b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator:/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface:/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator:/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface:/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/opt/ros/humble')]), 'shell': False}
+[0.072839] (manipulator) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099507] (-) TimerEvent: {}
+[0.130137] (manipulator) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.157101] (manipulator) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199642] (-) TimerEvent: {}
+[0.210875] (manipulator) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.222257] (manipulator) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.222528] (manipulator) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.222966] (manipulator) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.230782] (manipulator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.298079] (manipulator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.299777] (-) TimerEvent: {}
+[0.309898] (manipulator) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.310203] (manipulator) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.310765] (manipulator) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.314771] (manipulator) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399895] (-) TimerEvent: {}
+[0.445262] (manipulator) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.500027] (-) TimerEvent: {}
+[0.538338] (manipulator) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.600143] (-) TimerEvent: {}
+[0.627553] (manipulator) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.638665] (manipulator) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.656191] (manipulator) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.685086] (manipulator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.700296] (-) TimerEvent: {}
+[0.727971] (manipulator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.800449] (-) TimerEvent: {}
+[0.888892] (manipulator) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.894925] (manipulator) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.900558] (-) TimerEvent: {}
+[1.000850] (-) TimerEvent: {}
+[1.059962] (manipulator) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.096582] (manipulator) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.100973] (-) TimerEvent: {}
+[1.165117] (manipulator) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.179417] (manipulator) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.201083] (-) TimerEvent: {}
+[1.250534] (manipulator) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.251722] (manipulator) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.301243] (-) TimerEvent: {}
+[1.401605] (-) TimerEvent: {}
+[1.501910] (-) TimerEvent: {}
+[1.543023] (manipulator) StdoutLine: {'line': b'-- Found motor_interface: 0.0.0 (/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/share/motor_interface/cmake)\n'}
+[1.581827] (manipulator) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.0 (/usr/share/ament_lint_auto/cmake)\n'}
+[1.602019] (-) TimerEvent: {}
+[1.702380] (-) TimerEvent: {}
+[1.767492] (manipulator) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.767792] (manipulator) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.767934] (manipulator) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.775784] (manipulator) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.791382] (manipulator) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.799508] (manipulator) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.802485] (-) TimerEvent: {}
+[1.861783] (manipulator) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.861990] (manipulator) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.869582] (manipulator) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.871505] (manipulator) StdoutLine: {'line': b'-- Configuring done (1.8s)\n'}
+[1.897760] (manipulator) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.900184] (manipulator) StdoutLine: {'line': b'-- Build files have been written to: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator\n'}
+[1.902614] (-) TimerEvent: {}
+[1.916183] (manipulator) CommandEnded: {'returncode': 0}
+[1.917057] (manipulator) JobProgress: {'identifier': 'manipulator', 'progress': 'build'}
+[1.918384] (manipulator) Command: {'cmd': ['/home/kcw/.local/bin/cmake', '--build', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator', '--', '-j8', '-l8'], 'cwd': '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kcw'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kcw'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3050'), ('SYSTEMD_EXEC_PID', '3334'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '26285'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install:/home/kcw/capstone_ws/ros2/src/manipulator/install:/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kcw'), ('JOURNAL_STREAM', '8:37431'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcw'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/kcw/.local/bin:/home/kcw/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kcwUbuntu:@/tmp/.ICE-unix/3313,unix/kcwUbuntu:/tmp/.ICE-unix/3313'), ('INVOCATION_ID', 'c5b438357b6643ac8cbb54f7a55423ef'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DRASN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d5c4bc728b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator:/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface:/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator:/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface:/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/opt/ros/humble')]), 'shell': False}
+[1.978547] (manipulator) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/pathW.cpp.o\x1b[0m\n'}
+[1.979259] (manipulator) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_read.dir/src/pathR.cpp.o\x1b[0m\n'}
+[1.979496] (manipulator) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/pathRW.cpp.o\x1b[0m\n'}
+[1.979983] (manipulator) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_read.dir/src/pathRW.cpp.o\x1b[0m\n'}
+[1.980153] (manipulator) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/motor.cpp.o\x1b[0m\n'}
+[1.980733] (manipulator) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/pathRW.cpp.o\x1b[0m\n'}
+[1.980919] (manipulator) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_read.dir/src/serial.cpp.o\x1b[0m\n'}
+[1.982177] (manipulator) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/serial.cpp.o\x1b[0m\n'}
+[2.002723] (-) TimerEvent: {}
+[2.103294] (-) TimerEvent: {}
+[2.203691] (-) TimerEvent: {}
+[2.304137] (-) TimerEvent: {}
+[2.405003] (-) TimerEvent: {}
+[2.505411] (-) TimerEvent: {}
+[2.605884] (-) TimerEvent: {}
+[2.706363] (-) TimerEvent: {}
+[2.806787] (-) TimerEvent: {}
+[2.904961] (manipulator) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/serial.cpp.o\x1b[0m\n'}
+[2.906896] (-) TimerEvent: {}
+[2.935609] (manipulator) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/dynamixel_protocols.cpp.o\x1b[0m\n'}
+[3.007040] (-) TimerEvent: {}
+[3.107832] (-) TimerEvent: {}
+[3.208294] (-) TimerEvent: {}
+[3.308922] (-) TimerEvent: {}
+[3.409386] (-) TimerEvent: {}
+[3.510189] (-) TimerEvent: {}
+[3.610581] (-) TimerEvent: {}
+[3.711023] (-) TimerEvent: {}
+[3.811612] (-) TimerEvent: {}
+[3.912106] (-) TimerEvent: {}
+[4.012531] (-) TimerEvent: {}
+[4.112957] (-) TimerEvent: {}
+[4.213396] (-) TimerEvent: {}
+[4.313769] (-) TimerEvent: {}
+[4.414188] (-) TimerEvent: {}
+[4.514576] (-) TimerEvent: {}
+[4.614953] (-) TimerEvent: {}
+[4.715289] (-) TimerEvent: {}
+[4.815647] (-) TimerEvent: {}
+[4.915975] (-) TimerEvent: {}
+[5.016387] (-) TimerEvent: {}
+[5.116761] (-) TimerEvent: {}
+[5.217126] (-) TimerEvent: {}
+[5.317511] (-) TimerEvent: {}
+[5.417857] (-) TimerEvent: {}
+[5.518291] (-) TimerEvent: {}
+[5.618708] (-) TimerEvent: {}
+[5.719084] (-) TimerEvent: {}
+[5.819407] (-) TimerEvent: {}
+[5.919770] (-) TimerEvent: {}
+[6.020166] (-) TimerEvent: {}
+[6.120496] (-) TimerEvent: {}
+[6.220868] (-) TimerEvent: {}
+[6.321251] (-) TimerEvent: {}
+[6.355647] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.355936] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:106:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings\x07-Wwrite-strings\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.356112] (manipulator) StderrLine: {'line': b'  106 |     if(openSerialPort(&fd,\x1b[01;35m\x1b[K"/dev/u2d2"\x1b[m\x1b[K)==-1) return -1;\n'}
+[6.356250] (manipulator) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.421390] (-) TimerEvent: {}
+[6.521717] (-) TimerEvent: {}
+[6.622089] (-) TimerEvent: {}
+[6.722422] (-) TimerEvent: {}
+[6.822730] (-) TimerEvent: {}
+[6.923055] (-) TimerEvent: {}
+[7.023425] (-) TimerEvent: {}
+[7.123775] (-) TimerEvent: {}
+[7.213001] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.213219] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:153:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings\x07-Wwrite-strings\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.213312] (manipulator) StderrLine: {'line': b'  153 |     if(openSerialPort(&fd,\x1b[01;35m\x1b[K"/dev/arduinoMega"\x1b[m\x1b[K)==-1) return -1;\n'}
+[7.213391] (manipulator) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.223908] (-) TimerEvent: {}
+[7.324215] (-) TimerEvent: {}
+[7.359207] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathR.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.359406] (manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathR.cpp:160:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings\x07-Wwrite-strings\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.359498] (manipulator) StderrLine: {'line': b'  160 |     if(openSerialPort(&fd,\x1b[01;35m\x1b[K"/dev/arduinoMega"\x1b[m\x1b[K)==-1) return -1;\n'}
+[7.359575] (manipulator) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.424329] (-) TimerEvent: {}
+[7.524715] (-) TimerEvent: {}
+[7.625030] (-) TimerEvent: {}
+[7.725334] (-) TimerEvent: {}
+[7.825631] (-) TimerEvent: {}
+[7.925930] (-) TimerEvent: {}
+[8.026245] (-) TimerEvent: {}
+[8.126549] (-) TimerEvent: {}
+[8.226825] (-) TimerEvent: {}
+[8.327186] (-) TimerEvent: {}
+[8.427573] (-) TimerEvent: {}
+[8.527956] (-) TimerEvent: {}
+[8.628409] (-) TimerEvent: {}
+[8.728762] (-) TimerEvent: {}
+[8.829154] (-) TimerEvent: {}
+[8.929494] (-) TimerEvent: {}
+[9.029882] (-) TimerEvent: {}
+[9.130274] (-) TimerEvent: {}
+[9.230582] (-) TimerEvent: {}
+[9.330898] (-) TimerEvent: {}
+[9.431280] (-) TimerEvent: {}
+[9.531581] (-) TimerEvent: {}
+[9.631888] (-) TimerEvent: {}
+[9.732220] (-) TimerEvent: {}
+[9.757337] (manipulator) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX executable manipulator_write\x1b[0m\n'}
+[9.832362] (-) TimerEvent: {}
+[9.932739] (-) TimerEvent: {}
+[10.033084] (-) TimerEvent: {}
+[10.076884] (manipulator) StdoutLine: {'line': b'[ 84%] Built target manipulator_write\n'}
+[10.133201] (-) TimerEvent: {}
+[10.233711] (-) TimerEvent: {}
+[10.334111] (-) TimerEvent: {}
+[10.434442] (-) TimerEvent: {}
+[10.534802] (-) TimerEvent: {}
+[10.635140] (-) TimerEvent: {}
+[10.705857] (manipulator) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable manipulator_read\x1b[0m\n'}
+[10.735282] (-) TimerEvent: {}
+[10.835648] (-) TimerEvent: {}
+[10.936022] (-) TimerEvent: {}
+[10.965753] (manipulator) StdoutLine: {'line': b'[ 92%] Built target manipulator_read\n'}
+[11.036156] (-) TimerEvent: {}
+[11.136464] (-) TimerEvent: {}
+[11.236843] (-) TimerEvent: {}
+[11.337173] (-) TimerEvent: {}
+[11.437818] (-) TimerEvent: {}
+[11.538167] (-) TimerEvent: {}
+[11.638505] (-) TimerEvent: {}
+[11.738852] (-) TimerEvent: {}
+[11.839197] (-) TimerEvent: {}
+[11.939566] (-) TimerEvent: {}
+[12.039942] (-) TimerEvent: {}
+[12.140291] (-) TimerEvent: {}
+[12.240622] (-) TimerEvent: {}
+[12.340924] (-) TimerEvent: {}
+[12.441248] (-) TimerEvent: {}
+[12.541576] (-) TimerEvent: {}
+[12.641848] (-) TimerEvent: {}
+[12.742210] (-) TimerEvent: {}
+[12.842525] (-) TimerEvent: {}
+[12.942871] (-) TimerEvent: {}
+[13.043140] (-) TimerEvent: {}
+[13.143533] (-) TimerEvent: {}
+[13.243843] (-) TimerEvent: {}
+[13.344212] (-) TimerEvent: {}
+[13.444568] (-) TimerEvent: {}
+[13.544923] (-) TimerEvent: {}
+[13.645303] (-) TimerEvent: {}
+[13.745639] (-) TimerEvent: {}
+[13.845923] (-) TimerEvent: {}
+[13.946282] (-) TimerEvent: {}
+[14.046633] (-) TimerEvent: {}
+[14.146980] (-) TimerEvent: {}
+[14.247325] (-) TimerEvent: {}
+[14.343006] (manipulator) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable manipulator_run\x1b[0m\n'}
+[14.347429] (-) TimerEvent: {}
+[14.447774] (-) TimerEvent: {}
+[14.548118] (-) TimerEvent: {}
+[14.648426] (-) TimerEvent: {}
+[14.721379] (manipulator) StdoutLine: {'line': b'[100%] Built target manipulator_run\n'}
+[14.730690] (manipulator) CommandEnded: {'returncode': 0}
+[14.748545] (-) TimerEvent: {}
+[14.793347] (manipulator) JobProgress: {'identifier': 'manipulator', 'progress': 'install'}
+[14.826122] (manipulator) Command: {'cmd': ['/home/kcw/.local/bin/cmake', '--install', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator'], 'cwd': '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kcw'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kcw'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3050'), ('SYSTEMD_EXEC_PID', '3334'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '26285'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install:/home/kcw/capstone_ws/ros2/src/manipulator/install:/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kcw'), ('JOURNAL_STREAM', '8:37431'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kcw'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/kcw/.local/bin:/home/kcw/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kcwUbuntu:@/tmp/.ICE-unix/3313,unix/kcwUbuntu:/tmp/.ICE-unix/3313'), ('INVOCATION_ID', 'c5b438357b6643ac8cbb54f7a55423ef'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DRASN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d5c4bc728b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator:/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface:/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator:/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/motor_interface/install/motor_interface:/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/opt/ros/humble')]), 'shell': False}
+[14.848668] (-) TimerEvent: {}
+[14.854622] (manipulator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.854904] (manipulator) StdoutLine: {'line': b'-- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_write\n'}
+[14.857289] (manipulator) StdoutLine: {'line': b'-- Set runtime path of "/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_write" to ""\n'}
+[14.857614] (manipulator) StdoutLine: {'line': b'-- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_read\n'}
+[14.859443] (manipulator) StdoutLine: {'line': b'-- Set runtime path of "/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_read" to ""\n'}
+[14.859640] (manipulator) StdoutLine: {'line': b'-- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_run\n'}
+[14.866324] (manipulator) StdoutLine: {'line': b'-- Set runtime path of "/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/lib/manipulator/manipulator_run" to ""\n'}
+[14.866647] (manipulator) StdoutLine: {'line': b'-- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/package_run_dependencies/manipulator\n'}
+[14.866842] (manipulator) StdoutLine: {'line': b'-- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/parent_prefix_path/manipulator\n'}
+[14.867001] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/environment/ament_prefix_path.sh\n'}
+[14.867127] (manipulator) StdoutLine: {'line': b'-- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/environment/ament_prefix_path.dsv\n'}
+[14.867272] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/environment/path.sh\n'}
+[14.867417] (manipulator) StdoutLine: {'line': b'-- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/environment/path.dsv\n'}
+[14.867582] (manipulator) StdoutLine: {'line': b'-- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.bash\n'}
+[14.867860] (manipulator) StdoutLine: {'line': b'-- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.sh\n'}
+[14.868101] (manipulator) StdoutLine: {'line': b'-- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.zsh\n'}
+[14.868300] (manipulator) StdoutLine: {'line': b'-- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/local_setup.dsv\n'}
+[14.868594] (manipulator) StdoutLine: {'line': b'-- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/package.dsv\n'}
+[14.868868] (manipulator) StdoutLine: {'line': b'-- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/ament_index/resource_index/packages/manipulator\n'}
+[14.869125] (manipulator) StdoutLine: {'line': b'-- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/cmake/manipulatorConfig.cmake\n'}
+[14.869325] (manipulator) StdoutLine: {'line': b'-- Installing: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/cmake/manipulatorConfig-version.cmake\n'}
+[14.869560] (manipulator) StdoutLine: {'line': b'-- Up-to-date: /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/install/manipulator/share/manipulator/package.xml\n'}
+[14.875727] (manipulator) CommandEnded: {'returncode': 0}
+[14.949050] (-) TimerEvent: {}
+[14.957509] (manipulator) JobEnded: {'identifier': 'manipulator', 'rc': 0}
+[14.958193] (-) EventReactorShutdown: {}

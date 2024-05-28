@@ -1,0 +1,12 @@
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::control_callback(motor_interface::msg::Motor_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:71:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct motor_interface::msg::Motor_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct motor_interface::msg::Motor_<std::allocator<void> >[m[K’} has no member named ‘[01m[Km70[m[K’; did you mean ‘[01m[Km7[m[K’?
+   71 |         std::cout <<  std::hex << (unsigned char)(-(msg->[01;31m[Km70[m[K)) << "\n";
+      |                                                          [01;31m[K^~~[m[K
+      |                                                          [32m[Km7[m[K
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/motor.cpp:106:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+  106 |     if(openSerialPort(&fd,[01;35m[K"/dev/u2d2"[m[K)==-1) return -1;
+      |                           [01;35m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/manipulator_run.dir/build.make:76: CMakeFiles/manipulator_run.dir/src/motor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/manipulator_run.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,1 @@
+/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/paths/

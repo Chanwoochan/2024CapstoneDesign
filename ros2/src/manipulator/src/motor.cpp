@@ -54,47 +54,85 @@ class Manipulator : public rclcpp::Node  // Node 1
     private:
     void control_callback(motor_interface::msg::Motor::SharedPtr msg)
     {
+        if((msg->st) == (unsigned char)0x00 )
+        {
+            motor_position_control(fd, 1, (unsigned short)(793.6 + (double)(msg->m1)*2.56));
 
-        motor_position_control(fd, 1, (unsigned short)(818.1 + (double)(msg->m1)*2.4917));
+            motor_position_control(fd, 2, (unsigned short)(4095 - 793.6 - (double)(msg->m2)*2.56));
+            motor_position_control(fd, 6, (unsigned short)(793.6 + (double)(msg->m2)*2.56));
 
-        motor_position_control(fd, 2, (unsigned short)(818.1 + (double)(msg->m2)*2.4917));
-        motor_position_control(fd, 6, (unsigned short)(4095 - 818.1 - (double)(msg->m2)*2.4917));
-
-        motor_position_control(fd, 3, (unsigned short)(818.1 + (double)(msg->m3)*2.4917));
-        motor_position_control(fd, 4, (unsigned short)(818.1 + (double)(msg->m4)*2.4917));
-        motor_position_control(fd, 5, (unsigned short)(818.1 + (double)(msg->m5)*2.4917));
-
-        if((msg->m7) > 512)
-            motor_velocity_control(fd, 7, (msg->m7)*2 - 1024);
+        if((msg->m3)<90)
+            motor_position_control(fd, 3, (unsigned short)(4095 - 292.48 - (double)(msg->m3)*8.128));
+        else if((msg->m3)>890)
+            motor_position_control(fd, 3, (unsigned short)(4095 - 182.68 - (double)(msg->m3)*3.2464));
         else
-            motor_position_control(fd, 7, 2047);
+            motor_position_control(fd, 3, (unsigned short)(4095 - 793.6 - (double)(msg->m3)*2.56));
+
+        if((msg->m4)<90)
+            motor_position_control(fd, 4, (unsigned short)(4095 - 292.48 - (double)(msg->m4)*8.128));
+        else if((msg->m4)>890)
+            motor_position_control(fd, 4, (unsigned short)(4095 - 182.68 - (double)(msg->m4)*3.2464));
+        else
+            motor_position_control(fd, 4, (unsigned short)(4095 - 793.6 - (double)(msg->m4)*2.56));
+
+        // if((msg->m5)<90)
+        //     motor_position_control(fd, 5, (unsigned short)(4095 - 292.48 - (double)(msg->m5)*8.128));
+        // else if((msg->m5)>890)
+        //     motor_position_control(fd, 5, (unsigned short)(4095 + 3314.9 - (double)(msg->m5)*7.1763));
+        // else
+            motor_position_control(fd, 5, (unsigned short)(4095 - 793.6 - (double)(msg->m5)*2.56));
+
+            // if((msg->m7) >= 600)
+                motor_velocity_control(fd, 7, (((msg->m7)-600)*530./623.) - 265);
+            // else
+            //     motor_position_control(fd, 7, 2047);
+        }
+        if((msg->st) == 0xAB)        //trapzoidal
+        {
+            for(unsigned char i{1}; i<=6; i++)
+            {
+                motor_Profile_v(fd, i, 131);
+                motor_Profile_a(fd, i, 5);
+                usleep(10000);
+            }
+        }
+        else if((msg->st) == 0xAA)   //step
+        {
+            for(unsigned char i{1}; i<=6; i++)
+            {
+                motor_Profile_v(fd, i, 0);
+                motor_Profile_a(fd, i, 0);
+                usleep(10000);
+            }
+        }
     }
     rclcpp::Subscription<motor_interface::msg::Motor>::SharedPtr motor_;
+
 };
 
 int main(int argc, char*argv[])
 {
     std::cout << "\x1b[38;5;39m3M_MANIPULATOR v1.0\x1b[0m\n\n";
-    usleep(1000000);
+    usleep(100000);
 
     std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "ROS2 를 초기화중입니다...";
     rclcpp::init(argc, argv);
     auto node1 = std::make_shared<Manipulator>();
     std::cout << "완료!\n\n";
-    usleep(1000000);
+    usleep(100000);
 
     std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "매니퓰레이터와 연결중입니다...";
     if(openSerialPort(&fd,"/dev/u2d2")==-1) return -1;
     else std::cout << "완료!\n\n";
-    usleep(1000000);
+    usleep(100000);
 
     std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "Serial 통신을 위한 인자들을 초기화중입니다...";
     serialSetting(&fd, newtio, poll_events);
     std::cout << "완료!\n\n";
-    usleep(1000000);
+    usleep(100000);
 
     std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "잠시만 기다려주세요..\n\n";
@@ -102,23 +140,31 @@ int main(int argc, char*argv[])
 
     for(unsigned char i{1};i<=7;i++)
     {
-        // motor_p_gain(fd, i, 600);
-        // motor_d_gain(fd, i, 4000);
+        motor_p_gain(fd, i, 600);
+        usleep(10000);
+        motor_d_gain(fd, i, 3000);
+        usleep(10000);
         motor_torque_e(fd, i);
+        usleep(10000);
     }
-    for(unsigned char i{1}; i<=7; i++ )
+    for(unsigned char i{1}; i<=6; i++ )
     {
-        motor_Profile_v(fd, i, 6000);
-        motor_Profile_a(fd, i, 6000);
+        motor_Profile_v(fd, i, 200);
+        usleep(10000);
+        motor_Profile_a(fd, i, 1);
+        usleep(10000);
     }
     std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "위치를 초기화합니다.\n";
-    position_init(fd, 2000);  // Runtime : 2000 msec
-    for(unsigned char i{1}; i<=7; i++ )
+    position_init(fd, 3000);  // Runtime : 2000 mseca
+    for(unsigned char i{1}; i<=6; i++ )
     {
         motor_Profile_v(fd, i, 0);
+        usleep(100000);
         motor_Profile_a(fd, i, 0);
+        usleep(100000);
     }
+    sleep(1);
     std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "위치제어중입니다.\n";
     rclcpp::spin(node1);

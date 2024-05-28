@@ -14,7 +14,7 @@
 
 void initPathData(std::ofstream &rec_path, std::string path_name)
 {
-    rec_path.open("/home/kcw/capstone_ws/ros2/src/manipulator/src/paths/" + path_name + ".pth");
+    rec_path.open("/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/paths/" + path_name + ".pth");
 }
 
 void writePathData(std::ofstream &rec_path,int data_size, char *data)
@@ -27,7 +27,7 @@ void writePathData(std::ofstream &rec_path,int data_size, char *data)
 
 bool openPathData(std::ifstream &path, std::string path_name)
 {
-    path.open("/home/kcw/capstone_ws/ros2/src/manipulator/src/paths/" + path_name + ".pth");
+    path.open("/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/paths/" + path_name + ".pth");
     if (!path)
 	{
 		std::cerr << "\n파일이 존재하지 않거나, 파일을 열 수 없습니다,\n프로그램을 종료합니다.\n\n" << std::endl;

@@ -1,0 +1,3 @@
+[ 38%] Built target manipulator_run
+[ 53%] [32mBuilding CXX object CMakeFiles/manipulator_read.dir/src/pathR.cpp.o[0m
+[ 76%] Built target manipulator_write

@@ -1,0 +1,34 @@
+[0.013s] Invoking command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator': /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.251s] [ 30%] Built target manipulator_read
+[0.254s] [ 38%] [32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/pathW.cpp.o[0m
+[0.263s] [ 76%] Built target manipulator_run
+[2.952s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:[m[K In member function ‘[01m[Kvoid Manipulator::timer_callback()[m[K’:
+[2.952s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:106:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Km1[m[K’ in ‘[01m[K*(unsigned char*)(& msg)[m[K’, which is of non-class type ‘[01m[Kunsigned char[m[K’
+[2.952s]   106 |         std::cout << msg->[01;31m[Km1[m[K << " " << msg->m2 << " " << msg->m3 << " " << msg->m4 << " " << msg->m5 << " " << msg->m6 << " " << msg->m7 << "\n";
+[2.952s]       |                           [01;31m[K^~[m[K
+[2.952s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:106:45:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Km2[m[K’ in ‘[01m[K*(unsigned char*)(& msg)[m[K’, which is of non-class type ‘[01m[Kunsigned char[m[K’
+[2.952s]   106 |         std::cout << msg->m1 << " " << msg->[01;31m[Km2[m[K << " " << msg->m3 << " " << msg->m4 << " " << msg->m5 << " " << msg->m6 << " " << msg->m7 << "\n";
+[2.952s]       |                                             [01;31m[K^~[m[K
+[2.952s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:106:63:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Km3[m[K’ in ‘[01m[K*(unsigned char*)(& msg)[m[K’, which is of non-class type ‘[01m[Kunsigned char[m[K’
+[2.952s]   106 |         std::cout << msg->m1 << " " << msg->m2 << " " << msg->[01;31m[Km3[m[K << " " << msg->m4 << " " << msg->m5 << " " << msg->m6 << " " << msg->m7 << "\n";
+[2.952s]       |                                                               [01;31m[K^~[m[K
+[2.952s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:106:81:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Km4[m[K’ in ‘[01m[K*(unsigned char*)(& msg)[m[K’, which is of non-class type ‘[01m[Kunsigned char[m[K’
+[2.953s]   106 |         std::cout << msg->m1 << " " << msg->m2 << " " << msg->m3 << " " << msg->[01;31m[Km4[m[K << " " << msg->m5 << " " << msg->m6 << " " << msg->m7 << "\n";
+[2.953s]       |                                                                                 [01;31m[K^~[m[K
+[2.953s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:106:99:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Km5[m[K’ in ‘[01m[K*(unsigned char*)(& msg)[m[K’, which is of non-class type ‘[01m[Kunsigned char[m[K’
+[2.953s]   106 |         std::cout << msg->m1 << " " << msg->m2 << " " << msg->m3 << " " << msg->m4 << " " << msg->[01;31m[Km5[m[K << " " << msg->m6 << " " << msg->m7 << "\n";
+[2.953s]       |                                                                                                   [01;31m[K^~[m[K
+[2.953s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:106:117:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Km6[m[K’ in ‘[01m[K*(unsigned char*)(& msg)[m[K’, which is of non-class type ‘[01m[Kunsigned char[m[K’
+[2.953s]   106 |         std::cout << msg->m1 << " " << msg->m2 << " " << msg->m3 << " " << msg->m4 << " " << msg->m5 << " " << msg->[01;31m[Km6[m[K << " " << msg->m7 << "\n";
+[2.953s]       |                                                                                                                     [01;31m[K^~[m[K
+[2.953s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:106:135:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Km7[m[K’ in ‘[01m[K*(unsigned char*)(& msg)[m[K’, which is of non-class type ‘[01m[Kunsigned char[m[K’
+[2.953s]   106 |         std::cout << msg->m1 << " " << msg->m2 << " " << msg->m3 << " " << msg->m4 << " " << msg->m5 << " " << msg->m6 << " " << msg->[01;31m[Km7[m[K << "\n";
+[2.953s]       |                                                                                                                                       [01;31m[K^~[m[K
+[2.958s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.958s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathW.cpp:153:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[2.958s]   153 |     if(openSerialPort(&fd,[01;35m[K"/dev/arduinoMega"[m[K)==-1) return -1;
+[2.958s]       |                           [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[3.681s] gmake[2]: *** [CMakeFiles/manipulator_write.dir/build.make:76: CMakeFiles/manipulator_write.dir/src/pathW.cpp.o] Error 1
+[3.682s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/manipulator_write.dir/all] Error 2
+[3.682s] gmake: *** [Makefile:146: all] Error 2
+[3.688s] Invoked command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator' returned '2': /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator -- -j8 -l8

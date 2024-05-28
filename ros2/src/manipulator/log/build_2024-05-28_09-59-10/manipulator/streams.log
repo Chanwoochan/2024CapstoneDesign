@@ -1,0 +1,31 @@
+[0.012s] Invoking command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.087s] [  7%] [32mBuilding CXX object CMakeFiles/manipulator_write.dir/src/pathRW.cpp.o[0m
+[0.088s] [ 15%] [32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/pathRW.cpp.o[0m
+[0.093s] [ 23%] [32mBuilding CXX object CMakeFiles/manipulator_read.dir/src/pathRW.cpp.o[0m
+[0.444s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp:[m[K In function ‘[01m[Kvoid initPathData(std::ofstream&, std::string)[m[K’:
+[0.444s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp:20:8:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator![m[K’ (operand type is ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’})
+[0.444s]    20 |     if([01;31m[K!pth[m[K)
+[0.444s]       |        [01;31m[K^~~~[m[K
+[0.444s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp:20:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Koperator!(bool)[m[K’ (built-in)
+[0.444s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp:20:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kbool[m[K’
+[0.474s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp:[m[K In function ‘[01m[Kvoid initPathData(std::ofstream&, std::string)[m[K’:
+[0.474s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp:20:8:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator![m[K’ (operand type is ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’})
+[0.474s]    20 |     if([01;31m[K!pth[m[K)
+[0.474s]       |        [01;31m[K^~~~[m[K
+[0.474s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp:20:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Koperator!(bool)[m[K’ (built-in)
+[0.474s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp:20:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kbool[m[K’
+[0.511s] gmake[2]: *** [CMakeFiles/manipulator_run.dir/build.make:90: CMakeFiles/manipulator_run.dir/src/pathRW.cpp.o] Error 1
+[0.511s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/manipulator_run.dir/all] Error 2
+[0.512s] gmake[1]: *** Waiting for unfinished jobs....
+[0.515s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp:[m[K In function ‘[01m[Kvoid initPathData(std::ofstream&, std::string)[m[K’:
+[0.516s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp:20:8:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator![m[K’ (operand type is ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’})
+[0.516s]    20 |     if([01;31m[K!pth[m[K)
+[0.516s]       |        [01;31m[K^~~~[m[K
+[0.516s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp:20:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Koperator!(bool)[m[K’ (built-in)
+[0.516s] [01m[K/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/src/pathRW.cpp:20:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kbool[m[K’
+[0.520s] gmake[2]: *** [CMakeFiles/manipulator_write.dir/build.make:90: CMakeFiles/manipulator_write.dir/src/pathRW.cpp.o] Error 1
+[0.520s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/manipulator_write.dir/all] Error 2
+[0.560s] gmake[2]: *** [CMakeFiles/manipulator_read.dir/build.make:90: CMakeFiles/manipulator_read.dir/src/pathRW.cpp.o] Error 1
+[0.560s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/manipulator_read.dir/all] Error 2
+[0.560s] gmake: *** [Makefile:146: all] Error 2
+[0.566s] Invoked command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kcw/capstone_ws/ros2/src/manipulator/install/manipulator:/opt/ros/humble /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator -- -j8 -l8

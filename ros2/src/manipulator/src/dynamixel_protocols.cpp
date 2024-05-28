@@ -73,7 +73,7 @@ void motor_position_control(int fd, unsigned char motor_id, unsigned short posit
     write(fd, data, 16);
 }
 
-void motor_velocity_control(int fd, unsigned char motor_id, unsigned short velocity)
+void motor_velocity_control(int fd, unsigned char motor_id, int velocity)
 {
     unsigned char data[16]{};
     data[0] = 0xFF;     data[1] = 0xFF; data[2] = 0xFD; data[3] = 0x00;
@@ -82,8 +82,8 @@ void motor_velocity_control(int fd, unsigned char motor_id, unsigned short veloc
 
     data[10] = velocity     & 0xFF;
     data[11] =(velocity>>8) & 0xFF;
-
-    data[12] = 0x00; data[13] = 0x00;
+    data[12] =(velocity>>16) & 0xFF;
+    data[13] =(velocity>>24) & 0xFF;
     unsigned short CRC = update_crc(0, data , 14);   // 14 = 5 + Packet Length(9)
     data[14] = (CRC & 0x00FF);    //CRC_L
     data[15] = (CRC>>8) & 0x00FF; //CRC_H
@@ -177,8 +177,11 @@ void position_init(int fd, unsigned long runtime)
         std::chrono::system_clock::time_point start_time = std::chrono::system_clock::now(); // 코드 시작 시간
         for(unsigned char i{1}; i<=7; i++ )
             motor_position_control(fd, i, 2047);
-        std::chrono::system_clock::time_point end_time = std::chrono::system_clock::now();
-        std::chrono::nanoseconds nano = end_time - start_time;
-        while((long)(nano.count())<50000000);
+        while(1)
+        {
+            std::chrono::system_clock::time_point end_time = std::chrono::system_clock::now();
+            std::chrono::nanoseconds nano = end_time - start_time;
+            if ((long)(nano.count())<50000000) break;
+        };
     }
 }

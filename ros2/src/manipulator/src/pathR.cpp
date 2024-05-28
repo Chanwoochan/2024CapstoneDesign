@@ -47,6 +47,7 @@ struct pollfd     poll_events;
 
 const int motor_num{7};
 int motor[motor_num]={0};
+int init_motor[motor_num]={0};
 
 char data[BUF_SIZE];
 
@@ -62,9 +63,69 @@ class Manipulator : public rclcpp::Node  // Node 1
     Manipulator() : Manipulator::Node("Pathreader")
     { // Define Topic msg
         motor_ = this->create_publisher<motor_interface::msg::Motor>("motor", 10);
-        timer_ = this->create_wall_timer(std::chrono::microseconds(control_time), std::bind(&Manipulator::timer_callback, this)); // control timer, control time = 10 ms
+        timer_ = this->create_wall_timer(std::chrono::microseconds(control_time), std::bind(&Manipulator::start_callback, this)); // control timer, control time = 10 ms
     }
     private:
+    void start_callback()
+    {
+        auto Motor = motor_interface::msg::Motor();
+
+        readPathData(path, BUF_SIZE, data);
+        readPathData(path, BUF_SIZE, data);
+        dataTransform(data, motor, motor_num);
+        Motor.m1 = motor[0]; Motor.m2 = motor[1];
+        Motor.m3 = motor[2]; Motor.m4 = motor[3];
+        Motor.m5 = motor[4]; Motor.m6 = motor[5];
+        Motor.m7 = motor[6]; Motor.st = (unsigned char)0xAB;
+        motor_ -> publish(Motor);
+        usleep(50000);
+        readPathData(path, BUF_SIZE, data);
+        dataTransform(data, motor, motor_num);
+        Motor.m1 = motor[0]; Motor.m2 = motor[1];
+        Motor.m3 = motor[2]; Motor.m4 = motor[3];
+        Motor.m5 = motor[4]; Motor.m6 = motor[5];
+        Motor.m7 = motor[6]; Motor.st = (unsigned char)0x00;
+        motor_ -> publish(Motor);
+        sleep(2);
+        readPathData(path, BUF_SIZE, data);
+        dataTransform(data, motor, motor_num);
+        Motor.m1 = motor[0]; Motor.m2 = motor[1];
+        Motor.m3 = motor[2]; Motor.m4 = motor[3];
+        Motor.m5 = motor[4]; Motor.m6 = motor[5];
+        Motor.m7 = motor[6]; Motor.st = (unsigned char)0xAA;
+        motor_ -> publish(Motor);
+        sleep(1);
+        timer_ = this->create_wall_timer(std::chrono::microseconds(control_time), std::bind(&Manipulator::timer_callback, this));
+    }
+    void init_callback()
+    {
+        auto Motor = motor_interface::msg::Motor();
+
+        readPathData(path, BUF_SIZE, data);
+        Motor.m1 = motor[0]; Motor.m2 = motor[1];
+        Motor.m3 = motor[2]; Motor.m4 = motor[3];
+        Motor.m5 = motor[4]; Motor.m6 = motor[5];
+        Motor.m7 = motor[6]; Motor.st = (unsigned char)0xAB;
+        motor_ -> publish(Motor);
+        usleep(50000);
+        readPathData(path, BUF_SIZE, data);
+        dataTransform(data, motor, motor_num);
+        Motor.m1 = motor[0]; Motor.m2 = motor[1];
+        Motor.m3 = motor[2]; Motor.m4 = motor[3];
+        Motor.m5 = motor[4]; Motor.m6 = motor[5];
+        Motor.m7 = motor[6]; Motor.st = (unsigned char)0x00;
+        motor_ -> publish(Motor);
+        sleep(2);
+        readPathData(path, BUF_SIZE, data);
+        dataTransform(data, motor, motor_num);
+        Motor.m1 = motor[0]; Motor.m2 = motor[1];
+        Motor.m3 = motor[2]; Motor.m4 = motor[3];
+        Motor.m5 = motor[4]; Motor.m6 = motor[5];
+        Motor.m7 = motor[6]; Motor.st = (unsigned char)0xAA;
+        motor_ -> publish(Motor);
+        sleep(1);
+        timer_ = this->create_wall_timer(std::chrono::microseconds(control_time), std::bind(&Manipulator::timer_callback, this));
+    }
     void timer_callback()
     {
         auto Motor = motor_interface::msg::Motor();
@@ -98,7 +159,15 @@ class Manipulator : public rclcpp::Node  // Node 1
         }
         write(fd, msg, 1);
         readSerialData(&fd, poll_events, &poll_state, buf, 2);
-        while(state)
+        if(state==9 && (unsigned char)buf[1]==0x00)
+        {
+            state=0;
+        }
+        if(state==9 && ((unsigned char)buf[1]==0x02 || (unsigned char)buf[1]==0x03 || (unsigned char)buf[1]==0x04))
+        {
+            buf[1]==0x00;
+        }
+        while(state!=0&&state!=9)
         {
             write(fd, msg, 1);
             readSerialData(&fd, poll_events, &poll_state, buf, 2);
@@ -106,17 +175,17 @@ class Manipulator : public rclcpp::Node  // Node 1
             {
                 std::cout << "\x1b[38;5;9m[Expansion Port]\x1b[0m: ";
                 std::cout<<"센서"<<state<<" 감지됨.\n";
-                state=0;
+                state=9;
             }
+            usleep(10000);
         }
 
         if (data[15]==(char)(0xFF))
         {
             path.clear();
             path.seekg(0, std::ios::beg);
+            timer_ = this->create_wall_timer(std::chrono::microseconds(control_time), std::bind(&Manipulator::init_callback, this));
         }
-
-
     }
     rclcpp::Publisher<motor_interface::msg::Motor>::SharedPtr motor_;
     rclcpp::TimerBase::SharedPtr timer_;
@@ -125,26 +194,26 @@ class Manipulator : public rclcpp::Node  // Node 1
 int main(int argc, char* argv[])
 {
     std::cout << "\x1b[38;5;39m3M_MANIPULATOR PATH READER v1.0\x1b[0m\n\n";
-    usleep(1000000);
+    usleep(100000);
 
     std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "ROS2 를 초기화중입니다...";
     rclcpp::init(argc, argv);
     auto node1 = std::make_shared<Manipulator>();
     std::cout << "완료!\n\n";
-    usleep(1000000);
+    usleep(100000);
 
     std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "컨트롤러와 연결중입니다...";
-    if(openSerialPort(&fd,"/dev/arduinoMega")==-1) return -1;
+    if(openSerialPort(&fd,"/dev/arduinoMega")==-1)return -1;
     else std::cout << "완료!\n\n";
-    usleep(1000000);
+    usleep(100000);
 
     std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "Serial 통신을 위한 인자들을 초기화중입니다...";
     serialSetting(&fd, newtio, poll_events);
     std::cout << "완료!\n\n";
-    usleep(1000000);
+    usleep(100000);
 
     std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "불러올 PATH파일의 이름이 무엇입니까?\n";
@@ -154,26 +223,25 @@ int main(int argc, char* argv[])
     std::cin >> file_name;
     std::cout << "\n\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "PATH파일을 불러오고 있습니다...";
-    if(!openPathData(path, file_name)) return -1;
+    if(!openPathData(path, file_name))return -2;
     else std::cout << "완료!\n\n";
 
     std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "경로 재생 배속을 입력해주새요. (정배속 구동 시 1 입력.)\n";
     std::cout << "\x1b[38;5;226m[INPUT]\x1b[0m: ";
     std::cout << "배속 : ";
-    int time_in;
+    double time_in;
     std::cin >> time_in;
     control_time = 50000/time_in;
 
-    usleep(1000000);
+    usleep(100000);
     std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "잠시만 기다려주세요..\n\n";
-    sleep(3);
-
+    sleep(1);
     std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "PATH 읽는중...\n";
     rclcpp::spin(node1);
-    
+
     path.close();
     rclcpp::shutdown();
     return 0;

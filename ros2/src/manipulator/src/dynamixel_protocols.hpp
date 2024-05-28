@@ -14,7 +14,7 @@ unsigned short update_crc(unsigned short crc_accum, unsigned char *data_blk_ptr,
 
 void motor_position_control(int fd, unsigned char motor_id, unsigned short position);
 
-void motor_velocity_control(int fd, unsigned char motor_id, unsigned short velocity);
+void motor_velocity_control(int fd, unsigned char motor_id, int velocity);
 
 void motor_Profile_v(int fd, unsigned char motor_id, unsigned short velocity);
 
