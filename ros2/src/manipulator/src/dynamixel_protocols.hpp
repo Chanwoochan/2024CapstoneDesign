@@ -12,6 +12,8 @@
 
 unsigned short update_crc(unsigned short crc_accum, unsigned char *data_blk_ptr, unsigned short data_blk_size);
 
+void op_mode(int fd, unsigned char motor_id, unsigned short mode);
+
 void motor_position_control(int fd, unsigned char motor_id, unsigned short position);
 
 void motor_velocity_control(int fd, unsigned char motor_id, int velocity);

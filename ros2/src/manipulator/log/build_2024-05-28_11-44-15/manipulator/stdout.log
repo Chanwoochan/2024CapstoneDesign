@@ -1,0 +1,4 @@
+[  7%] [32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/motor.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/dynamixel_protocols.cpp.o[0m
+[ 69%] Built target manipulator_read
+[ 76%] Built target manipulator_write

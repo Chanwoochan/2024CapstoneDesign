@@ -82,10 +82,8 @@ class Manipulator : public rclcpp::Node  // Node 1
         // else
             motor_position_control(fd, 5, (unsigned short)(4095 - 793.6 - (double)(msg->m5)*2.56));
 
-            // if((msg->m7) >= 600)
-                motor_velocity_control(fd, 7, (((msg->m7)-600)*530./623.) - 265);
-            // else
-            //     motor_position_control(fd, 7, 2047);
+            motor_position_control(fd, 7, (unsigned short)((double)(msg->m7)*8));
+
         }
         if((msg->st) == 0xAB)        //trapzoidal
         {
@@ -137,12 +135,12 @@ int main(int argc, char*argv[])
     std::cout << "\x1b[38;5;46m[SYSTEM]\x1b[0m: ";
     std::cout << "잠시만 기다려주세요..\n\n";
     sleep(1);
-
+    op_mode(fd, 7, 4);
     for(unsigned char i{1};i<=7;i++)
     {
-        motor_p_gain(fd, i, 600);
+        motor_p_gain(fd, i, 1200);
         usleep(10000);
-        motor_d_gain(fd, i, 3000);
+        motor_d_gain(fd, i, 6000);
         usleep(10000);
         motor_torque_e(fd, i);
         usleep(10000);

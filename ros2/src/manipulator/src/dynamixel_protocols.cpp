@@ -56,6 +56,20 @@ unsigned short update_crc(unsigned short crc_accum, unsigned char *data_blk_ptr,
     return crc_accum;
 }
 
+void op_mode(int fd, unsigned char motor_id, unsigned short mode)
+{
+    unsigned char data[13]{};
+    data[0] = 0xFF;     data[1] = 0xFF; data[2] = 0xFD; data[3] = 0x00;
+    data[4] = motor_id; data[5] = 0x06; data[6] = 0x00; data[7] = 0x03;
+    data[8] = 0x0A; data[9] = 0x00;
+
+    data[10] = mode & 0xFF;
+    unsigned short CRC = update_crc(0, data , 14);   // 14 = 5 + Packet Length(9)
+    data[11] = (CRC & 0x00FF);    //CRC_L
+    data[12] = (CRC>>8) & 0x00FF; //CRC_H
+    write(fd, data, 13);
+}
+
 void motor_position_control(int fd, unsigned char motor_id, unsigned short position)
 {
     unsigned char data[16]{};
