@@ -1,0 +1,24 @@
+[0.012s] Invoking command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator': /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator -- -j8 -l8
+[0.177s] [ 61%] Built target manipulator_read
+[0.177s] [ 61%] Built target manipulator_write
+[0.185s] [ 69%] [32mBuilding CXX object CMakeFiles/manipulator_run.dir/src/motor.cpp.o[0m
+[1.051s] gmake[2]: *** [CMakeFiles/manipulator_run.dir/build.make:76: CMakeFiles/manipulator_run.dir/src/motor.cpp.o] Interrupt
+[1.051s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/manipulator_run.dir/all] Interrupt
+[1.052s] gmake: *** [Makefile:146: all] Interrupt
+[1.053s] Traceback (most recent call last):
+[1.053s]   File "/home/kcw/.local/bin/cmake", line 8, in <module>
+[1.054s]     sys.exit(cmake())
+[1.054s]   File "/home/kcw/.local/lib/python3.10/site-packages/cmake/__init__.py", line 43, in cmake
+[1.075s]     raise SystemExit(_program('cmake', sys.argv[1:]))
+[1.075s]   File "/home/kcw/.local/lib/python3.10/site-packages/cmake/__init__.py", line 39, in _program
+[1.075s]     return subprocess.call([os.path.join(CMAKE_BIN_DIR, name)] + args, close_fds=False)
+[1.075s]   File "/usr/lib/python3.10/subprocess.py", line 347, in call
+[1.078s]     return p.wait(timeout=timeout)
+[1.078s]   File "/usr/lib/python3.10/subprocess.py", line 1209, in wait
+[1.079s]     return self._wait(timeout=timeout)
+[1.079s]   File "/usr/lib/python3.10/subprocess.py", line 1959, in _wait
+[1.080s]     (pid, sts) = self._try_wait(0)
+[1.080s]   File "/usr/lib/python3.10/subprocess.py", line 1917, in _try_wait
+[1.080s]     (pid, sts) = os.waitpid(self.pid, wait_flags)
+[1.080s] KeyboardInterrupt
+[1.085s] Invoked command in '/home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator' returned '-2': /home/kcw/.local/bin/cmake --build /home/kcw/capstone_ws/2024CapstoneDesign/ros2/src/manipulator/build/manipulator -- -j8 -l8
