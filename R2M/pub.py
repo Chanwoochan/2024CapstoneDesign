@@ -17,7 +17,7 @@ def read_pth_file_and_publish(file_path):
             # ROS Publisher 초기화
             rospy.init_node('resistance_publisher', anonymous=True)
             pub = rospy.Publisher('resistance_values', Int32MultiArray, queue_size=10)
-            rate = rospy.Rate(10)  # 발행 속도 설정
+            rate = rospy.Rate(100)  # 발행 속도 설정
             
             # 가변저항 값을 한 행당 8개씩 묶어서 발행
             idx = 0
@@ -40,8 +40,8 @@ def read_pth_file_and_publish(file_path):
         rospy.logerr("An error occurred: %s", str(e))
 
 # 테스트를 위해 pth 파일 경로 설정
-pth_file_path = "/home/jy/catkin_ws/src/2024CapstoneDesign/CAPSTONE/src/paths/ss.pth"
+pth_file_path = "/home/jy/catkin_ws/src/2024CapstoneDesign/CAPSTONE/src/paths/l.pth"
 
-# pth 파일 읽고 가변저항 값을 ROS topic으로 발행
+# pth읽고 가변저항 값을 ROS topic으로 
 read_pth_file_and_publish(pth_file_path)
 

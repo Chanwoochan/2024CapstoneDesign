@@ -19,76 +19,75 @@ double CAPS::cosWave(double amp, double period, double time, double int_pos)
     return (amp / 2) * (1 - cos(PI / period * time)) + int_pos;
 }
 
-void CAPS::ReturnPose(float return_time)
-{
-    static float re_time = 0;
+// void CAPS::ReturnPose(float return_time)
+// {
+//     static float re_time = 0;
 
-    static struct End_point target;
-    static struct End_point EP_goal;
-    static float init_joint_angle[2]; // Now nDoF = 13
+//     static struct End_point target;
+//     static struct End_point EP_goal;
+//     static float init_joint_angle[2]; // Now nDoF = 13
 
-    // ref -> init
-    // (ik -> write_ready_joint) - (ref -> init) -> ref
+//     // ref -> init
+//     // (ik -> write_ready_joint) - (ref -> init) -> ref
 
-    EP_goal.x = 0.22;
-    EP_goal.y = 0.0;
-    Compute_IK(EP_goal.x, EP_goal.y);
+//     EP_goal.x = 0.22;
+//     EP_goal.y = 0.0;
+//     Compute_IK(EP_goal.x, EP_goal.y);
 
-    if (re_time == 0)
-    {
-        for (int j = 0; j < 6; j++)
-        {
-            init_joint_angle[j] = refAngle[j];
-        }
-    }
-    if (re_time <= return_time)
-    {
-        for (int j = 0; j < 6; j++)
-        {
-            refAngle[j] = cosWave(write_ready_joint[j] - init_joint_angle[j], return_time, re_time, init_joint_angle[j]);
-        }
-        re_time += tasktime;
-    }
-    else
-    {
-        re_time = 0;
-        Move_current = false;
-    }
-}
+//     if (re_time == 0)
+//     {
+//         for (int j = 0; j < 6; j++)
+//         {
+//             init_joint_angle[j] = refAngle[j];
+//         }
+//     }
+//     if (re_time <= return_time)
+//     {
+//         for (int j = 0; j < 6; j++)
+//         {
+//             refAngle[j] = cosWave(write_ready_joint[j] - init_joint_angle[j], return_time, re_time, init_joint_angle[j]);
+//         }
+//         re_time += tasktime;
+//     }
+//     else
+//     {
+//         re_time = 0;
+//         Move_current = false;
+//     }
+// }
 
-void CAPS::Convert()
-{
-    // 파일 경로 설정
-    std::string file_path = "/home/park/resistance_values.txt";
+// <coswave motion>
+// void CAPS::Convert()
+// {
+//     // 파일 경로 설정
+//     std::string file_path = "/home/park/resistance_values.txt";
     
-    // 파일 열기
-    std::ifstream input_file(file_path);
+//     // 파일 열기
+//     std::ifstream input_file(file_path);
     
-    // 파일이 제대로 열렸는지 확인
-    if (!input_file.is_open()) {
-        std::cerr << "Failed to open file: " << file_path << std::endl;
-    }
+//     // 파일이 제대로 열렸는지 확인
+//     if (!input_file.is_open()) {
+//         std::cerr << "Failed to open file: " << file_path << std::endl;
+//     }
     
-    const int motor_count = 7;
-    std::vector<double> Angle(motor_count, 0.0);
+//     const int motor_count = 7;
+//     std::vector<double> Angle(motor_count, 0.0);
     
-    // 파일에서 한 줄씩 읽어와서 배열에 저장
-    std::string line;
-    while (std::getline(input_file, line)) {
-        std::istringstream iss(line);
-        for (int i = 0; i < motor_count && iss >> Angle[i]; i++) {
-            refAngle[i] = (PI / 2048) * Angle[i] * 4;
-        }
-        // 모터 배열 출력
-        for (int i = 0; i < motor_count; i++) {
-            // refAngle[motor_count]=Angle[motor_count];
-            std::cout << "t_motor[" << i + 1 << "] = " << Angle[i] << " "<<endl;
-            std::cout << "R_motor[" << i + 1 << "] = " << refAngle[i] << " "<<endl;
-        }
-    }
-
-
-}
+//     // 파일에서 한 줄씩 읽어와서 배열에 저장
+//     std::string line;
+//     while (std::getline(input_file, line)) {
+//         std::istringstream iss(line);
+//         for (int i = 0; i < motor_count && iss >> Angle[i]; i++) {
+//             refAngle[i] = (PI / 2048) * Angle[i] * 4;
+//         }
+//         // 모터 배열 출력
+//         for (int i = 0; i < motor_count; i++) {
+//             // refAngle[motor_count]=Angle[motor_count];
+//             std::cout << "t_motor[" << i + 1 << "] = " << Angle[i] << " "<<endl;
+//             std::cout << "R_motor[" << i + 1 << "] = " << refAngle[i] << " "<<endl;
+//         }
+//     }
+// }
 
 // void CAPS::Motion1(float upTime, float swingTime)
 // {

@@ -1,3 +1,8 @@
+/* 
+date: 2024.04.08
+first developer: Ji Young Kim
+for 2024 Capstone 
+*/
 #include <stdio.h>
 #include <iostream>
 #include <boost/bind.hpp>
@@ -59,8 +64,7 @@ namespace gazebo {
         physics::JointPtr third_pitch;
         physics::JointPtr fourth_pitch;
         physics::JointPtr fifth_pitch;
-        physics::JointPtr sixth_roll;
-        physics::JointPtr gripper;    // detail_arm_pkg
+        physics::JointPtr sixth_roll;    // detail_arm_pkg
 
         ros::NodeHandle nh;
         ros::Subscriber CAPSModesp;
@@ -71,11 +75,9 @@ namespace gazebo {
         ros::Publisher CAPSModesp_pub;
         std_msgs::Float64 CAPSModesp_msg;
 
-
-
         enum
         { 
-            LK1 = 0, LK2, LK3, LK4, LK5, LK6, LK7
+            LK1 = 0, LK2, LK3, LK4, LK5, LK6
         };
 
         //* Joint Variables
@@ -102,13 +104,12 @@ namespace gazebo {
             double Ki;
             double Kd;
 
-            
-
         } ROBO_JOINT;
         ROBO_JOINT* joint;                
 
         CAPS caps;
-        double txtAngle[7];
+
+        double txtAngle[6];
 
     public :
             //*** Functions for Kubot Simulation in Gazebo ***//
@@ -117,7 +118,6 @@ namespace gazebo {
           
           void setjoints(); // Get each joint data from [physics::ModelPtr _model]    
           void getjointdata(); // Get encoder data of each joint
-
           void jointcontroller();
           
           void initializejoint(); 
@@ -155,22 +155,30 @@ void gazebo::arm_plugin::CAPSMode(const std_msgs::Int32 &msg)
 
 }
 
-int received_data[7] = {0};
-
+int received_data[8] = {0};
 void gazebo::arm_plugin::msg_callback(const std_msgs::Int32MultiArray::ConstPtr& msg)
 {
     // 받은 데이터를 배열에 저장
-    for (int i = 0; i < 7; ++i)
+    for (int i = 0; i < 8; ++i)
     {
         received_data[i] = msg->data[i];
     }
     
     // 저장된 데이터 출력 (예시)
     ROS_INFO("Received data:");
-    for (int i = 0; i < 7; ++i)
+    for (int i = 0; i < 8; ++i)
     {
         ROS_INFO("Value %d: %d", i, received_data[i]);
+
     }
+    joint[0].targetRadian = received_data[0]*(PI/2048)*(0.5);
+    joint[1].targetRadian = received_data[1]*(PI/2048)*(0.5);
+    joint[2].targetRadian = received_data[2]*(PI/2048)*(0.5);
+    joint[3].targetRadian = received_data[3]*(PI/2048)*(0.5);
+    joint[4].targetRadian = received_data[4]*(PI/2048)*(0.5);
+
+    joint[5].targetRadian = received_data[6]*(PI/2048)*(0.5); //gripper
+
 }
 
 void gazebo::arm_plugin::Load(physics::ModelPtr _model, sdf::ElementPtr /*_sdf*/)
@@ -185,10 +193,9 @@ void gazebo::arm_plugin::Load(physics::ModelPtr _model, sdf::ElementPtr /*_sdf*/
     setjoints();
     //sdf변환하기 전에 urdf파일에서 조인트가 몇개인지 인식을 함.
     //인식이 끝나면 joint 갯수에 맞게 구조체를 여러개 생성
-    //Robotjoint 구조체를 joint 갯수만큼 복제되는 거임
 
-    nDoF = 7; // Get degrees of freedom, except position and orientation of the robot
-    //우리가 만든 joint는 12개로 지정
+    nDoF = 6; // Get degrees of freedom, except position and orientation of the robot
+
     joint = new ROBO_JOINT[nDoF]; // Generation joint variables struct    
     
     initializejoint();
@@ -197,7 +204,6 @@ void gazebo::arm_plugin::Load(physics::ModelPtr _model, sdf::ElementPtr /*_sdf*/
     //* setting for getting dt
 
     CAPSModesp_pub = nh.advertise<std_msgs::Float64>("command/CAPSMode", 1000);    
-           
 
     last_update_time = model->GetWorld()->SimTime();
     update_connection = event::Events::ConnectWorldUpdateBegin(boost::bind(&arm_plugin::UpdateAlgorithm, this));
@@ -218,7 +224,6 @@ void gazebo::arm_plugin::UpdateAlgorithm()
     //sub = nh.subscribe("resistance_values", 10, &gazebo::arm_plugin::msg_callback);
 
     //     ros::Subscriber sub = nh.subscribe("dxl_switch", 1000, dxl_switch_Callback);
-
 
     getjointdata();
 
@@ -243,16 +248,11 @@ void gazebo::arm_plugin::UpdateAlgorithm()
         {
 
         case RETURN_POSE:
-
             if (caps.Move_current == true) {
-                // caps.Convert();
-                Convert();
-                //  cout<<"after Convert / after Convert / after Convert"<<endl;
-                //  for (int j = 0; j < nDoF; j++) {
-                //     // cout<<"JOINT CONTROLLER / JOINT CONTROLLER / JOINT CONTROLLER"<<caps.refAngle[j]<<endl;
-                //     cout<<"after Convert / after Convert / after Convert"<<endl;
-                //      joint[j].targetRadian = txtAngle[j];
-                // }
+               
+                // Convert(); 
+                // because of jointcontroller(), this way is incorrect 
+                // -> new way is get array data from pub.py by using topic
            }
             else {
                 printf("RETURN_POSE COMPLETE !\n");
@@ -264,11 +264,17 @@ void gazebo::arm_plugin::UpdateAlgorithm()
 
             break;
         }
+    }
+    
 
-    }
-    for(int j=0;j<7;j++){
-    joint[j].targetRadian=received_data[j]*(PI/2048)*2;
-    }
+    // joint[0].targetRadian = received_data[0]*(PI/2048)*(0.5);
+    // joint[1].targetRadian = received_data[1]*(PI/2048)*(0.5);
+    // joint[2].targetRadian = received_data[2]*(PI/2048)*(0.5);
+    // joint[3].targetRadian = received_data[3]*(PI/2048)*(0.5);
+    // joint[4].targetRadian = received_data[4]*(PI/2048)*(0.5);
+
+    // joint[5].targetRadian = received_data[6]*(PI/2048)*(0.5); //gripper
+
     jointcontroller();        
 
     CAPSModesp_pub.publish(CAPSModesp_msg); 
@@ -283,23 +289,22 @@ void gazebo::arm_plugin::setjoints()   //plugin에다가 joints name 설정 .sdf
      */
 
     //* Joint specified in model.sdf
-    // first_yaw = this->model->GetJoint("first_yaw");
-    // second_pitch = this->model->GetJoint("second_pitch");
-    // third_pitch = this->model->GetJoint("third_pitch");
-    // fourth_pitch = this->model->GetJoint("fourth_pitch");
-    // fifth_pitch = this->model->GetJoint("fifth_pitch");
-    // sixth_roll = this->model->GetJoint("sixth_roll");
-    // gripper = this->model->GetJoint("gripper");    // detail_arm_pkg
+    first_yaw = this->model->GetJoint("first_yaw");
+    second_pitch = this->model->GetJoint("second_pitch");
+    third_pitch = this->model->GetJoint("third_pitch");
+    fourth_pitch = this->model->GetJoint("fourth_pitch");
+    fifth_pitch = this->model->GetJoint("fifth_pitch");
+    sixth_roll = this->model->GetJoint("sixth_roll");
+    // gripper = this->model->GetJoint("gripper");   
 
     // detail_arm_pkg    // detail_arm_pkg    // detail_arm_pkg    // detail_arm_pkg
     // * Joint specified in model.sdf
-    first_yaw = this->model->GetJoint("1yaw");
-    second_pitch = this->model->GetJoint("2pitch");
-    third_pitch = this->model->GetJoint("3pitch");
-    fourth_pitch = this->model->GetJoint("4pitch");
-    fifth_pitch = this->model->GetJoint("5pitch");
-    sixth_roll = this->model->GetJoint("6roll");
-    gripper = this->model->GetJoint("gripper");    // detail_arm_pkg
+    // first_yaw = this->model->GetJoint("1yaw");
+    // second_pitch = this->model->GetJoint("2pitch");
+    // third_pitch = this->model->GetJoint("3pitch");
+    // fourth_pitch = this->model->GetJoint("4pitch");
+    // fifth_roll = this->model->GetJoint("5roll");
+    // gripper = this->model->GetJoint("gripper");    // detail_arm_pkg
 
 
 }
@@ -318,7 +323,7 @@ void gazebo::arm_plugin::getjointdata()
     joint[LK4].actualRadian = fourth_pitch->Position(0);
     joint[LK5].actualRadian = fifth_pitch->Position(0);
     joint[LK6].actualRadian = sixth_roll->Position(0);
-    joint[LK7].actualRadian = gripper->Position(0);    // detail_arm_pkg
+    // joint[LK7].actualRadian = gripper->Position(0);    // detail_arm_pkg
 
 
     joint[LK1].actualVelocity = first_yaw->GetVelocity(0);
@@ -327,7 +332,7 @@ void gazebo::arm_plugin::getjointdata()
     joint[LK4].actualVelocity = fourth_pitch->GetVelocity(0);
     joint[LK5].actualVelocity = fifth_pitch->GetVelocity(0);
     joint[LK6].actualVelocity = sixth_roll->GetVelocity(0);
-    joint[LK7].actualVelocity = gripper->GetVelocity(0);    // detail_arm_pkg
+    // joint[LK7].actualVelocity = gripper->GetVelocity(0);    // detail_arm_pkg
 
 
     joint[LK1].actualTorque = first_yaw->GetForce(0);
@@ -336,21 +341,19 @@ void gazebo::arm_plugin::getjointdata()
     joint[LK4].actualTorque = fourth_pitch->GetForce(0);
     joint[LK5].actualTorque = fifth_pitch->GetForce(0);
     joint[LK6].actualTorque = sixth_roll->GetForce(0);
-    joint[LK7].actualTorque = gripper->GetForce(0);    // detail_arm_pkg
+    // joint[LK7].actualTorque = gripper->GetForce(0);    // detail_arm_pkg
     
 }
 
 void gazebo::arm_plugin::jointcontroller()
 {
-        static double pre_rad[7];
+        static double pre_rad[6];
 
         cout<< "==================================================" << endl;
 
         for (int j = 0; j < nDoF; j++){           
             cout<<"타켓라디안 ["<< j << "] : "<< joint[j].targetRadian<<endl;
         }
-
-        cout<< "==================================================" << endl;
         cout<< "==================================================" << endl;
 
         for (int j = 0; j < nDoF; j++){           
@@ -367,7 +370,7 @@ void gazebo::arm_plugin::jointcontroller()
         fourth_pitch->SetForce(0, joint[LK4].targetTorque);
         fifth_pitch->SetForce(0, joint[LK5].targetTorque);
         sixth_roll->SetForce(0, joint[LK6].targetTorque);
-        gripper->SetForce(0, joint[LK7].targetTorque);    // detail_arm_pkg
+        // gripper->SetForce(0, joint[LK7].targetTorque);    // detail_arm_pkg
          
 }
 
@@ -382,7 +385,7 @@ void gazebo::arm_plugin::initializejoint()
         joint[3].targetRadian= 0*D2R;
         joint[4].targetRadian= 0*D2R;
         joint[5].targetRadian= 0*D2R;
-        joint[6].targetRadian= 0*D2R;    // detail_arm_pkg
+        // joint[6].targetRadian= 0*D2R;    // detail_arm_pkg
 
 }
 
@@ -391,13 +394,13 @@ void gazebo::arm_plugin::setjointPIDgain()
     /*
      * Set each joint PID gain for joint control
      */
-        joint[LK1].Kp = 5;
-        joint[LK2].Kp = 5;
-        joint[LK3].Kp = 5;
-        joint[LK4].Kp = 5;
-        joint[LK5].Kp = 5;
-        joint[LK6].Kp = 5;
-        joint[LK7].Kp = 5;    // detail_arm_pkg
+        joint[LK1].Kp = 70;
+        joint[LK2].Kp = 70;
+        joint[LK3].Kp = 70;
+        joint[LK4].Kp = 70;
+        joint[LK5].Kp = 70;
+        joint[LK6].Kp = 70;
+        // joint[LK7].Kp = 5;    // detail_arm_pkg
 
         joint[LK1].Kd = 0;  // 0.01;
         joint[LK2].Kd = 0;  // 0.01;
@@ -405,48 +408,7 @@ void gazebo::arm_plugin::setjointPIDgain()
         joint[LK4].Kd = 0;  // 0.01;
         joint[LK5].Kd = 0;  // 0.01;
         joint[LK6].Kd = 0;  // 0.01;
-        joint[LK7].Kd = 0;  // 0.01;    // detail_arm_pkg
+        // joint[LK7].Kd = 0;  // 0.01;    // detail_arm_pkg
         
 }
 
-
-void gazebo::arm_plugin::Convert() {
-    // 파일 경로 설정
-    std::string file_path = "/home/park/resistance_values.txt";
-    
-    // 파일 열기
-    std::ifstream input_file(file_path);
-    
-    // 파일이 제대로 열렸는지 확인
-    if (!input_file.is_open()) {
-        std::cerr << "Failed to open file: " << file_path << std::endl;
-        return;
-    }
-    
-    const int motor_count = 7;
-    std::vector<double> Angle(motor_count, 0.0);
-    
-    // 파일에서 한 줄씩 읽어와서 배열에 저장
-    std::string line;
-    while (std::getline(input_file, line)) {
-        std::istringstream iss(line);
-        for (int i = 0; i < motor_count && iss >> Angle[i]; i++) {
-            txtAngle[i] = (PI / 2048) * Angle[i] * 4;
-        }
-        
-        // 모터 배열 출력 및 joint 배열 업데이트
-        for (int i = 0; i < motor_count; i++) {
-            std::cout << "t_motor[" << i + 1 << "] = " << Angle[i] << " " << std::endl;
-            std::cout << "R_motor[" << i + 1 << "] = " << txtAngle[i] << " " << std::endl;
-            joint[i].targetRadian = txtAngle[i];  // joint 배열 업데이트
-            
-        }
-        // if()
-        // jointcontroller();
-
-        // 추가적인 딜레이를 통해 실시간 갱신처럼 보이게 함 (선택 사항)
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
-    }
-
-    input_file.close();
-}
